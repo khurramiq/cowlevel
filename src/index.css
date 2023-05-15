@@ -1,0 +1,76 @@
+#section1 {
+  color: #fff;
+}
+.section {
+  height: 100vh;
+  display: block !important;
+}
+
+.fp-warning,
+.fp-watermark {
+  z-index: 9999999;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wading-image {
+  animation: wadingAnimation 2s infinite alternate linear;
+  transform: translateY(0);
+}
+
+.moving_cow {
+  display: inline-block;
+  position: relative;
+  right: -100vw;
+  animation: moveAnimation 15s linear infinite;
+  -webkit-animation: moveAnimation 15s linear infinite;
+}
+
+.footer_cow_nose {
+  width: 600px;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: cow_nose;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cow_nose {
+  0% {
+    width: 600px;
+  }
+  50% {
+    width: 530px;
+  }
+  100% {
+    width: 600px;
+  }
+}
+@keyframes moveAnimation {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 250px;
+  }
+}
+
+@keyframes wadingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
