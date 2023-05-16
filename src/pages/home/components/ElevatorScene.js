@@ -1,17 +1,18 @@
 import React from 'react';
-import elevatorscene from '../../../assets/images/elevatorscene.jpg';
+import elevatorscene from '../../../assets/images/av1.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const ElevatorScene = () => {
   return (
-    <div className="section relative">
+    <div className="section relative overflow-hidden bg-[#A5AAAD]">
       <CowLevelHeader />
-      <img
-        className="absolute z-[-1] top-0 left-0 right-0 bottom-0"
-        src={elevatorscene}
-        style={{ width: '100vw', height: '100vh' }}
-        alt="handOpen"
-      />
+      <div className="absolute h-screen w-screen overflow-hidden">
+        <img
+          className="relative w-full"
+          src={elevatorscene}
+          alt="elevatorscene"
+        />
+      </div>
     </div>
   );
 };

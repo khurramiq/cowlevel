@@ -14,6 +14,10 @@
   display: none;
 }
 
+.text-shadow-p {
+  text-shadow: 1px 1px 3px #000;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

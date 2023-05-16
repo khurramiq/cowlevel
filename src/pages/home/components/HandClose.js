@@ -1,5 +1,4 @@
-import bg from '../../../assets/images/bg.png';
-import handClose from '../../../assets/images/handClose.png';
+import clh from '../../../assets/images/clh.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import CowMoving from './CowMoving';
 import { FaBars } from 'react-icons/fa';
@@ -17,16 +16,9 @@ const HandClose = () => {
           <FaBars className="text-3xl mr-5" />
         </div>
       </div>
-      <img
-        className="absolute top-0 w-screen h-screen z-[0]"
-        src={bg}
-        alt="handOpen"
-      />
-      <img
-        className="absolute top-0 w-screen h-screen z-[1]"
-        src={handClose}
-        alt="handOpen"
-      />
+      <div className="top-0 absolute h-screen w-screen overflow-hidden">
+        <img className="relative w-full" src={clh} alt="closinghand" />
+      </div>
       <CowMoving />
     </div>
   );
