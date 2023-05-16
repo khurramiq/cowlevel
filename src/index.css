@@ -23,6 +23,25 @@
   transform: translateY(0);
 }
 
+.currencyAnimate {
+  animation: currencyAnimate 4s infinite alternate linear;
+  transform: translateX(0);
+  -webkit-animation: currencyAnimate 4s infinite alternate linear;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.remoteAnimate {
+  animation: remoteAnimate 4s infinite alternate linear;
+  transform: translateX(0) rotate(-7deg);
+  -webkit-animation: remoteAnimate 4s infinite alternate linear;
+  -webkit-transform: translateX(0) rotate(-7deg);
+  -moz-transform: translateX(0) rotate(-7deg);
+  -ms-transform: translateX(0) rotate(-7deg);
+  -o-transform: translateX(0) rotate(-7deg);
+}
+
 .moving_cow {
   display: inline-block;
   position: relative;
@@ -59,6 +78,52 @@
   }
 }
 
+@keyframes remoteAnimate {
+  0% {
+    transform: translateX(0) rotate(-7deg);
+    -webkit-transform: translateX(0) rotate(-7deg);
+    -moz-transform: translateX(0) rotate(-7deg);
+    -ms-transform: translateX(0) rotate(-7deg);
+    -o-transform: translateX(0) rotate(-7deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-7deg);
+    -webkit-transform: translateX(-10px) rotate(-7deg);
+    -moz-transform: translateX(-10px) rotate(-7deg);
+    -ms-transform: translateX(-10px) rotate(-7deg);
+    -o-transform: translateX(-10px) rotate(-7deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-7deg);
+    -webkit-transform: translateX(0) rotate(-7deg);
+    -moz-transform: translateX(0) rotate(-7deg);
+    -ms-transform: translateX(0) rotate(-7deg);
+    -o-transform: translateX(0) rotate(-7deg);
+  }
+}
+@keyframes currencyAnimate {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
 @keyframes wadingAnimation {
   0% {
     transform: translateY(0);

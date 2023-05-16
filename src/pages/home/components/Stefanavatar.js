@@ -1,10 +1,12 @@
 import React from 'react';
 import bg from '../../../assets/images/hallWithClosedElevator.png';
 import stefanavatar from '../../../assets/images/stefanavatar.png';
+import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const Stefanavatar = () => {
   return (
-    <div className="section" style={{ position: 'relative' }}>
+    <div className="section relative">
+      <CowLevelHeader />
       <img
         src={bg}
         style={{

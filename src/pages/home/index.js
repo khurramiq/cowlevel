@@ -3,37 +3,22 @@ import HandOpen from './components/HandOpen';
 import HandClose from './components/HandClose';
 import ElevatorScene from './components/ElevatorScene';
 import Stefanavatar from './components/Stefanavatar';
-import Footer from '../../components/footer';
 import SignupForm from './components/SignupForm';
-import CowMoving from './components/CowMoving';
+import cowskinpattern from '../../assets/images/cowskinpattern.png';
+import CowLevelSlide1 from './components/CowLevelSlide1';
+import StefanBoris1 from './components/StefanBoris1';
+import StefanBoris2 from './components/StefanBoris2';
+import CowLevelHeader from '../../components/CowLevelHeader';
 
-// const Home = () => {
-//   return (
-//     <div>
-//       <HandOpen />
-//       <HandClose />
-//       <div style={{ width: '100vw', height: '100vh' }}></div>
-//     </div>
-//   );
-// };
 const Home = () => {
-  // const anchors = [
-  //   'page1',
-  //   'page2',
-  //   'page3',
-  //   'page4',
-  //   'page5',
-  //   'page6',
-  //   'page7',
-  // ];
   return (
     <>
       <ReactFullpage
-        navigation
-        // navigationTooltips={anchors}
-        scrollingSpeed="700"
+        // navigation
+        scrollingSpeed="1"
         animateAnchor={true}
         keyboardScrolling={true}
+        dropEffect={true}
         easing="easeInOutCubic"
         onLeave={(origin, destination, direction) => {
           console.log('onLeave event', { origin, destination, direction });
@@ -42,14 +27,25 @@ const Home = () => {
           console.log('state', state);
           return (
             <div>
+              <CowLevelSlide1 />
+              <StefanBoris1 />
+              <StefanBoris2 />
               <ElevatorScene />
               <Stefanavatar />
               <HandOpen />
               <HandClose />
-              <CowMoving />
-              <div className="section" style={{ background: '#F4423F' }}></div>
+              <div className="section relative">
+                <CowLevelHeader />
+                <img
+                  className="w-full h-full"
+                  src={cowskinpattern}
+                  alt="cowskinpattern"
+                />
+              </div>
+              <div className="section relative bg-[#F4423F]">
+                <CowLevelHeader />
+              </div>
               <SignupForm />
-              <Footer />
             </div>
           );
         }}

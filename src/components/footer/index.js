@@ -2,7 +2,7 @@ import footerflower from '../../assets/images/footerflower.png';
 
 const Footer = () => {
   return (
-    <div className="section" style={{ background: '#262629' }}>
+    <div className="absolute top-[100%] h-screen w-screen overflow-hidden bg-[#262629]">
       <div className="ml-20">
         <img
           className="footer_cow_nose w-[600px]"

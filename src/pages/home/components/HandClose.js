@@ -1,45 +1,33 @@
-// import Plx from 'react-plx';
 import bg from '../../../assets/images/bg.png';
 import handClose from '../../../assets/images/handClose.png';
-// import { useEffect, useState } from 'react';
+import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
+import CowMoving from './CowMoving';
+import { FaBars } from 'react-icons/fa';
 
 const HandClose = () => {
-  //   const [scrollValue, setScrollValue] = useState(0);
-  //   const handleScroll = () => {
-  //     const currentScrollValue = window.pageYOffset;
-  //     setScrollValue(currentScrollValue);
-  //   };
-
-  //   const top = () => {
-  //     if (scrollValue <= 400) {
-  //       return '0px';
-  //     }
-  //     return '-100vh';
-  //   };
-
-  //   useEffect(() => {
-  //     window.addEventListener('scroll', handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }, []);
   return (
-    <div
-      className="section"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-      }}
-    >
+    <div className="section relative overflow-x-hidden">
+      <div className="z-[100] sticky left-0 right-0 top-0">
+        <div className="w-[1200px] mx-auto p-5 flex justify-between items-center">
+          <img
+            className="w-[60px] h-[40px]"
+            src={cowheaderlogo}
+            alt="cowheaderlogo"
+          />
+          <FaBars className="text-3xl mr-5" />
+        </div>
+      </div>
       <img
-        src={handClose}
-        style={{ width: '100vw', height: '100vh' }}
+        className="absolute top-0 w-screen h-screen z-[0]"
+        src={bg}
         alt="handOpen"
       />
+      <img
+        className="absolute top-0 w-screen h-screen z-[1]"
+        src={handClose}
+        alt="handOpen"
+      />
+      <CowMoving />
     </div>
   );
 };
