@@ -1,12 +1,11 @@
 import movingcow from '../../../assets/images/movingcow.gif';
 import twomaninbelowcow from '../../../assets/images/twomaninbelowcow.png';
-import leftAngle from '../../../assets/images/leftAngle.png';
 
 const CowMoving = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
       <div
-        class="flex justify-end items-end w-[110%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[-10px]"
+        class="flex justify-end items-end w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[-10px]"
         style={{ zIndex: -10 }}
       >
         <div className="w-[110%]">

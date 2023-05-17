@@ -12,10 +12,10 @@ const MovingIcons = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#3D6EB1]">
       <div
-        class="flex justify-center items-end w-[110%] h-[60%] bg-[#325C95] origin-bottom-right rotate-[7deg] translate-x-[-50px]"
+        class="flex justify-center items-end w-[120%] h-[60%] bg-[#325C95] origin-bottom-right rotate-[7deg] translate-x-[-200px]"
         style={{ zIndex: -10 }}
       >
-        <div className="relative w-[80%]">
+        <div className="relative w-[100%]">
           <Marquee speed={150} className="absolute w-full bottom-0">
             <img className="w-[100px] mr-[100px]" src={mi1} alt="mi1" />
             <img className="w-[100px] mr-[100px]" src={mi2} alt="mi2" />
