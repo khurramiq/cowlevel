@@ -9,8 +9,10 @@ import CowLevelSlide1 from './components/CowLevelSlide1';
 import StefanBoris1 from './components/StefanBoris1';
 import StefanBoris2 from './components/StefanBoris2';
 import CowLevelHeader from '../../components/CowLevelHeader';
+import { useState } from 'react';
 
 const Home = () => {
+  const [startCounter, setStartCounter] = useState(false);
   return (
     <>
       <ReactFullpage
@@ -22,6 +24,11 @@ const Home = () => {
         easing="easeInOutCubic"
         onLeave={(origin, destination, direction) => {
           console.log('onLeave event', { origin, destination, direction });
+          if (destination.index === 2 || destination.index === 4) {
+            setStartCounter(true);
+          } else {
+            setStartCounter(false);
+          }
         }}
         render={({ state, fullpageApi }) => {
           console.log('state', state);
@@ -29,7 +36,7 @@ const Home = () => {
             <div>
               <CowLevelSlide1 />
               <StefanBoris1 />
-              <StefanBoris2 />
+              <StefanBoris2 startCounter={startCounter} />
               <ElevatorScene />
               <Stefanavatar />
               <HandOpen />

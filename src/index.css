@@ -2,8 +2,15 @@
   color: #fff;
 }
 .section {
+  opacity: 0.6;
   height: 100vh;
   display: block !important;
+  animation-name: showDelayedDiv;
+  animation-duration: 3s;
+  animation-delay: 1s; /* Delay of 2 seconds before the animation starts */
+}
+.active {
+  opacity: 1;
 }
 
 .fp-warning,
@@ -123,6 +130,23 @@
   top: -10px;
 }
 
+.bzcounttt {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  min-height: 50px;
+  background: #000;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 auto;
+  border-radius: 20px;
+  letter-spacing: 6px;
+  text-shadow: 4px 4px 5px #9b9797;
+  box-shadow: -1px 3px 5px 4px #979292;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -161,10 +185,21 @@
 
 .footer_cow_nose {
   width: 600px;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-fill-mode: both;
   animation-name: cow_nose;
   animation-iteration-count: infinite;
+}
+.badgeAmimation {
+  transform: rotateY(0deg);
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: badgeAmimation;
+  animation-iteration-count: infinite;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
 }
 
 @keyframes cow_nose {
@@ -172,7 +207,7 @@
     width: 600px;
   }
   50% {
-    width: 530px;
+    width: 540px;
   }
   100% {
     width: 600px;
@@ -246,5 +281,19 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes badgeAmimation {
+  50% {
+    transform: rotateY(-50deg);
+  }
+}
+
+@keyframes showDelayedDiv {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
   }
 }

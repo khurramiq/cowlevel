@@ -1,4 +1,5 @@
 import board from '../../../assets/images/board.png';
+import fiPMELogo from '../../../assets/images/fiPMELogo.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import stefanfipme from '../../../assets/images/stefanfipme.png';
@@ -7,9 +8,12 @@ const MovingText = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
       <div
-        class="flex justify-center items-end w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
+        class="flex flex-col justify-between items-center w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}
       >
+        <div className="w-[120px] relative top-[50px] left-[-20%] rotate-[7deg]">
+          <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
+        </div>
         <div className="relative w-[50%] translate-x-[-10%] translate-y-[-30px]">
           <img className="h-[60px] w-full absolute" src={board} alt="board" />
           <Marquee
