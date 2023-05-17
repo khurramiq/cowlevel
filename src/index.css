@@ -18,6 +18,111 @@
   text-shadow: 1px 1px 3px #000;
 }
 
+.red_speech_left_arrow {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -30px;
+  top: 40px; /* Adjust the color of the arrow to match the speech box */
+}
+.blue_speech_left_arrow {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -30px;
+  top: 40px; /* Adjust the color of the arrow to match the speech box */
+}
+.red_speech_right_arrow {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #fff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -30px;
+  top: 40px; /* Adjust the color of the arrow to match the speech box */
+}
+.blue_speech_right_arrow {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #fff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -30px;
+  top: 40px; /* Adjust the color of the arrow to match the speech box */
+}
+.blue_speech_left_arrow:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 20px solid #3d6eb1;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -5px;
+  top: -10px;
+}
+.red_speech_left_arrow:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 20px solid #ec3e37;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -5px;
+  top: -10px;
+}
+.red_speech_right_arrow:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #ec3e37;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -5px;
+  top: -10px;
+}
+.blue_speech_right_arrow:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #3d6eb1;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -5px;
+  top: -10px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

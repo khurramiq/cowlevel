@@ -7,7 +7,6 @@ import mi6 from '../../../assets/images/mi6.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import borisavatar from '../../../assets/images/borisavatar.png';
-import leftAngle from '../../../assets/images/blueangle.png';
 
 const MovingIcons = () => {
   return (
@@ -35,12 +34,7 @@ const MovingIcons = () => {
               in line with game publishers and partners to create a whole new
               financial market.
             </span>
-            <div className="absolute bg-[#3D6EB1] w-[15px] h-[17px] right-[-13px] top-[45px]" />
-            <img
-              className="absolute z-[1] right-[-30px] top-[40px]"
-              src={leftAngle}
-              alt="leftAngle"
-            />
+            <div className="blue_speech_right_arrow" />
           </div>
           <img src={borisavatar} alt="borisavatar" />
           <div className="relative w-[272px]">

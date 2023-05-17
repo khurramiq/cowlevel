@@ -9,10 +9,7 @@ import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const CowLevelSlide1 = () => {
   return (
-    <div
-      className="section relative overflow-hidden"
-      style={{ background: '#FFFBE8' }}
-    >
+    <div className="section relative overflow-hidden bg-[#FFFBE8]">
       <CowLevelHeader />
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
         <div className="w-[50%] rotate-[5deg]">

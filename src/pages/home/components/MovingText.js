@@ -2,7 +2,7 @@ import board from '../../../assets/images/board.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import stefanfipme from '../../../assets/images/stefanfipme.png';
-import leftAngle from '../../../assets/images/leftAngle.png';
+import leftAngle from '../../../assets/images/blueangle.png';
 
 const MovingText = () => {
   return (
@@ -34,11 +34,7 @@ const MovingText = () => {
         <div className="flex justify-center items-start">
           <img src={stefanfipme} alt="twomaninbelowcow" />
           <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  w-[272px] text-white">
-            <img
-              className="absolute left-[-24px] top-[40px]"
-              src={leftAngle}
-              alt="leftAngle"
-            />
+            <div className="red_speech_left_arrow" />
             <span>
               The First International Play Money Exchange (FiPME) is a
               supervised platform for players to safely and quickly trade

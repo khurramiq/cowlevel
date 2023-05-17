@@ -24,11 +24,7 @@ const CowMoving = () => {
               An investment in cow level is an investment in the protection of
               gamers…
             </span>
-            <img
-              className="absolute right-[-24px] top-[40px] rotate-[180deg]"
-              src={leftAngle}
-              alt="leftAngle"
-            />
+            <div className="red_speech_right_arrow" />
           </div>
           <img
             className="w-[397px] h-[283px]"
@@ -36,11 +32,7 @@ const CowMoving = () => {
             alt="twomaninbelowcow"
           />
           <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 pb-0 w-[272px] h-[94px] text-white">
-            <img
-              className="absolute left-[-24px] top-[40px]"
-              src={leftAngle}
-              alt="leftAngle"
-            />
+            <div className="red_speech_left_arrow" />
             <span>
               …and the creation of wealth through gaming. Thank you for your
               support.
