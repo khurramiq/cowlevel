@@ -7,14 +7,15 @@ const MovingText = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
       <div
-        class="flex justify-center items-end w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[10px]"
+        class="flex justify-center items-end w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}
       >
         <div className="relative w-[50%] translate-x-[-10%] translate-y-[-30px]">
+          <img className="h-[60px] w-full absolute" src={board} alt="board" />
           <Marquee
             speed={150}
             pauseOnHover
-            className="absolute left-[30px]  top-[7px] pl-[20px] pr-[20px]"
+            className="absolute left-[30px] top-[7px] bg-transparent pl-[20px] pr-[20px]"
             style={{ width: 'calc(100% - 60px)' }}
           >
             <div className="text-[#ae4db5] text-[30px]">
@@ -26,7 +27,6 @@ const MovingText = () => {
               <span className="text-[#04cd04]">0.25</span>
             </div>
           </Marquee>
-          <img className="h-[60px] w-full absolute" src={board} alt="board" />
         </div>
       </div>
       <div className="h-[40%] overflow-hidden">
