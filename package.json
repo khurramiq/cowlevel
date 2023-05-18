@@ -23,7 +23,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "npm install --legacy-peer-deps && vercel --prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
