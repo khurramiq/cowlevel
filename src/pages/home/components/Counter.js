@@ -19,7 +19,7 @@ const Counter = ({ startCounter }) => {
   }, [count]);
   useEffect(() => {
     if (startCounter) {
-      setCount(204800);
+      setCount(204995);
     }
   }, [startCounter]);
 

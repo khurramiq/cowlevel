@@ -2,12 +2,17 @@
   color: #fff;
 }
 .section {
-  opacity: 0.6;
+  opacity: 0.5;
   height: 100vh;
   display: block !important;
   animation-name: showDelayedDiv;
   animation-duration: 3s;
-  animation-delay: 1s; /* Delay of 2 seconds before the animation starts */
+  animation-delay: 2s;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
 }
 .active {
   opacity: 1;
@@ -291,7 +296,7 @@
 
 @keyframes showDelayedDiv {
   from {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
