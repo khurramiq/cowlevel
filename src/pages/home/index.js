@@ -44,32 +44,36 @@ const Home = () => {
               <Stefanavatar fullpageApi={fullpageApi} />
               <HandOpen fullpageApi={fullpageApi} />
               <HandClose fullpageApi={fullpageApi} />
-              <div className="section relative overflow-y-hidden">
+              <div className="section relative">
                 <CowLevelHeader />
-                <img
-                  className="w-screen h-screen"
-                  src={cowskinpattern}
-                  alt="cowskinpattern"
-                />
-                <button
-                  className="scrollToTopButton"
-                  onClick={() => {
-                    fullpageApi.moveTo(1);
-                  }}
-                >
-                  <i className="fal fa-angle-up text-4xl"></i>
-                </button>
+                <div className="absolute top-0 w-screen h-screen overflow-hidden">
+                  <img
+                    className="h-full w-full"
+                    src={cowskinpattern}
+                    alt="cowskinpattern"
+                  />
+                  <button
+                    className="scrollToTopButton"
+                    onClick={() => {
+                      fullpageApi.moveTo(1);
+                    }}
+                  >
+                    <i className="fal fa-angle-up text-4xl"></i>
+                  </button>
+                </div>
               </div>
-              <div className="section relative overflow-y-hidden bg-[#F4423F]">
+              <div className="section relative bg-[#F4423F]">
                 <CowLevelHeader />
-                <button
-                  className="scrollToTopButton"
-                  onClick={() => {
-                    fullpageApi.moveTo(1);
-                  }}
-                >
-                  <i className="fal fa-angle-up text-4xl"></i>
-                </button>
+                <div className="absolute top-0 w-screen h-screen overflow-hidden">
+                  <button
+                    className="scrollToTopButton"
+                    onClick={() => {
+                      fullpageApi.moveTo(1);
+                    }}
+                  >
+                    <i className="fal fa-angle-up text-4xl"></i>
+                  </button>
+                </div>
               </div>
               <SignupForm fullpageApi={fullpageApi} />
               <button
