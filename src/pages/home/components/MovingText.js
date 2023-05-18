@@ -9,13 +9,13 @@ const MovingText = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
       <div
-        class="flex flex-col justify-between items-center w-[120%] h-[60%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
+        class="flex flex-col justify-between items-center w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}
       >
         <div className="w-[120px] relative top-[50px] left-[-20%] rotate-[7deg]">
           <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
         </div>
-        <div className="relative w-[50%] translate-x-[-10%] translate-y-[-30px]">
+        <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-30px] xs:translate-y-[-100px]">
           <img className="h-[60px] w-full absolute" src={board} alt="board" />
           <Marquee
             speed={150}
@@ -34,13 +34,17 @@ const MovingText = () => {
           </Marquee>
         </div>
       </div>
-      <div className="h-[40%] overflow-hidden">
-        <div className="flex justify-center items-start">
-          <img src={stefanfipme} alt="twomaninbelowcow" />
+      <div className="sm:h-[40%] xs:h-[50%] overflow-hidden">
+        <div className="flex justify-center sm:items-start xs:items-center">
+          <img
+            className="xs:w-[50%] sm:w-auto"
+            src={stefanfipme}
+            alt="twomaninbelowcow"
+          />
           <Fade bottom>
-            <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  w-[272px] text-white">
+            <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[30%] text-white">
               <div className="red_speech_left_arrow" />
-              <span>
+              <span className="sm:text-sm xs:text-xs">
                 The First International Play Money Exchange (FiPME) is a
                 supervised platform for players to safely and quickly trade
                 in-game items.

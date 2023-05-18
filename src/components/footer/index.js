@@ -16,7 +16,7 @@ const Footer = () => {
           alt="footerflower"
         />
       </div>
-      <div className="absolute bottom-[90px] left-0 right-0">
+      <div className="absolute sm:bottom-[90px] xs:bottom-[70px] left-0 right-0">
         <div className="sm:flex xs:block xs:w-[90%] w-[1200px] mx-auto">
           <div className="sm:w-[50%] xs:w-[100%] text-white">
             <div>
@@ -46,10 +46,10 @@ const Footer = () => {
               <img className="w-[40px] mr-4" src={li} alt="li" />
             </div>
           </div>
-          <div className="sm:w-[50%] xs:w-[100%] xs:mt-10 xs:block flex justify-end items-center">
+          <div className="sm:w-[50%] xs:w-[100%] xs:mt-2 xs:block sm:flex justify-end items-center">
             <div className="text-white pr-5">
-              <h3 className="text-[28px] pl-5">JOIN THE HERD</h3>
-              <p className="text-[18px] mt-2">
+              <h3 className="text-[28px] sm:pl-5 xs:mt-0">JOIN THE HERD</h3>
+              <p className="text-[18px] sm:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
                   jobs@bws546.xyz
@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className="xs:w-[100%] xs:mt-2 sm:w-[50%]">
               <img
-                className="w-full"
+                className="sm:w-full xs:w-[80%]"
                 src={footer_animation}
                 alt="footer_animation"
               />

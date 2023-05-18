@@ -13,7 +13,7 @@ const MovingIcons = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#3D6EB1]">
       <div
-        class="flex justify-center items-end w-[120%] h-[60%] bg-[#325C95] origin-bottom-right rotate-[7deg] translate-x-[-200px]"
+        class="flex justify-center items-end w-[120%] sm:h-[60%] xs:h-[50%] bg-[#325C95] origin-bottom-right rotate-[7deg] sm:translate-x-[-200px] xs:translate-x-[-50px]"
         style={{ zIndex: -10 }}
       >
         <div className="relative w-[100%]">
@@ -27,11 +27,11 @@ const MovingIcons = () => {
           </Marquee>
         </div>
       </div>
-      <div className="h-[40%] overflow-hidden">
-        <div className="flex justify-center items-start">
+      <div className="sm:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
+        <div className="flex justify-center sm:items-start xs:items-center">
           <Fade left>
-            <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 pb-0 w-[350px] h-[120px] text-white">
-              <span>
+            <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[30%] sm:h-[120px] xs:h-auto text-white">
+              <span className="sm:text-sm xs:text-xs">
                 We built an exchange environment around this growing asset class
                 in line with game publishers and partners to create a whole new
                 financial market.
@@ -40,7 +40,11 @@ const MovingIcons = () => {
             </div>
           </Fade>
           <Fade bottom>
-            <img src={borisavatar} alt="borisavatar" />
+            <img
+              className="xs:w-[30%] sm:w-auto"
+              src={borisavatar}
+              alt="borisavatar"
+            />
           </Fade>
           <div className="relative w-[272px]">
             <img
