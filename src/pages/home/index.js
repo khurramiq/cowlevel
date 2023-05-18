@@ -33,30 +33,65 @@ const Home = () => {
         render={({ state, fullpageApi }) => {
           console.log('state', state);
           return (
-            <div>
+            <div className="relative">
               <CowLevelSlide1 />
               <StefanBoris1 />
-              <StefanBoris2 startCounter={startCounter} />
-              <ElevatorScene />
-              <Stefanavatar />
-              <HandOpen />
-              <HandClose />
-              <div className="section relative">
+              <StefanBoris2
+                fullpageApi={fullpageApi}
+                startCounter={startCounter}
+              />
+              <ElevatorScene fullpageApi={fullpageApi} />
+              <Stefanavatar fullpageApi={fullpageApi} />
+              <HandOpen fullpageApi={fullpageApi} />
+              <HandClose fullpageApi={fullpageApi} />
+              <div className="section relative overflow-y-hidden">
                 <CowLevelHeader />
                 <img
-                  className="w-full h-full"
+                  className="w-screen h-screen"
                   src={cowskinpattern}
                   alt="cowskinpattern"
                 />
+                <button
+                  className="scrollToTopButton"
+                  onClick={() => {
+                    fullpageApi.moveTo(1);
+                  }}
+                >
+                  <i className="fal fa-angle-up text-4xl"></i>
+                </button>
               </div>
-              <div className="section relative bg-[#F4423F]">
+              <div className="section relative overflow-y-hidden bg-[#F4423F]">
                 <CowLevelHeader />
+                <button
+                  className="scrollToTopButton"
+                  onClick={() => {
+                    fullpageApi.moveTo(1);
+                  }}
+                >
+                  <i className="fal fa-angle-up text-4xl"></i>
+                </button>
               </div>
-              <SignupForm />
+              <SignupForm fullpageApi={fullpageApi} />
+              <button
+                className="scrollToTopButton"
+                onClick={() => {
+                  fullpageApi.moveTo(1);
+                }}
+              >
+                <i className="fal fa-angle-up text-4xl"></i>
+              </button>
             </div>
           );
         }}
       />
+      {/* <button
+        className="scrollToTopButton"
+        onClick={() => {
+          // fullpageApi.moveTo(1);
+        }}
+      >
+        <i className="fal fa-angle-up text-4xl"></i>
+      </button> */}
     </>
   );
 };

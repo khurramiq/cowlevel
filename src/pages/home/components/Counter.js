@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import FlipNumbers from 'react-flip-numbers';
+// import FlipNumbers from 'react-flip-numbers';
 import Flip from '../../../components/Flip';
 
-const Counter = ({ startCounter }) => {
+const Counter = ({ startCounter, fullpageApi }) => {
   const [count, setCount] = useState(204999);
 
   useEffect(() => {
@@ -29,17 +29,6 @@ const Counter = ({ startCounter }) => {
       <div>
         <div className="flex items-center justify-center">
           <span className="text-[25px] mr-2">$</span>
-          {/* <FlipNumbers
-            play
-            color="#fff"
-            background="#000"
-            width={50}
-            height={50}
-            numbers={`${count}`}
-            style={{
-              borderRadius: '10px',
-            }}
-          /> */}
           <Flip value={count} />
         </div>
         <p className="text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
@@ -55,6 +44,14 @@ const Counter = ({ startCounter }) => {
           without any regulation or compliance framework. Until now.
         </p>
       </div>
+      <button
+        className="scrollToTopButton"
+        onClick={() => {
+          fullpageApi.moveTo(1);
+        }}
+      >
+        <i className="fal fa-angle-up text-4xl"></i>
+      </button>
     </div>
   );
 };

@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import bs from '../../../assets/images/bs6.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import Counter from './Counter';
 import { FaBars } from 'react-icons/fa';
 
-const StefanBoris2 = ({ startCounter }) => {
+const StefanBoris2 = ({ startCounter, fullpageApi }) => {
   return (
     <div className="section relative overflow-x-hidden bg-[#A49E90]">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -44,7 +44,7 @@ const StefanBoris2 = ({ startCounter }) => {
           </div>
         </div>
       </div>
-      <Counter startCounter={startCounter} />
+      <Counter fullpageApi={fullpageApi} startCounter={startCounter} />
     </div>
   );
 };

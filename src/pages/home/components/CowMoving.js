@@ -1,7 +1,8 @@
 import movingcow from '../../../assets/images/movingcow.gif';
 import twomaninbelowcow from '../../../assets/images/twomaninbelowcow.png';
+import Fade from 'react-reveal/Fade';
 
-const CowMoving = () => {
+const CowMoving = ({ fullpageApi }) => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
       <div
@@ -18,27 +19,39 @@ const CowMoving = () => {
       </div>
       <div className="h-[40%] overflow-hidden">
         <div className="flex justify-center">
-          <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 pb-0 w-[272px] h-[94px] text-white">
-            <span>
-              An investment in cow level is an investment in the protection of
-              gamers…
-            </span>
-            <div className="red_speech_right_arrow" />
-          </div>
+          <Fade bottom>
+            <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 pb-0 w-[272px] h-[94px] text-white">
+              <span>
+                An investment in cow level is an investment in the protection of
+                gamers…
+              </span>
+              <div className="red_speech_right_arrow" />
+            </div>
+          </Fade>
           <img
             className="w-[397px] h-[283px]"
             src={twomaninbelowcow}
             alt="twomaninbelowcow"
           />
-          <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 pb-0 w-[272px] h-[94px] text-white">
-            <div className="red_speech_left_arrow" />
-            <span>
-              …and the creation of wealth through gaming. Thank you for your
-              support.
-            </span>
-          </div>
+          <Fade bottom>
+            <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 pb-0 w-[272px] h-[94px] text-white">
+              <div className="red_speech_left_arrow" />
+              <span>
+                …and the creation of wealth through gaming. Thank you for your
+                support.
+              </span>
+            </div>
+          </Fade>
         </div>
       </div>
+      <button
+        className="scrollToTopButton"
+        onClick={() => {
+          fullpageApi.moveTo(1);
+        }}
+      >
+        <i className="fal fa-angle-up text-4xl"></i>
+      </button>
     </div>
   );
 };

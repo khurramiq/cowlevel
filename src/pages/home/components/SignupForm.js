@@ -2,7 +2,9 @@ import { FaBars } from 'react-icons/fa';
 import mailBox from '../../../assets/images/mailBox.gif';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import Footer from '../../../components/footer';
-const SignupForm = () => {
+import { useState } from 'react';
+const SignupForm = ({ fullpageApi }) => {
+  const [showToTop, setShowToTop] = useState(false);
   return (
     <>
       <div
@@ -19,7 +21,22 @@ const SignupForm = () => {
             <FaBars className="text-3xl mr-5" />
           </div>
         </div>
-        <div className="absolute top-0 w-screen h-screen">
+        {/* {showToTop && (
+          <button
+            className="scrollToTopButton"
+            onMouseEnter={() => setShowToTop(true)}
+            onClick={() => {
+              fullpageApi.moveTo(1);
+            }}
+          >
+            <i className="fal fa-angle-up text-4xl"></i>
+          </button>
+        )} */}
+        <div
+          className="absolute top-0 w-screen h-screen"
+          onMouseEnter={() => setShowToTop(true)}
+          onMouseLeave={() => setShowToTop(false)}
+        >
           <h1 className="text-center text-white text-4xl font-bold pt-20">
             GET THE ONLY COW THAT WILL
             <br />

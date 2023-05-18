@@ -7,6 +7,7 @@ import mi6 from '../../../assets/images/mi6.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import borisavatar from '../../../assets/images/borisavatar.png';
+import Fade from 'react-reveal/Fade';
 
 const MovingIcons = () => {
   return (
@@ -28,15 +29,19 @@ const MovingIcons = () => {
       </div>
       <div className="h-[40%] overflow-hidden">
         <div className="flex justify-center items-start">
-          <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 pb-0 w-[350px] h-[120px] text-white">
-            <span>
-              We built an exchange environment around this growing asset class
-              in line with game publishers and partners to create a whole new
-              financial market.
-            </span>
-            <div className="blue_speech_right_arrow" />
-          </div>
-          <img src={borisavatar} alt="borisavatar" />
+          <Fade left>
+            <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 pb-0 w-[350px] h-[120px] text-white">
+              <span>
+                We built an exchange environment around this growing asset class
+                in line with game publishers and partners to create a whole new
+                financial market.
+              </span>
+              <div className="blue_speech_right_arrow" />
+            </div>
+          </Fade>
+          <Fade bottom>
+            <img src={borisavatar} alt="borisavatar" />
+          </Fade>
           <div className="relative w-[272px]">
             <img
               className="absolute left-5 bottom-[-200px] w-[80px]"

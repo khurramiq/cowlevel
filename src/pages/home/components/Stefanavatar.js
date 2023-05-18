@@ -4,7 +4,7 @@ import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import MovingText from './MovingText';
 import { FaBars } from 'react-icons/fa';
 
-const Stefanavatar = () => {
+const Stefanavatar = ({ fullpageApi }) => {
   return (
     <div className="section relative overflow-x-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -23,6 +23,14 @@ const Stefanavatar = () => {
       <MovingText />
       <div className="absolute top-[200%] h-screen w-screen overflow-hidden">
         <img className="relative w-full" src={oure} alt="elevatorscene" />
+        <button
+          className="scrollToTopButton"
+          onClick={() => {
+            fullpageApi.moveTo(1);
+          }}
+        >
+          <i className="fal fa-angle-up text-4xl"></i>
+        </button>
       </div>
     </div>
   );
