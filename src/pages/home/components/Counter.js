@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react';
 import FlipNumbers from 'react-flip-numbers';
 
 const Counter = ({ startCounter }) => {
-  const [count, setCount] = useState(204800);
+  const [count, setCount] = useState(204999);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prevCount) => prevCount + 1);
-    }, 50); // Delay between each number in milliseconds
+    }, 1000); // Delay between each number in milliseconds
 
     if (count === 205000) {
       clearInterval(interval);
