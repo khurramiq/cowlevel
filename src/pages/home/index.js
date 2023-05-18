@@ -31,7 +31,7 @@ const Home = () => {
           }
         }}
         render={({ state, fullpageApi }) => {
-          console.log('state', state);
+          // console.log('state', state);
           return (
             <div className="relative">
               <CowLevelSlide1 />
