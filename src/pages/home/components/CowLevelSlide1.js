@@ -12,7 +12,7 @@ const CowLevelSlide1 = () => {
     <div className="section relative overflow-hidden bg-[#FFFBE8]">
       <CowLevelHeader />
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
-        <div className="w-[50%] rotate-[5deg]">
+        <div className="w-[50%] xs:w-[80%] rotate-[5deg]">
           <img
             className="w-full"
             src={progresslinearrow}
@@ -21,7 +21,7 @@ const CowLevelSlide1 = () => {
         </div>
       </div>
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
-        <div className="relative top-[-15px] w-[50%] m-auto flex items-center justify-between">
+        <div className="relative top-[-15px] w-[50%] xs:w-[80%] m-auto flex items-center justify-between">
           <div className="w-[25%]">
             <img
               className="currencyAnimate relative left-[-30px] top-[13px]"
@@ -56,7 +56,7 @@ const CowLevelSlide1 = () => {
         </div>
       </div>
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
-        <div className="mt-[30%]">
+        <div className="mt-[30%] xs:mt-[60%]">
           <p className="text-center text-2xl font-bold tracking-wide leading-tight">
             COW LEVEL IS A <br /> FINTECH-FOR-GAMING COMPANY
           </p>
