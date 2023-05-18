@@ -5,11 +5,11 @@ import Flip from '../../../components/Flip';
 
 const Counter = ({ startCounter, fullpageApi }) => {
   const [count1, setCount1] = useState(6);
-  const [count2, setCount2] = useState(204999);
-  const [count3, setCount3] = useState(204999);
-  const [count4, setCount4] = useState(204999);
-  const [count5, setCount5] = useState(204999);
-  const [count6, setCount6] = useState(204999);
+  const [count2, setCount2] = useState(4);
+  const [count3, setCount3] = useState(9);
+  const [count4, setCount4] = useState(4);
+  const [count5, setCount5] = useState(4);
+  const [count6, setCount6] = useState(4);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -106,14 +106,14 @@ const Counter = ({ startCounter, fullpageApi }) => {
           <Flip value={count5} />
           <Flip value={count6} />
         </div>
-        <p className="text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
+        <p className="w-[90%] m-auto text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
           OVER $200K OF IN-GAME ITEMS <br />
           CHANGE HANDS EVERY MINUTE.
         </p>
         <p className="text-center mt-[30px] font-semibold text-[24px]">
           HOLY COW!
         </p>
-        <p className="text-center mt-[30px] font-normal text-[18px] leading-[1.3]">
+        <p className="w-[90%] m-auto text-center mt-[30px] font-normal text-[18px] leading-[1.3]">
           But the market lacks transparency, is ripe with fraud, and has
           operated <br />
           without any regulation or compliance framework. Until now.

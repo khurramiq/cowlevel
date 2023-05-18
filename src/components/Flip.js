@@ -27,7 +27,7 @@ export default class Flip extends React.Component {
 
   render() {
     return (
-      <div ref={this._tickRef} className="tick">
+      <div ref={this._tickRef} className="tick xs:text-[32px] sm:text-[3em]">
         <div data-repeat="true" aria-hidden="true">
           <span data-view="flip">Tick</span>
         </div>
