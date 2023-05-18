@@ -9,16 +9,16 @@ import li from '../../assets/images/li.png';
 const Footer = () => {
   return (
     <div className="absolute top-[100%] h-screen w-screen overflow-hidden bg-[#262629]">
-      <div className="relative h-[250px] ml-20">
+      <div className="relative h-[250px] sm:ml-20 sm:block xs:flex xs:justify-center">
         <img
-          className="absolute footer_cow_nose w-[600px]"
+          className="absolute footer_cow_nose xs:footer_cow_nosexs xs:w-[300px] sm:w-[600px]"
           src={footerflower}
           alt="footerflower"
         />
       </div>
       <div className="absolute bottom-[90px] left-0 right-0">
-        <div className="flex w-[1200px] mx-auto">
-          <div className="w-[50%] text-white">
+        <div className="sm:flex xs:block xs:w-[90%] w-[1200px] mx-auto">
+          <div className="sm:w-[50%] xs:w-[100%] text-white">
             <div>
               <img className="w-[80px]" src={footerlogo} alt="footerlogo" />
             </div>
@@ -46,7 +46,7 @@ const Footer = () => {
               <img className="w-[40px] mr-4" src={li} alt="li" />
             </div>
           </div>
-          <div className="w-[50%] flex justify-end items-center">
+          <div className="sm:w-[50%] xs:w-[100%] xs:mt-10 xs:block flex justify-end items-center">
             <div className="text-white pr-5">
               <h3 className="text-[28px] pl-5">JOIN THE HERD</h3>
               <p className="text-[18px] mt-2">
@@ -56,7 +56,7 @@ const Footer = () => {
                 </span>
               </p>
             </div>
-            <div className="w-[50%]">
+            <div className="xs:w-[100%] xs:mt-2 sm:w-[50%]">
               <img
                 className="w-full"
                 src={footer_animation}

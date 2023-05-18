@@ -236,6 +236,27 @@
   -o-transform: rotateY(0deg);
 }
 
+@media only screen and (max-width: 576px) {
+  .footer_cow_nose {
+    width: 200px;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-name: cow_nosexs;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes cow_nosexs {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 230px;
+  }
+  100% {
+    width: 300px;
+  }
+}
 @keyframes cow_nose {
   0% {
     width: 600px;
@@ -255,7 +276,6 @@
     right: 250px;
   }
 }
-
 @keyframes remoteAnimate {
   0% {
     transform: translateX(0) rotate(-7deg);
@@ -322,7 +342,6 @@
     transform: rotateY(-50deg);
   }
 }
-
 @keyframes showDelayedDiv {
   from {
     opacity: 0.5;
