@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import FlipNumbers from 'react-flip-numbers';
+import Flip from '../../../components/Flip';
 
 const Counter = ({ startCounter }) => {
   const [count, setCount] = useState(204999);
@@ -19,16 +20,16 @@ const Counter = ({ startCounter }) => {
   }, [count]);
   useEffect(() => {
     if (startCounter) {
-      setCount(204995);
+      setCount(204990);
     }
   }, [startCounter]);
 
   return (
     <div className="absolute flex justify-center items-center top-[100%] w-screen h-screen overflow-hidden bg-[#FFFBE8]">
       <div>
-        <div className="bzcounttt p-[10px]">
-          $
-          <FlipNumbers
+        <div className="flex items-center justify-center">
+          <span className="text-[25px] mr-2">$</span>
+          {/* <FlipNumbers
             play
             color="#fff"
             background="#000"
@@ -38,7 +39,8 @@ const Counter = ({ startCounter }) => {
             style={{
               borderRadius: '10px',
             }}
-          />
+          /> */}
+          <Flip value={count} />
         </div>
         <p className="text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
           OVER $200K OF IN-GAME ITEMS <br />

@@ -152,6 +152,10 @@
   box-shadow: -1px 3px 5px 4px #979292;
 }
 
+.tick {
+  font-size: 3em;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
