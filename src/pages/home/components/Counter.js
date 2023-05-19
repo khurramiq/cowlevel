@@ -13,10 +13,10 @@ const Counter = ({ startCounter, fullpageApi }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount1((prevCount) => prevCount - 1);
+      setCount1((prevCount) => prevCount + 1);
     }, 1000); // Delay between each number in milliseconds
 
-    if (count1 === 2) {
+    if (count1 === 205) {
       clearInterval(interval);
     }
     return () => {
@@ -85,12 +85,12 @@ const Counter = ({ startCounter, fullpageApi }) => {
   }, [count6]);
   useEffect(() => {
     if (startCounter) {
-      setCount1(6);
-      setCount2(4);
-      setCount3(9);
-      setCount4(4);
-      setCount5(4);
-      setCount6(4);
+      setCount1(199);
+      // setCount2(4);
+      // setCount3(9);
+      setCount4(0);
+      setCount5(0);
+      setCount6(0);
     }
   }, [startCounter]);
 
@@ -100,20 +100,20 @@ const Counter = ({ startCounter, fullpageApi }) => {
         <div className="flex items-center justify-center">
           <span className="text-[25px] mr-2">$</span>
           <Flip value={count1} />
-          <Flip value={count2} />
-          <Flip value={count3} />
+          {/* <Flip value={count2} />
+          <Flip value={count3} /> */}
           <Flip value={count4} />
           <Flip value={count5} />
           <Flip value={count6} />
         </div>
-        <p className="w-[90%] m-auto text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
+        <p className="xs:w-[90%] sm:w-full m-auto text-[36px] mt-[50px] font-bold text-center leading-[1.16]">
           OVER $200K OF IN-GAME ITEMS <br />
           CHANGE HANDS EVERY MINUTE.
         </p>
         <p className="text-center mt-[30px] font-semibold text-[24px]">
           HOLY COW!
         </p>
-        <p className="w-[90%] m-auto text-center mt-[30px] font-normal text-[18px] leading-[1.3]">
+        <p className="xs:w-[90%] sm:w-full m-auto text-center mt-[30px] font-normal text-[18px] leading-[1.3]">
           But the market lacks transparency, is ripe with fraud, and has
           operated <br />
           without any regulation or compliance framework. Until now.
