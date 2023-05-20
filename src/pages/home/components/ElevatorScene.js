@@ -6,7 +6,7 @@ const ElevatorScene = ({ fullpageApi }) => {
   return (
     <div className="section relative overflow-hidden bg-[#A5AAAD]">
       <CowLevelHeader />
-      <div className="absolute h-screen w-screen overflow-hidden z-[1]">
+      <div className="absolute xs:flex xs:items-center h-screen w-screen overflow-hidden z-[1] bg-[#CAD5CC]">
         <img
           className="relative w-full"
           src={elevatorscene}

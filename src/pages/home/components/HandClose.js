@@ -16,7 +16,7 @@ const HandClose = ({ fullpageApi }) => {
           <FaBars className="text-3xl mr-5" />
         </div>
       </div>
-      <div className="top-0 absolute h-screen w-screen overflow-hidden">
+      <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <img className="relative w-full" src={clh} alt="closinghand" />
       </div>
       <CowMoving fullpageApi={fullpageApi} />

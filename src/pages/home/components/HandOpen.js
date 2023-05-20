@@ -1,6 +1,7 @@
 import React from 'react';
 import runlookingbehind from '../../../assets/images/runlookingbehind.png';
 import oph from '../../../assets/images/oph.png';
+import mobilebg from '../../../assets/images/mobilebg.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import { FaBars } from 'react-icons/fa';
 import MovingIcons from './MovingIcons';
@@ -18,7 +19,7 @@ const HandOpen = ({ fullpageApi }) => {
           <FaBars className="text-3xl mr-5" />
         </div>
       </div>
-      <div className="top-0 absolute h-screen w-screen overflow-hidden">
+      <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <img
           className="relative w-full"
           src={runlookingbehind}
@@ -26,8 +27,13 @@ const HandOpen = ({ fullpageApi }) => {
         />
       </div>
       <MovingIcons />
-      <div className="absolute top-[200%] h-screen w-screen overflow-hidden">
+      <div className="absolute xs:flex xs:items-center top-[200%] h-screen overflow-hidden bg-[#CAD5CC]">
         <img className="relative w-full" src={oph} alt="runninglookingbehind" />
+        {/* <img
+          className="sm:hidden xs:inline-block relative w-full"
+          src={mobilebg}
+          alt="mobilebg"
+        /> */}
         <button
           className="scrollToTopButton"
           onClick={() => {

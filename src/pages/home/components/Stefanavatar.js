@@ -17,11 +17,11 @@ const Stefanavatar = ({ fullpageApi }) => {
           <FaBars className="text-3xl mr-5" />
         </div>
       </div>
-      <div className="top-0 absolute h-screen w-screen overflow-hidden">
+      <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <img className="relative w-full" src={oure} alt="elevatorscene" />
       </div>
       <MovingText />
-      <div className="absolute top-[200%] h-screen w-screen overflow-hidden">
+      <div className="absolute xs:flex xs:items-center top-[200%] h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <img className="relative w-full" src={oure} alt="elevatorscene" />
         <button
           className="scrollToTopButton"
