@@ -57,7 +57,7 @@ const SignupForm = ({ fullpageApi }) => {
             We value your privacy.
           </p>
           <img
-            className="absolute right-[12%] bottom-[5px] wading-image xs:w-[100px] sm:w-[200px]"
+            className="absolute right-[12%] sm:bottom-[5px] xs:bottom-[50px] wading-image xs:w-[100px] sm:w-[200px]"
             src={mailBox}
             alt="mailBox"
           />

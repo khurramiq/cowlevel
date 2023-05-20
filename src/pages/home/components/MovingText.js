@@ -12,7 +12,7 @@ const MovingText = () => {
         class="flex flex-col justify-between items-center w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}
       >
-        <div className="w-[120px] relative top-[50px] left-[-20%] rotate-[7deg]">
+        <div className="w-[120px] relative sm:top-[50px] xs:top-[0px] left-[-20%] rotate-[7deg]">
           <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
         </div>
         <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-30px] xs:translate-y-[-100px]">
