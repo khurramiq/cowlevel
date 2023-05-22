@@ -1,6 +1,7 @@
 import React from 'react';
 import elevatorscene from '../../../assets/images/av1.png';
-import mobileelevatorscene from '../../../assets/images/mobile_av1.png';
+import withoutstef from '../../../assets/images/withoutstef.png';
+import stef from '../../../assets/images/stef.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const ElevatorScene = ({ fullpageApi }) => {
@@ -8,11 +9,18 @@ const ElevatorScene = ({ fullpageApi }) => {
     <div className="section relative overflow-hidden bg-[#A5AAAD]">
       <CowLevelHeader />
       <div className="absolute xs:flex xs:items-center h-screen w-screen overflow-hidden z-[1] bg-[#CAD5CC]">
-        <img
-          className="relative w-full xs:inline-block sm:hidden"
-          src={mobileelevatorscene}
-          alt="elevatorscene"
-        />
+        <div className="relative w-full h-full">
+          <img
+            className="absolute w-full top-0 xs:inline-block sm:hidden"
+            src={withoutstef}
+            alt="elevatorscene"
+          />
+          <img
+            className="absolute w-full top-0 xs:inline-block sm:hidden z-[2]"
+            src={stef}
+            alt="elevatorscene"
+          />
+        </div>
         <img
           className="relative w-full sm:inline-block xs:hidden"
           src={elevatorscene}
