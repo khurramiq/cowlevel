@@ -1,5 +1,6 @@
 import React from 'react';
 import bs from '../../../assets/images/bs6.png';
+import mbs from '../../../assets/images/mbs6.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import Counter from './Counter';
@@ -20,7 +21,16 @@ const StefanBoris2 = ({ startCounter, fullpageApi }) => {
       </div>
       <div className="top-0 absolute h-screen w-screen overflow-hidden">
         <div className="relative w-screen h-screen overflow-hidden">
-          <img className="w-full" src={bs} alt="handOpen" />
+          <img
+            className="w-full sm:hidden xs:inline-block"
+            src={mbs}
+            alt="handOpen"
+          />
+          <img
+            className="w-full xs:hidden sm:inline-block"
+            src={bs}
+            alt="handOpen"
+          />
           <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[60%] bottom-0 z-[1]">
             <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">
               <p

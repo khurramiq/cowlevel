@@ -1,4 +1,5 @@
 import clh from '../../../assets/images/clh.png';
+import mclh from '../../../assets/images/mclh.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import CowMoving from './CowMoving';
 import { FaBars } from 'react-icons/fa';
@@ -17,7 +18,16 @@ const HandClose = ({ fullpageApi }) => {
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
-        <img className="relative w-full" src={clh} alt="closinghand" />
+        <img
+          className="relative w-full xs:inline-block sm:hidden"
+          src={mclh}
+          alt="closinghand"
+        />
+        <img
+          className="relative w-full sm:inline-block xs:hidden"
+          src={clh}
+          alt="closinghand"
+        />
       </div>
       <CowMoving fullpageApi={fullpageApi} />
     </div>

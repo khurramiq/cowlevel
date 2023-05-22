@@ -1,5 +1,6 @@
 import React from 'react';
 import bs3 from '../../../assets/images/bs3.png';
+import mbs3 from '../../../assets/images/mbs3.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 
@@ -8,7 +9,16 @@ const StefanBoris1 = () => {
     <div className="section relative overflow-hidden bg-[#D6D0C4]">
       <CowLevelHeader />
       <div className="absolute h-screen w-screen overflow-hidden">
-        <img className="relative w-full" src={bs3} alt="handOpen" />
+        <img
+          className="relative w-full xs:inline-block sm:hidden"
+          src={mbs3}
+          alt="handOpen"
+        />
+        <img
+          className="relative w-full sm:inline-block xs:hidden"
+          src={bs3}
+          alt="handOpen"
+        />
       </div>
       <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[60%] bottom-0 z-[1]">
         <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">

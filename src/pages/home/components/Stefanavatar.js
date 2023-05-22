@@ -1,5 +1,6 @@
 import React from 'react';
 import oure from '../../../assets/images/oure.png';
+import moure from '../../../assets/images/moure.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import MovingText from './MovingText';
 import { FaBars } from 'react-icons/fa';
@@ -18,11 +19,29 @@ const Stefanavatar = ({ fullpageApi }) => {
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
-        <img className="relative w-full" src={oure} alt="elevatorscene" />
+        <img
+          className="relative w-full xs:inline-block sm:hidden"
+          src={moure}
+          alt="elevatorscene"
+        />
+        <img
+          className="relative w-full sm:inline-block xs:hidden"
+          src={oure}
+          alt="elevatorscene"
+        />
       </div>
       <MovingText />
       <div className="absolute xs:flex xs:items-center top-[200%] h-screen w-screen overflow-hidden bg-[#CAD5CC]">
-        <img className="relative w-full" src={oure} alt="elevatorscene" />
+        <img
+          className="relative w-full xs:inline-block sm:hidden"
+          src={moure}
+          alt="elevatorscene"
+        />
+        <img
+          className="relative w-full sm:inline-block xs:hidden"
+          src={oure}
+          alt="elevatorscene"
+        />
         <button
           className="scrollToTopButton"
           onClick={() => {
