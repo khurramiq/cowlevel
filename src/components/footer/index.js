@@ -48,8 +48,10 @@ const Footer = () => {
           </div>
           <div className="sm:w-[50%] xs:w-[100%] xs:mt-2 xs:block sm:flex justify-end items-center">
             <div className="text-white pr-5">
-              <h3 className="text-[28px] xs:mt-0">JOIN THE HERD</h3>
-              <p className="text-[18px] sm:mt-2 xs:mt-0">
+              <h3 className="sm:text-[28px] xs:text-[18px] xs:mt-0">
+                JOIN THE HERD
+              </h3>
+              <p className="sm:text-[18px] xs:text-[14px] sm:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
                   jobs@bws546.xyz
@@ -58,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="xs:w-[100%] xs:mt-2 sm:w-[50%]">
               <img
-                className="sm:w-full xs:w-[80%]"
+                className="sm:w-full xs:w-[50%]"
                 src={footer_animation}
                 alt="footer_animation"
               />

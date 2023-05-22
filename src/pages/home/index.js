@@ -5,6 +5,7 @@ import ElevatorScene from './components/ElevatorScene';
 import Stefanavatar from './components/Stefanavatar';
 import SignupForm from './components/SignupForm';
 import cowskinpattern from '../../assets/images/cowskinpattern.png';
+import mcows from '../../assets/images/mcows.png';
 import CowLevelSlide1 from './components/CowLevelSlide1';
 import StefanBoris1 from './components/StefanBoris1';
 import StefanBoris2 from './components/StefanBoris2';
@@ -48,8 +49,13 @@ const Home = () => {
                 <CowLevelHeader />
                 <div className="absolute top-0 w-screen h-screen overflow-hidden">
                   <img
-                    className="h-full w-full"
+                    className="h-full w-full sm:block xs:hidden"
                     src={cowskinpattern}
+                    alt="cowskinpattern"
+                  />
+                  <img
+                    className="h-full w-full xs:block sm:hidden"
+                    src={mcows}
                     alt="cowskinpattern"
                   />
                   <button
