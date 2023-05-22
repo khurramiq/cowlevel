@@ -28,9 +28,9 @@ const MovingIcons = () => {
         </div>
       </div>
       <div className="sm:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
-        <div className="flex justify-center sm:items-start xs:items-center">
+        <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <Fade left>
-            <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[30%] sm:h-[120px] xs:h-auto text-white">
+            <div className="relative sm:top-0 xs:top-[-100px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
               <span className="sm:text-sm xs:text-xs">
                 We built an exchange environment around this growing asset class
                 in line with game publishers and partners to create a whole new
@@ -41,18 +41,23 @@ const MovingIcons = () => {
           </Fade>
           <Fade bottom>
             <img
-              className="xs:w-[30%] sm:w-auto"
+              className="xs:w-[50%] sm:w-auto"
               src={borisavatar}
               alt="borisavatar"
             />
           </Fade>
-          <div className="relative w-[272px]">
+          <div className="xs:hidden sm:inline-block relative w-[272px]">
             <img
               className="absolute left-5 bottom-[-200px] w-[80px]"
               src={cowlinkimage}
               alt="cowlinkimage"
             />
           </div>
+          <img
+            className="absolute top-5 right-0 w-[80px]"
+            src={cowlinkimage}
+            alt="cowlinkimage"
+          />
         </div>
       </div>
     </div>
