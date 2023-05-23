@@ -68,7 +68,7 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   right: -30px;
-  top: 40px; /* Adjust the color of the arrow to match the speech box */
+  top: 50%; /* Adjust the color of the arrow to match the speech box */
 }
 .blue_speech_left_arrow:after {
   position: absolute;

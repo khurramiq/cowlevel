@@ -2,6 +2,7 @@ import movingcow from '../../../assets/images/movingcow.gif';
 import twomaninbelowcow from '../../../assets/images/twomaninbelowcow.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Fade from 'react-reveal/Fade';
+import { FaAngleUp } from 'react-icons/fa';
 
 const CowMoving = ({ fullpageApi }) => {
   return (
@@ -83,7 +84,7 @@ const CowMoving = ({ fullpageApi }) => {
           fullpageApi.moveTo(1);
         }}
       >
-        <i className="fal fa-angle-up text-4xl"></i>
+        <FaAngleUp size="large" />
       </button>
     </div>
   );

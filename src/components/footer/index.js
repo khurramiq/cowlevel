@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className="xs:w-[100%] xs:mt-2 sm:w-[50%]">
               <img
-                className="sm:w-full xs:w-[50%]"
+                className="sm:w-full xs:w-[50%] m-auto"
                 src={footer_animation}
                 alt="footer_animation"
               />

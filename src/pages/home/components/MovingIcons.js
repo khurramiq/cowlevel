@@ -30,7 +30,7 @@ const MovingIcons = () => {
       <div className="sm:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <Fade left>
-            <div className="relative sm:top-0 xs:top-[-100px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
+            <div className="relative sm:inline-block xs:hidden sm:top-0 xs:top-[-100px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
               <span className="sm:text-sm xs:text-xs">
                 We built an exchange environment around this growing asset class
                 in line with game publishers and partners to create a whole new
@@ -39,9 +39,21 @@ const MovingIcons = () => {
               <div className="blue_speech_right_arrow" />
             </div>
           </Fade>
+          <div className="absolute xs:inline-block sm:hidden top-0 left-0">
+            <Fade left>
+              <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
+                <span className="sm:text-sm xs:text-xs">
+                  We built an exchange environment around this growing asset
+                  class in line with game publishers and partners to create a
+                  whole new financial market.
+                </span>
+                <div className="blue_speech_right_arrow" />
+              </div>
+            </Fade>
+          </div>
           <Fade bottom>
             <img
-              className="xs:w-[50%] sm:w-auto"
+              className="xs:w-[40%] sm:w-auto"
               src={borisavatar}
               alt="borisavatar"
             />
@@ -54,7 +66,7 @@ const MovingIcons = () => {
             />
           </div>
           <img
-            className="absolute top-5 right-0 w-[80px]"
+            className="xs:inline-block sm:hidden absolute top-[100px] right-0 w-[80px]"
             src={cowlinkimage}
             alt="cowlinkimage"
           />

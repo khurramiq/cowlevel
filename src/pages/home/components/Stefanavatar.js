@@ -3,7 +3,7 @@ import oure from '../../../assets/images/oure.png';
 import moure from '../../../assets/images/moure.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import MovingText from './MovingText';
-import { FaBars } from 'react-icons/fa';
+import { FaAngleUp, FaBars } from 'react-icons/fa';
 
 const Stefanavatar = ({ fullpageApi }) => {
   return (
@@ -48,7 +48,7 @@ const Stefanavatar = ({ fullpageApi }) => {
             fullpageApi.moveTo(1);
           }}
         >
-          <i className="fal fa-angle-up text-4xl"></i>
+          <FaAngleUp size="large" />
         </button>
       </div>
     </div>

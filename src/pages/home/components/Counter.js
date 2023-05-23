@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 // import FlipNumbers from 'react-flip-numbers';
 import Flip from '../../../components/Flip';
+import { FaAngleUp } from 'react-icons/fa';
 
 const Counter = ({ startCounter, fullpageApi }) => {
   const [count1, setCount1] = useState(6);
@@ -125,7 +126,7 @@ const Counter = ({ startCounter, fullpageApi }) => {
           fullpageApi.moveTo(1);
         }}
       >
-        <i className="fal fa-angle-up text-4xl"></i>
+        <FaAngleUp size="large" />
       </button>
     </div>
   );

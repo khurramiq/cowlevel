@@ -11,6 +11,7 @@ import StefanBoris1 from './components/StefanBoris1';
 import StefanBoris2 from './components/StefanBoris2';
 import CowLevelHeader from '../../components/CowLevelHeader';
 import { useState } from 'react';
+import { FaAngleUp } from 'react-icons/fa';
 
 const Home = () => {
   const [startCounter, setStartCounter] = useState(false);
@@ -64,7 +65,7 @@ const Home = () => {
                       fullpageApi.moveTo(1);
                     }}
                   >
-                    <i className="fal fa-angle-up text-4xl"></i>
+                    <FaAngleUp size="large" />
                   </button>
                 </div>
               </div>
@@ -77,7 +78,7 @@ const Home = () => {
                       fullpageApi.moveTo(1);
                     }}
                   >
-                    <i className="fal fa-angle-up text-4xl"></i>
+                    <FaAngleUp size="large" />
                   </button>
                 </div>
               </div>
@@ -88,7 +89,8 @@ const Home = () => {
                   fullpageApi.moveTo(1);
                 }}
               >
-                <i className="fal fa-angle-up text-4xl"></i>
+                {/* <i className="fal fa-angle-up text-4x"></i> */}
+                <FaAngleUp size="large" />
               </button>
             </div>
           );

@@ -3,6 +3,7 @@ import elevatorscene from '../../../assets/images/av1.png';
 import withoutstef from '../../../assets/images/withoutstef.png';
 import stef from '../../../assets/images/stef.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
+import { FaAngleUp } from 'react-icons/fa';
 
 const ElevatorScene = ({ fullpageApi }) => {
   return (
@@ -16,13 +17,13 @@ const ElevatorScene = ({ fullpageApi }) => {
             alt="elevatorscene"
           />
           <img
-            className="absolute w-full top-0 xs:inline-block sm:hidden z-[2]"
+            className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]"
             src={stef}
             alt="elevatorscene"
           />
         </div>
         <img
-          className="relative w-full sm:inline-block xs:hidden"
+          className="absolute top-0 w-full sm:inline-block xs:hidden"
           src={elevatorscene}
           alt="elevatorscene"
         />
@@ -32,7 +33,7 @@ const ElevatorScene = ({ fullpageApi }) => {
             fullpageApi.moveTo(1);
           }}
         >
-          <i className="fal fa-angle-up text-4xl"></i>
+          <FaAngleUp size="large" />
         </button>
       </div>
     </div>

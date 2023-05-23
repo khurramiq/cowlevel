@@ -4,7 +4,7 @@ import mrunlookingbehind from '../../../assets/images/mrunlookingbehind.png';
 import oph from '../../../assets/images/oph.png';
 import moph from '../../../assets/images/moph.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
-import { FaBars } from 'react-icons/fa';
+import { FaAngleUp, FaBars } from 'react-icons/fa';
 import MovingIcons from './MovingIcons';
 
 const HandOpen = ({ fullpageApi }) => {
@@ -33,7 +33,7 @@ const HandOpen = ({ fullpageApi }) => {
         />
       </div>
       <MovingIcons />
-      <div className="absolute xs:flex xs:items-center top-[200%] h-screen overflow-hidden bg-[#CAD5CC]">
+      <div className="absolute xs:flex xs:items-center top-[200%] h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <img
           className="relative w-full xs:inline-block sm:hidden"
           src={moph}
@@ -50,7 +50,7 @@ const HandOpen = ({ fullpageApi }) => {
             fullpageApi.moveTo(1);
           }}
         >
-          <i className="fal fa-angle-up text-4xl"></i>
+          <FaAngleUp size="large" />
         </button>
       </div>
     </div>

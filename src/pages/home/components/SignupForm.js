@@ -7,7 +7,7 @@ const SignupForm = ({ fullpageApi }) => {
     <>
       <div
         className="section h-screen w-screen relative overflow-x-hidden"
-        style={{ background: 'rgb(249, 59, 63)' }}
+        // style={{ background: 'rgb(249, 59, 63)' }}
       >
         <div className="z-[100] sticky left-0 right-0 top-0">
           <div className="w-[1200px] mx-auto p-5 flex justify-between items-center">
@@ -19,7 +19,10 @@ const SignupForm = ({ fullpageApi }) => {
             <FaBars className="text-3xl mr-5" />
           </div>
         </div>
-        <div className="absolute top-0 w-screen h-screen">
+        <div
+          className="absolute top-0 w-screen h-screen"
+          style={{ background: 'rgb(249, 59, 63)' }}
+        >
           <h1 className="text-center text-white sm:text-4xl xs:text-lg font-bold sm:pt-20 xs:pt-[70px]">
             GET THE ONLY COW THAT WILL
             <br />
