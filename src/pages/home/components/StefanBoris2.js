@@ -19,10 +19,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi }) => {
           <FaBars className="text-3xl" />
         </div>
       </div>
-      <div
-        className="top-0 absolute w-screen overflow-hidden"
-        style={{ height: 'calc(100vh - 100px)' }}
-      >
+      <div className="top-0 absolute w-screen h-full overflow-hidden">
         <div className="relative w-screen h-full overflow-hidden">
           <img
             className="w-full sm:hidden xs:inline-block"
