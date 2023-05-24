@@ -5,10 +5,10 @@ import stef from '../../../assets/images/stef.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 import { FaAngleUp } from 'react-icons/fa';
 
-const ElevatorScene = ({ fullpageApi }) => {
+const ElevatorScene = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-hidden">
-      <CowLevelHeader />
+      <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute xs:flex xs:items-center w-screen h-full overflow-hidden z-[1] bg-[#CAD5CC]">
         <div className="relative w-full h-full">
           <img

@@ -7,7 +7,7 @@ import mobileslider1 from '../../../assets/images/mobileslider1.png';
 import downarrownarrow from '../../../assets/images/downarrownarrow.png';
 import CowLevelHeaderWithLinks from '../../../components/CowLevelHeaderWithLinks';
 
-const CowLevelSlide0 = () => {
+const CowLevelSlide0 = ({ open, setOpen }) => {
   return (
     <div className="section relative  bg-[#FFFBE8]">
       <CowLevelHeaderWithLinks />

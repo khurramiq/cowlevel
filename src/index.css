@@ -223,6 +223,14 @@
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
 }
+.rotate_animation {
+  animation: rotate 0.5s;
+  -webkit-animation: rotate 0.5s;
+}
+.rotate-animationR {
+  animation: rotateR 0.5s;
+  -webkit-animation: rotateR 0.5s;
+}
 
 @media only screen and (max-width: 576px) {
   .footer_cow_nose {
@@ -328,5 +336,30 @@
 @keyframes badgeAmimation {
   50% {
     transform: rotateY(-50deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateR {
+  0% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
 }

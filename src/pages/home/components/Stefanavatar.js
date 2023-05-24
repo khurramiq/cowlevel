@@ -5,8 +5,9 @@ import closedElevator from '../../../assets/images/closedElevator.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import MovingText from './MovingText';
 import { FaAngleUp, FaBars } from 'react-icons/fa';
+import MobileLinks from '../../../components/MobileLinks';
 
-const Stefanavatar = ({ fullpageApi }) => {
+const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-x-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -16,7 +17,20 @@ const Stefanavatar = ({ fullpageApi }) => {
             src={cowheaderlogo}
             alt="cowheaderlogo"
           />
-          <FaBars className="text-3xl" />
+          <div className="relative">
+            {open ? (
+              <i
+                className="far fa-times text-4xl cursor-pointer rotate_animation"
+                onClick={() => setOpen(false)}
+              ></i>
+            ) : (
+              <FaBars
+                className="text-3xl cursor-pointer rotate-animationR"
+                onClick={() => setOpen(true)}
+              />
+            )}
+            {open && <MobileLinks />}
+          </div>
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">

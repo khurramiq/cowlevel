@@ -1,6 +1,7 @@
 import { FaBars } from 'react-icons/fa';
 import headerLogo from '../assets/images/headerLogo.png';
 import investInTheCow from '../assets/images/investInTheCow.png';
+import { Link } from 'react-router-dom';
 
 const CowLevelHeaderWithLinks = () => {
   return (
@@ -14,11 +15,31 @@ const CowLevelHeaderWithLinks = () => {
           />
         </div>
         <ul className="sm:flex xs:hidden text-[#212934] text-[18px]">
-          <li className="pl-5 pr-5">COW STORY</li>
-          <li className="pl-5 pr-5">INVEST</li>
-          <li className="pl-5 pr-5">FiPME</li>
-          <li className="pl-5 pr-5">SOLUTIONS</li>
-          <li className="pl-5 pr-5">MOOS</li>
+          <li className="pl-5 pr-5">
+            <Link to={'/cow-story'} className="hover:text-red-600">
+              COW STORY
+            </Link>
+          </li>
+          <li className="pl-5 pr-5">
+            <Link to={'/invest'} className="hover:text-red-600">
+              INVEST
+            </Link>
+          </li>
+          <li className="pl-5 pr-5">
+            <Link to={'/fipme'} className="hover:text-red-600">
+              FiPME
+            </Link>
+          </li>
+          <li className="pl-5 pr-5">
+            <Link to={'/solutions'} className="hover:text-red-600">
+              SOLUTIONS
+            </Link>
+          </li>
+          <li className="pl-5 pr-5">
+            <Link to={'/moos'} className="hover:text-red-600">
+              MOOS
+            </Link>
+          </li>
         </ul>
         <div>
           <FaBars className="text-3xl xs:inline-block sm:hidden" />

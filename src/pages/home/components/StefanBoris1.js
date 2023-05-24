@@ -4,10 +4,10 @@ import mbs3 from '../../../assets/images/mbs3.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 
-const StefanBoris1 = () => {
+const StefanBoris1 = ({ open, setOpen }) => {
   return (
     <div className="section relative overflow-hidden bg-[#D6D0C4]">
-      <CowLevelHeader />
+      <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute w-screen h-full overflow-hidden">
         <img
           className="relative w-full xs:inline-block sm:hidden"

@@ -2,7 +2,8 @@ import { FaBars } from 'react-icons/fa';
 import mailBox from '../../../assets/images/mailBox.gif';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import Footer from '../../../components/footer';
-const SignupForm = ({ fullpageApi }) => {
+import MobileLinks from '../../../components/MobileLinks';
+const SignupForm = ({ fullpageApi, open, setOpen }) => {
   return (
     <>
       <div
@@ -16,7 +17,20 @@ const SignupForm = ({ fullpageApi }) => {
               src={cowheaderlogo}
               alt="cowheaderlogo"
             />
-            <FaBars className="text-3xl" />
+            <div className="relative">
+              {open ? (
+                <i
+                  className="far fa-times text-4xl cursor-pointer rotate_animation"
+                  onClick={() => setOpen(false)}
+                ></i>
+              ) : (
+                <FaBars
+                  className="text-3xl cursor-pointer rotate-animationR"
+                  onClick={() => setOpen(true)}
+                />
+              )}
+              {open && <MobileLinks />}
+            </div>
           </div>
         </div>
         <div

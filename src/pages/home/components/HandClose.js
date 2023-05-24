@@ -4,8 +4,9 @@ import closedElevator from '../../../assets/images/closedElevator.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import CowMoving from './CowMoving';
 import { FaBars } from 'react-icons/fa';
+import MobileLinks from '../../../components/MobileLinks';
 
-const HandClose = ({ fullpageApi }) => {
+const HandClose = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-x-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -15,7 +16,20 @@ const HandClose = ({ fullpageApi }) => {
             src={cowheaderlogo}
             alt="cowheaderlogo"
           />
-          <FaBars className="text-3xl" />
+          <div className="relative">
+            {open ? (
+              <i
+                className="far fa-times text-4xl cursor-pointer rotate_animation"
+                onClick={() => setOpen(false)}
+              ></i>
+            ) : (
+              <FaBars
+                className="text-3xl cursor-pointer rotate-animationR"
+                onClick={() => setOpen(true)}
+              />
+            )}
+            {open && <MobileLinks />}
+          </div>
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center h-full w-screen overflow-hidden bg-[#CAD5CC]">

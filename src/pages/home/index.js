@@ -16,6 +16,7 @@ import CowLevelSlide0 from './components/CowLevelSlide0';
 
 const Home = () => {
   const [startCounter, setStartCounter] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <ReactFullpage
@@ -37,19 +38,37 @@ const Home = () => {
           // console.log('state', state);
           return (
             <div className="relative">
-              <CowLevelSlide0 />
-              <CowLevelSlide1 />
-              <StefanBoris1 />
+              <CowLevelSlide0 open={open} setOpen={setOpen} />
+              <CowLevelSlide1 open={open} setOpen={setOpen} />
+              <StefanBoris1 open={open} setOpen={setOpen} />
               <StefanBoris2
                 fullpageApi={fullpageApi}
                 startCounter={startCounter}
+                open={open}
+                setOpen={setOpen}
               />
-              <ElevatorScene fullpageApi={fullpageApi} />
-              <Stefanavatar fullpageApi={fullpageApi} />
-              <HandOpen fullpageApi={fullpageApi} />
-              <HandClose fullpageApi={fullpageApi} />
+              <ElevatorScene
+                fullpageApi={fullpageApi}
+                open={open}
+                setOpen={setOpen}
+              />
+              <Stefanavatar
+                fullpageApi={fullpageApi}
+                open={open}
+                setOpen={setOpen}
+              />
+              <HandOpen
+                fullpageApi={fullpageApi}
+                open={open}
+                setOpen={setOpen}
+              />
+              <HandClose
+                fullpageApi={fullpageApi}
+                open={open}
+                setOpen={setOpen}
+              />
               <div className="section relative">
-                <CowLevelHeader />
+                <CowLevelHeader open={open} setOpen={setOpen} />
                 <div className="absolute top-0 w-screen h-full overflow-hidden">
                   <img
                     className="h-full w-full sm:block xs:hidden"
@@ -72,7 +91,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="section relative bg-[#F4423F]">
-                <CowLevelHeader />
+                <CowLevelHeader open={open} setOpen={setOpen} />
                 <div className="absolute top-0 w-screen h-full overflow-hidden">
                   <button
                     className="scrollToTopButton"
@@ -84,7 +103,11 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <SignupForm fullpageApi={fullpageApi} />
+              <SignupForm
+                fullpageApi={fullpageApi}
+                open={open}
+                setOpen={setOpen}
+              />
               <button
                 className="scrollToTopButton"
                 onClick={() => {

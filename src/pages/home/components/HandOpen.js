@@ -7,8 +7,9 @@ import handshakeopn from '../../../assets/images/handshakeopn.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import { FaAngleUp, FaBars } from 'react-icons/fa';
 import MovingIcons from './MovingIcons';
+import MobileLinks from '../../../components/MobileLinks';
 
-const HandOpen = ({ fullpageApi }) => {
+const HandOpen = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-x-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -18,7 +19,20 @@ const HandOpen = ({ fullpageApi }) => {
             src={cowheaderlogo}
             alt="cowheaderlogo"
           />
-          <FaBars className="text-3xl" />
+          <div className="relative">
+            {open ? (
+              <i
+                className="far fa-times text-4xl cursor-pointer rotate_animation"
+                onClick={() => setOpen(false)}
+              ></i>
+            ) : (
+              <FaBars
+                className="text-3xl cursor-pointer rotate-animationR"
+                onClick={() => setOpen(true)}
+              />
+            )}
+            {open && <MobileLinks />}
+          </div>
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center w-screen h-full overflow-hidden bg-[#CAD5CC]">
