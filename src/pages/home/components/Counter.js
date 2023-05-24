@@ -95,7 +95,10 @@ const Counter = ({ startCounter, fullpageApi }) => {
   }, [startCounter]);
 
   return (
-    <div className="absolute flex justify-center items-center top-[100%] w-screen h-screen overflow-hidden bg-[#FFFBE8]">
+    <div
+      className="absolute flex justify-center items-center w-screen overflow-hidden bg-[#FFFBE8]"
+      style={{ height: 'calc(100vh - 100px)', top: 'calc(100vh - 100px)' }}
+    >
       <div>
         <div className="flex items-center justify-center">
           <span className="xs:text-[32px] sm:text-[3em] mr-2">$</span>
