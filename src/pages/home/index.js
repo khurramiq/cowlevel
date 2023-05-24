@@ -50,7 +50,7 @@ const Home = () => {
               <HandClose fullpageApi={fullpageApi} />
               <div className="section relative">
                 <CowLevelHeader />
-                <div className="absolute top-0 w-screen h-screen overflow-hidden">
+                <div className="absolute top-0 w-screen h-full overflow-hidden">
                   <img
                     className="h-full w-full sm:block xs:hidden"
                     src={cowskinpattern}
@@ -73,7 +73,7 @@ const Home = () => {
               </div>
               <div className="section relative bg-[#F4423F]">
                 <CowLevelHeader />
-                <div className="absolute top-0 w-screen h-screen overflow-hidden">
+                <div className="absolute top-0 w-screen h-full overflow-hidden">
                   <button
                     className="scrollToTopButton"
                     onClick={() => {

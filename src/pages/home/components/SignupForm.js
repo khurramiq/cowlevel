@@ -6,7 +6,7 @@ const SignupForm = ({ fullpageApi }) => {
   return (
     <>
       <div
-        className="section h-screen w-screen relative overflow-x-hidden"
+        className="section w-screen relative overflow-x-hidden"
         // style={{ background: 'rgb(249, 59, 63)' }}
       >
         <div className="z-[100] sticky left-0 right-0 top-0">
@@ -20,7 +20,7 @@ const SignupForm = ({ fullpageApi }) => {
           </div>
         </div>
         <div
-          className="absolute top-0 w-screen h-screen"
+          className="absolute top-0 w-screen h-full"
           style={{ background: 'rgb(249, 59, 63)' }}
         >
           <h1 className="text-center text-white sm:text-4xl xs:text-lg font-bold sm:pt-20 xs:pt-[70px]">

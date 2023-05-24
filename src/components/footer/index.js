@@ -8,7 +8,7 @@ import li from '../../assets/images/li.png';
 
 const Footer = () => {
   return (
-    <div className="absolute top-[100%] h-screen w-screen overflow-hidden bg-[#262629]">
+    <div className="absolute top-[100%] h-full w-screen overflow-hidden bg-[#262629]">
       <div className="relative h-[250px] sm:ml-20 sm:block xs:flex xs:justify-center">
         <img
           className="absolute footer_cow_nose xs:footer_cow_nosexs xs:w-[300px] sm:w-[600px]"
