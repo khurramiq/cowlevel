@@ -21,10 +21,7 @@ const HandOpen = ({ fullpageApi }) => {
           <FaBars className="text-3xl" />
         </div>
       </div>
-      <div
-        className="top-0 absolute xs:flex xs:items-center w-screen overflow-hidden bg-[#CAD5CC]"
-        style={{ height: '100vh' }}
-      >
+      <div className="top-0 absolute xs:flex xs:items-center w-screen h-full overflow-hidden bg-[#CAD5CC]">
         <div className="relative top-0 w-full h-full">
           <img
             className="relative top-0 w-full xs:inline-block sm:hidden"
@@ -39,10 +36,7 @@ const HandOpen = ({ fullpageApi }) => {
         </div>
       </div>
       <MovingIcons />
-      <div
-        className="absolute xs:flex xs:items-center top-[200%] w-screen overflow-hidden bg-[#CAD5CC]"
-        style={{ height: '100vh' }}
-      >
+      <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
         <div className="relative top-0 w-full h-full">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"

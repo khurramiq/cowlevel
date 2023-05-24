@@ -6,7 +6,7 @@ import { FaAngleUp } from 'react-icons/fa';
 
 const CowMoving = ({ fullpageApi }) => {
   return (
-    <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37] z-[2]">
+    <div className="absolute top-[100%] w-screen h-full overflow-hidden bg-[#EC3E37] z-[2]">
       <div
         class="flex justify-end items-end w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[-10px]"
         style={{ zIndex: -10 }}
