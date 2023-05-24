@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const MovingText = () => {
   return (
-    <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#EC3E37]">
+    <div className="absolute top-[100%] w-screen h-full overflow-hidden bg-[#EC3E37]">
       <div
         class="flex flex-col justify-between items-center w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}

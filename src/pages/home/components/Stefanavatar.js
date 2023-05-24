@@ -39,10 +39,7 @@ const Stefanavatar = ({ fullpageApi }) => {
         </div>
       </div>
       <MovingText />
-      <div
-        className="absolute xs:flex xs:items-center top-[200%] w-screen overflow-hidden bg-[#CAD5CC]"
-        style={{ height: '100vh - 100px' }}
-      >
+      <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
         <div className="relative top-0 w-full h-full">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
