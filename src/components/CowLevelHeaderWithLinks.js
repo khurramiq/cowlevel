@@ -2,8 +2,9 @@ import { FaBars } from 'react-icons/fa';
 import headerLogo from '../assets/images/headerLogo.png';
 import investInTheCow from '../assets/images/investInTheCow.png';
 import { Link } from 'react-router-dom';
+import MobileLinks from './MobileLinks';
 
-const CowLevelHeaderWithLinks = () => {
+const CowLevelHeaderWithLinks = ({ open, setOpen }) => {
   return (
     <div className="z-[100] absolute left-0 right-0 top-0">
       <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
@@ -42,7 +43,20 @@ const CowLevelHeaderWithLinks = () => {
           </li>
         </ul>
         <div>
-          <FaBars className="text-3xl xs:inline-block sm:hidden" />
+          <div className="relative">
+            {open ? (
+              <i
+                className="far fa-times text-4xl cursor-pointer rotate_animation"
+                onClick={() => setOpen(false)}
+              ></i>
+            ) : (
+              <FaBars
+                className="text-3xl xs:inline-block sm:hidden"
+                onClick={() => setOpen(true)}
+              />
+            )}
+            {open && <MobileLinks />}
+          </div>
           <img
             className="w-[120px] sm:inline-block xs:hidden"
             src={investInTheCow}
