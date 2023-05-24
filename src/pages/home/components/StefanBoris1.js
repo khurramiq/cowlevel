@@ -8,7 +8,10 @@ const StefanBoris1 = () => {
   return (
     <div className="section relative overflow-hidden bg-[#D6D0C4]">
       <CowLevelHeader />
-      <div className="absolute h-screen w-screen overflow-hidden">
+      <div
+        className="absolute w-screen overflow-hidden"
+        style={{ height: '100vh' }}
+      >
         <img
           className="relative w-full xs:inline-block sm:hidden"
           src={mbs3}

@@ -98,7 +98,7 @@ const Counter = ({ startCounter, fullpageApi }) => {
     <div className="absolute flex justify-center items-center top-[100%] w-screen h-screen overflow-hidden bg-[#FFFBE8]">
       <div>
         <div className="flex items-center justify-center">
-          <span className="text-[25px] mr-2">$</span>
+          <span className="xs:text-[32px] sm:text-[3em] mr-2">$</span>
           <Flip value={count1} />
           {/* <Flip value={count2} />
           <Flip value={count3} /> */}
