@@ -10,7 +10,7 @@ const StefanBoris1 = () => {
       <CowLevelHeader />
       <div
         className="absolute w-screen overflow-hidden"
-        style={{ height: '100vh' }}
+        style={{ height: 'calc(100vh - 100px)' }}
       >
         <img
           className="relative w-full xs:inline-block sm:hidden"
