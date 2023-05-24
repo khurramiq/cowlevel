@@ -5,7 +5,7 @@ import Flip from '../../../components/Flip';
 import { FaAngleUp } from 'react-icons/fa';
 
 const Counter = ({ startCounter, fullpageApi }) => {
-  const [count1, setCount1] = useState(6);
+  const [count1, setCount1] = useState(110);
   const [count2, setCount2] = useState(4);
   const [count3, setCount3] = useState(9);
   const [count4, setCount4] = useState(4);
@@ -15,7 +15,7 @@ const Counter = ({ startCounter, fullpageApi }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount1((prevCount) => prevCount + 1);
-    }, 1000); // Delay between each number in milliseconds
+    }, 100); // Delay between each number in milliseconds
 
     if (count1 === 205) {
       clearInterval(interval);
@@ -86,7 +86,7 @@ const Counter = ({ startCounter, fullpageApi }) => {
   }, [count6]);
   useEffect(() => {
     if (startCounter) {
-      setCount1(199);
+      setCount1(150);
       // setCount2(4);
       // setCount3(9);
       setCount4(0);

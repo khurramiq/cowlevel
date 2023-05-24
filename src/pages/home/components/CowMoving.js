@@ -33,7 +33,7 @@ const CowMoving = ({ fullpageApi }) => {
             </Fade>
           </div>
           <Fade bottom>
-            <div className="xs:hidden sm:inline-block relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
+            <div className="xs:hidden sm:inline-block relative left-[50px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[290px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
               <span className="sm:text-sm xs:text-xs">
                 An investment in cow level is an investment in the protection of
                 gamers…
@@ -47,7 +47,7 @@ const CowMoving = ({ fullpageApi }) => {
             alt="twomaninbelowcow"
           />
           <Fade bottom>
-            <div className="relative xs:hidden sm:inline-block border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
+            <div className="relative left-[-50px] xs:hidden sm:inline-block border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
               <div className="red_speech_left_arrow" />
               <span className="sm:text-sm xs:text-xs">
                 …and the creation of wealth through gaming. Thank you for your

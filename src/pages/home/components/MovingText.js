@@ -36,13 +36,15 @@ const MovingText = () => {
       </div>
       <div className="sm:h-[40%] xs:h-[50%] overflow-hidden">
         <div className="h-full flex justify-center sm:items-start xs:items-end">
-          <img
-            className="xs:w-[50%] sm:w-auto"
-            src={stefanfipme}
-            alt="twomaninbelowcow"
-          />
           <Fade bottom>
-            <div className="relative xs:top-[-200px] sm:top-0 border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
+            <img
+              className="xs:w-[50%] sm:w-auto"
+              src={stefanfipme}
+              alt="twomaninbelowcow"
+            />
+          </Fade>
+          <Fade bottom>
+            <div className="relative xs:top-[-200px] sm:top-0 sm:left-[-50px] border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
               <div className="red_speech_left_arrow" />
               <span className="sm:text-sm xs:text-xs">
                 The First International Play Money Exchange (FiPME) is a

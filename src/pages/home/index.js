@@ -12,6 +12,7 @@ import StefanBoris2 from './components/StefanBoris2';
 import CowLevelHeader from '../../components/CowLevelHeader';
 import { useState } from 'react';
 import { FaAngleUp } from 'react-icons/fa';
+import CowLevelSlide0 from './components/CowLevelSlide0';
 
 const Home = () => {
   const [startCounter, setStartCounter] = useState(false);
@@ -36,6 +37,7 @@ const Home = () => {
           // console.log('state', state);
           return (
             <div className="relative">
+              <CowLevelSlide0 />
               <CowLevelSlide1 />
               <StefanBoris1 />
               <StefanBoris2

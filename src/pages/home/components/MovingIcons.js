@@ -30,7 +30,7 @@ const MovingIcons = () => {
       <div className="sm:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <Fade left>
-            <div className="relative sm:inline-block xs:hidden sm:top-0 xs:top-[-100px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
+            <div className="relative sm:inline-block xs:hidden sm:top-0 xs:top-[-100px] left-[60px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[355px] xs:w-[40%] sm:h-auto xs:h-auto text-white">
               <span className="sm:text-sm xs:text-xs">
                 We built an exchange environment around this growing asset class
                 in line with game publishers and partners to create a whole new
