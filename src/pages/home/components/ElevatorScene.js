@@ -11,7 +11,7 @@ const ElevatorScene = ({ fullpageApi }) => {
       <CowLevelHeader />
       <div
         className="absolute xs:flex xs:items-center w-screen overflow-hidden z-[1] bg-[#CAD5CC]"
-        style={{ height: 'calc(100vh - 100px)' }}
+        style={{ height: '100vh' }}
       >
         <div className="relative w-full h-full">
           <img
