@@ -26,7 +26,7 @@ const HandClose = ({ fullpageApi }) => {
             alt="closedElevator"
           />
           <img
-            className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]"
+            className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[1]"
             src={handshakeClose}
             alt="handshakeClose"
           />

@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-// import FlipNumbers from 'react-flip-numbers';
 import Flip from '../../../components/Flip';
 import { FaAngleUp } from 'react-icons/fa';
 
