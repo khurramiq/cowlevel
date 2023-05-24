@@ -7,10 +7,7 @@ import { FaAngleUp } from 'react-icons/fa';
 
 const ElevatorScene = ({ fullpageApi }) => {
   return (
-    <div
-      className="section relative overflow-hidden bg-[#A5AAAD]"
-      style={{ height: 'calc(100vh - 100px)' }}
-    >
+    <div className="section relative overflow-hidden bg-[#A5AAAD]">
       <CowLevelHeader />
       <div
         className="absolute xs:flex xs:items-center w-screen overflow-hidden z-[1] bg-[#CAD5CC]"
@@ -33,15 +30,15 @@ const ElevatorScene = ({ fullpageApi }) => {
           src={elevatorscene}
           alt="elevatorscene"
         />
-        <button
-          className="scrollToTopButton z-[10]"
-          onClick={() => {
-            fullpageApi.moveTo(1);
-          }}
-        >
-          <FaAngleUp size="large" />
-        </button>
       </div>
+      <button
+        className="scrollToTopButton z-[10]"
+        onClick={() => {
+          fullpageApi.moveTo(1);
+        }}
+      >
+        <FaAngleUp size="large" />
+      </button>
     </div>
   );
 };
