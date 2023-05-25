@@ -51,7 +51,7 @@ const HandOpen = ({ fullpageApi, open, setOpen }) => {
       </div>
       <MovingIcons />
       <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full text-center">
+        <div className="relative top-0 w-full h-full xs:text-left md:text-center">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
             src={closedElevator}

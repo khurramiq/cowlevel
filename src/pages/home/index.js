@@ -121,14 +121,6 @@ const Home = () => {
           );
         }}
       />
-      {/* <button
-        className="scrollToTopButton"
-        onClick={() => {
-          // fullpageApi.moveTo(1);
-        }}
-      >
-        <i className="fal fa-angle-up text-4xl"></i>
-      </button> */}
     </>
   );
 };
