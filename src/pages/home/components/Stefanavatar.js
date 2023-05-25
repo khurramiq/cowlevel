@@ -10,6 +10,7 @@ import MobileLinks from '../../../components/MobileLinks';
 const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-x-hidden">
+      {/* Header */}
       <div className="z-[100] sticky left-0 right-0 top-0">
         <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
           <img
@@ -33,8 +34,9 @@ const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
           </div>
         </div>
       </div>
+      {/* stef outside elevator */}
       <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full">
+        <div className="relative top-0 w-full h-full text-center">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
             src={closedElevator}
@@ -46,7 +48,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
             alt="elevatorscene"
           />
           <img
-            className="relative w-full sm:inline-block xs:hidden"
+            className="relative sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden"
             src={oure}
             alt="elevatorscene"
           />
@@ -54,7 +56,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
       </div>
       <MovingText />
       <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full">
+        <div className="relative top-0 w-full h-full text-center">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
             src={closedElevator}
@@ -66,7 +68,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
             alt="elevatorscene"
           />
           <img
-            className="relative w-full sm:inline-block xs:hidden"
+            className="relative sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block xs:hidden"
             src={oure}
             alt="elevatorscene"
           />

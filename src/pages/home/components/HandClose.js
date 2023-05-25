@@ -33,7 +33,7 @@ const HandClose = ({ fullpageApi, open, setOpen }) => {
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center h-full w-screen overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full">
+        <div className="relative top-0 w-full h-full text-center">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
             src={closedElevator}
@@ -45,7 +45,7 @@ const HandClose = ({ fullpageApi, open, setOpen }) => {
             alt="handshakeClose"
           />
           <img
-            className="relative w-full sm:inline-block xs:hidden"
+            className="relative sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden"
             src={clh}
             alt="closinghand"
           />

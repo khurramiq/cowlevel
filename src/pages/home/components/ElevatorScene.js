@@ -9,7 +9,7 @@ const ElevatorScene = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-hidden">
       <CowLevelHeader open={open} setOpen={setOpen} />
-      <div className="absolute xs:flex xs:items-center w-screen h-full overflow-hidden z-[1] bg-[#CAD5CC]">
+      <div className="absolute xs:flex xs:items-center justify-center w-screen h-full overflow-hidden z-[1] bg-[#CAD5CC]">
         <div className="relative w-full h-full">
           <img
             className="absolute w-full top-0 xs:inline-block sm:hidden"
@@ -23,7 +23,7 @@ const ElevatorScene = ({ fullpageApi, open, setOpen }) => {
           />
         </div>
         <img
-          className="absolute top-0 w-full sm:inline-block xs:hidden"
+          className="absolute top-0 sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block  xs:hidden"
           src={elevatorscene}
           alt="elevatorscene"
         />

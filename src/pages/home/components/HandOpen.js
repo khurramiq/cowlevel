@@ -1,5 +1,5 @@
 import React from 'react';
-import runlookingbehind from '../../../assets/images/runlookingbehind.png';
+import runlookingbehind from '../../../assets/images/stevRuningFrontOfCar.png';
 import closedElevator from '../../../assets/images/closedElevator.png';
 import steffRunningOutFromCar from '../../../assets/images/steffRunningOutFromCar.png';
 import oph from '../../../assets/images/oph.png';
@@ -36,14 +36,14 @@ const HandOpen = ({ fullpageApi, open, setOpen }) => {
         </div>
       </div>
       <div className="top-0 absolute xs:flex xs:items-center w-screen h-full overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full">
+        <div className="relative top-0 w-full h-full text-center">
           <img
             className="relative top-0 w-full xs:inline-block sm:hidden"
             src={steffRunningOutFromCar}
             alt="elevatorscene"
           />
           <img
-            className="relative w-full sm:inline-block xs:hidden"
+            className="relative sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block xs:hidden"
             src={runlookingbehind}
             alt="elevatorscene"
           />
@@ -51,7 +51,7 @@ const HandOpen = ({ fullpageApi, open, setOpen }) => {
       </div>
       <MovingIcons />
       <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
-        <div className="relative top-0 w-full h-full">
+        <div className="relative top-0 w-full h-full text-center">
           <img
             className="absolute top-0 w-full xs:inline-block sm:hidden"
             src={closedElevator}
@@ -63,7 +63,7 @@ const HandOpen = ({ fullpageApi, open, setOpen }) => {
             alt="handshakeopn"
           />
           <img
-            className="relative w-full sm:inline-block xs:hidden"
+            className="relative sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden"
             src={oph}
             alt="runninglookingbehind"
           />
