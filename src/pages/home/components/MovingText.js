@@ -15,7 +15,7 @@ const MovingText = () => {
         <div className="w-[120px] relative sm:top-[50px] xs:top-[0px] left-[-20%] rotate-[7deg]">
           <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
         </div>
-        <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-70px] xs:translate-y-[-30px]">
+        <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-30px] xs:translate-y-[-30px]">
           <img className="h-[60px] w-full absolute" src={board} alt="board" />
           <Marquee
             speed={150}
@@ -38,13 +38,13 @@ const MovingText = () => {
         <div className="h-full flex justify-center sm:items-start xs:items-end">
           <Fade bottom>
             <img
-              className="xs:w-[50%] sm:w-auto"
+              className="xs:w-[55%] sm:w-auto"
               src={stefanfipme}
               alt="twomaninbelowcow"
             />
           </Fade>
           <Fade bottom>
-            <div className="relative xs:top-[-150px] sm:top-0 sm:left-[-50px] border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
+            <div className="relative xs:top-[-150px] sm:top-0 sm:left-[-50px] xs:left-[-20px] border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
               <div className="red_speech_left_arrow" />
               <span className="sm:text-sm xs:text-xs">
                 The First International Play Money Exchange (FiPME) is a

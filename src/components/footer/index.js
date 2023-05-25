@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="absolute top-[100%] h-full w-screen overflow-hidden bg-[#262629]">
       <div className="relative h-[250px] sm:ml-20 sm:block xs:flex xs:justify-center">
         <img
-          className="absolute footer_cow_nose xs:footer_cow_nosexs xs:w-[300px] sm:w-[600px]"
+          className="absolute footer_cow_nose  xs:w-[70%] sm:w-[600px]"
           src={footerflower}
           alt="footerflower"
         />

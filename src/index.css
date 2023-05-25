@@ -234,7 +234,7 @@
 
 @media only screen and (max-width: 576px) {
   .footer_cow_nose {
-    width: 200px;
+    width: 70%;
     animation-duration: 4s;
     animation-fill-mode: both;
     animation-name: cow_nosexs;
@@ -244,13 +244,13 @@
 
 @keyframes cow_nosexs {
   0% {
-    width: 300px;
+    width: 70%;
   }
   50% {
-    width: 230px;
+    width: 60%;
   }
   100% {
-    width: 300px;
+    width: 70%;
   }
 }
 @keyframes cow_nose {

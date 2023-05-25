@@ -21,7 +21,7 @@ const CowMoving = ({ fullpageApi }) => {
       </div>
       <div className="sm:h-[40%] xs:h-[50%] xs:flex xs:items-center sm:block overflow-hidden">
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
-          <div className="sm:hidden xs:inline-block absolute top-[20px] left-[20px]">
+          <div className="sm:hidden xs:inline-block absolute top-[0px] left-[20px]">
             <Fade bottom>
               <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
                 <span className="sm:text-sm xs:text-xs">
@@ -60,7 +60,7 @@ const CowMoving = ({ fullpageApi }) => {
               />
             </div>
           </Fade>
-          <div className="sm:hidden xs:inline-block absolute top-[20px] right-[-270px]">
+          <div className="sm:hidden xs:inline-block absolute top-[0px] right-[-270px]">
             <Fade bottom>
               <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
                 <div className="red_speech_left_arrow" />
