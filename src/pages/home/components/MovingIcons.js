@@ -41,7 +41,7 @@ const MovingIcons = () => {
           </Fade>
           <div className="absolute xs:inline-block sm:hidden top-0 left-0">
             <Fade left>
-              <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
+              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
                 <span className="sm:text-sm xs:text-xs">
                   We built an exchange environment around this growing asset
                   class in line with game publishers and partners to create a

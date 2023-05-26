@@ -9,11 +9,13 @@ const CowLevelHeaderWithLinks = ({ open, setOpen }) => {
     <div className="z-[100] absolute left-0 right-0 top-0">
       <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
         <div>
-          <img
-            className="sm:w-[90px] sm:h-[75px] xs:w-[69px] xs:h-[57px]"
-            src={headerLogo}
-            alt="headerLogo"
-          />
+          <Link to="/">
+            <img
+              className="sm:w-[90px] sm:h-[75px] xs:w-[69px] xs:h-[57px]"
+              src={headerLogo}
+              alt="headerLogo"
+            />
+          </Link>
         </div>
         <ul className="sm:flex xs:hidden text-[#212934] text-[18px]">
           <li className="pl-5 pr-5">

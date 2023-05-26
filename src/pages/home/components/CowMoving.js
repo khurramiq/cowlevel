@@ -23,7 +23,7 @@ const CowMoving = ({ fullpageApi }) => {
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <div className="sm:hidden xs:inline-block absolute top-[0px] left-[20px]">
             <Fade bottom>
-              <div className="relative border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
+              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
                 <span className="sm:text-sm xs:text-xs">
                   An investment in cow level is an investment in the protection
                   of gamers…
@@ -62,7 +62,7 @@ const CowMoving = ({ fullpageApi }) => {
           </Fade>
           <div className="sm:hidden xs:inline-block absolute top-[0px] right-[-270px]">
             <Fade bottom>
-              <div className="relative border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
+              <div className="relative border-[3px] border-white p-[5px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
                 <div className="red_speech_left_arrow" />
                 <span className="sm:text-sm xs:text-xs">
                   …and the creation of wealth through gaming. Thank you for your

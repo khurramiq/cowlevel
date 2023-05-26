@@ -1,8 +1,12 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import { useState } from 'react';
+import Slide1 from './components/Slide1';
+import Slide2 from './components/Slide2';
+import Slide3 from './components/Slide3';
+import Slide4 from './components/Slide4';
+import './styles.css';
 
 const CowStory = () => {
-  const [startCounter, setStartCounter] = useState(false);
   const [open, setOpen] = useState(false);
   return (
     <ReactFullpage
@@ -22,7 +26,14 @@ const CowStory = () => {
       }}
       render={({ state, fullpageApi }) => {
         // console.log('state', state);
-        return <div className="relative">Cow Story</div>;
+        return (
+          <div className="relative">
+            <Slide1 open={open} setOpen={setOpen} />
+            <Slide2 open={open} setOpen={setOpen} />
+            <Slide3 open={open} setOpen={setOpen} />
+            <Slide4 open={open} setOpen={setOpen} />
+          </div>
+        );
       }}
     />
   );

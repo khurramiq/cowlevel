@@ -1,0 +1,25 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.prev {
+  left: -50px;
+}
+
+.next {
+  right: -50px;
+}
