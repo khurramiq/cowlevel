@@ -7,11 +7,11 @@ import MobileLinks from './MobileLinks';
 const CowLevelHeaderWithLinks = ({ open, setOpen }) => {
   return (
     <div className="z-[100] absolute left-0 right-0 top-0">
-      <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
+      <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
         <div>
           <Link to="/">
             <img
-              className="sm:w-[90px] sm:h-[75px] xs:w-[69px] xs:h-[57px]"
+              className="sm:w-[90px] sm:h-[75px] xs:w-[50px]"
               src={headerLogo}
               alt="headerLogo"
             />
@@ -53,7 +53,7 @@ const CowLevelHeaderWithLinks = ({ open, setOpen }) => {
               ></i>
             ) : (
               <FaBars
-                className="text-3xl xs:inline-block sm:hidden"
+                className="sm:text-3xl xs:text-lg xs:inline-block sm:hidden"
                 onClick={() => setOpen(true)}
               />
             )}

@@ -11,9 +11,9 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative overflow-x-hidden bg-[#A49E90]">
       <div className="z-[100] sticky left-0 right-0 top-0">
-        <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
+        <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
           <img
-            className="w-[60px] h-[40px]"
+            className="sm:w-[60px] xs:w-[50px]"
             src={cowheaderlogo}
             alt="cowheaderlogo"
           />
@@ -25,7 +25,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
               ></i>
             ) : (
               <FaBars
-                className="text-3xl cursor-pointer rotate-animationR"
+                className="sm:text-3xl xs:text-lg cursor-pointer rotate-animationR"
                 onClick={() => setOpen(true)}
               />
             )}
@@ -45,10 +45,10 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
             src={bs}
             alt="handOpen"
           />
-          <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[60%] bottom-0 z-[1]">
+          <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[50%] bottom-0 z-[1]">
             <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">
               <p
-                className="sm:w-[70%] text-xl text-shadow-p text-white
+                className="sm:w-[70%] sm:text-xl xs:text-xs text-shadow-p text-white
           xs:w-[90%] sm:text-left xs:text-center 
           "
               >
@@ -56,13 +56,13 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
                 AND EXCHANGING IN-GAME ITEMS AS SAFE & SECURE AS TRADING COMPANY
                 SHARES.
               </p>
-              <div className="sm:w-[30%] xs:w-[100%] sm:items-center sm:justify-start sm:mt-0 xs:flex xs:flex-col xs:justify-center xs:items-center xs:mt-10">
+              <div className="sm:w-[30%] xs:w-[100%] sm:items-center sm:justify-start sm:mt-0 xs:flex xs:flex-col xs:justify-center xs:items-center xs:mt-2">
                 <img
-                  className="max-w-[120px]"
+                  className="sm:max-w-[120px] xs:max-w-[80px]"
                   src={youtube_icon}
                   alt="youtube_icon"
                 />
-                <p className="text-white text-center text-shadow-p">
+                <p className="text-white sm:text-sm xs:text-xs sm:mt-0 xs:mt-2 text-center text-shadow-p">
                   WATCH THE
                   <br />
                   ELEVATOR PITCH

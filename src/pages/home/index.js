@@ -13,6 +13,7 @@ import CowLevelHeader from '../../components/CowLevelHeader';
 import { useState } from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 import CowLevelSlide0 from './components/CowLevelSlide0';
+import './styles.css';
 
 const Home = () => {
   const [startCounter, setStartCounter] = useState(false);
@@ -26,6 +27,9 @@ const Home = () => {
         keyboardScrolling={true}
         dropEffect={true}
         easing="easeInOutCubic"
+        afterLoad={(origin, destination, direction) => {
+          // console.log('afterLoad event', { origin, destination, direction });
+        }}
         onLeave={(origin, destination, direction) => {
           console.log('onLeave event', { origin, destination, direction });
           if (destination.index === 2 || destination.index === 4) {

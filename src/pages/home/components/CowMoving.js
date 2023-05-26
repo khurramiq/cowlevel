@@ -21,10 +21,10 @@ const CowMoving = ({ fullpageApi }) => {
       </div>
       <div className="sm:h-[40%] xs:h-[50%] xs:flex xs:items-center sm:block overflow-hidden">
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
-          <div className="sm:hidden xs:inline-block absolute top-[0px] left-[20px]">
+          <div className="sm:hidden xs:inline-block absolute top-[10%] left-[10px]">
             <Fade bottom>
-              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
-                <span className="sm:text-sm xs:text-xs">
+              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[25%] sm:h-[94px] xs:h-auto text-white">
+                <span className="sm:text-sm xs:text-[8px]">
                   An investment in cow level is an investment in the protection
                   of gamers…
                 </span>
@@ -42,7 +42,7 @@ const CowMoving = ({ fullpageApi }) => {
             </div>
           </Fade>
           <img
-            className="sm:w-[397px] sm:h-[283px] xs:w-[70%]"
+            className="sm:w-[397px] xs:w-[60%]"
             src={twomaninbelowcow}
             alt="twomaninbelowcow"
           />
@@ -60,16 +60,16 @@ const CowMoving = ({ fullpageApi }) => {
               />
             </div>
           </Fade>
-          <div className="sm:hidden xs:inline-block absolute top-[0px] right-[-270px]">
+          <div className="sm:hidden xs:inline-block absolute top-[10%] right-[-180px]">
             <Fade bottom>
               <div className="relative border-[3px] border-white p-[5px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
                 <div className="red_speech_left_arrow" />
-                <span className="sm:text-sm xs:text-xs">
+                <span className="sm:text-sm xs:text-[8px]">
                   …and the creation of wealth through gaming. Thank you for your
                   support.
                 </span>
                 <img
-                  className="absolute right-0 bottom-[-100px] w-[80px]"
+                  className="absolute right-0 bottom-[-50px] w-[50px]"
                   src={cowlinkimage}
                   alt="cowlinkimage"
                 />

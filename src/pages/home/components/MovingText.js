@@ -12,18 +12,22 @@ const MovingText = () => {
         class="flex flex-col justify-between items-center w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg]"
         style={{ zIndex: -10 }}
       >
-        <div className="w-[120px] relative sm:top-[50px] xs:top-[0px] left-[-20%] rotate-[7deg]">
+        <div className="sm:w-[120px] xs:w-[60px] relative sm:top-[50px] xs:top-[0px] sm:left-[-20%] xs:left-[-10%] rotate-[7deg]">
           <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
         </div>
         <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-30px] xs:translate-y-[-30px]">
-          <img className="h-[60px] w-full absolute" src={board} alt="board" />
+          <img
+            className="sm:h-[60px] xs:h-[30px] w-full absolute"
+            src={board}
+            alt="board"
+          />
           <Marquee
             speed={150}
             pauseOnHover
-            className="absolute left-[30px] top-[7px] bg-transparent pl-[20px] pr-[20px]"
+            className="absolute left-[30px] sm:top-[7px] xs:top-[6px] bg-transparent pl-[20px] pr-[20px]"
             style={{ width: 'calc(100% - 60px)' }}
           >
-            <div className="text-[#ae4db5] text-[30px]">
+            <div className="text-[#ae4db5] sm:text-[30px] xs:text-sm">
               &nbsp;&nbsp;GODS UNCHAINED{' '}
               <span className="text-[#04cd04]">0.26</span>
               &nbsp;&nbsp; GODS UNCHAINED{' '}
@@ -44,15 +48,15 @@ const MovingText = () => {
             />
           </Fade>
           <Fade bottom>
-            <div className="relative xs:top-[-160px] sm:top-0 sm:left-[-50px] xs:left-[-20px] border-[3px] border-white sm:p-[10px] xs:p-[5px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
+            <div className="relative xs:top-[-52%] sm:top-0 sm:left-[-50px] xs:left-[-15px] border-[3px] border-white sm:p-[10px] xs:p-[5px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
               <div className="red_speech_left_arrow" />
-              <span className="sm:text-sm xs:text-xs">
+              <span className="sm:text-sm xs:text-[8px]">
                 The First International Play Money Exchange (FiPME) is a
                 supervised platform for players to safely and quickly trade
                 in-game items.
               </span>
               <img
-                className="absolute sm:right-0 xs:right-[30px] bottom-[-100px] w-[80px]"
+                className="absolute sm:right-0 xs:right-[10px] sm:bottom-[-100px] xs:bottom-[-50px] sm:w-[80px] xs:w-[50px]"
                 src={cowlinkimage}
                 alt="cowlinkimage"
               />

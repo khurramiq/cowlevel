@@ -24,7 +24,7 @@ const CowLevelSlide0 = ({ open, setOpen }) => {
         <div className="relative top-[-15px] sm:w-[50%] xs:w-[80%] m-auto flex items-center justify-between">
           <div className="w-[25%]">
             <img
-              className="currencyAnimate relative left-[-30px] top-[13px]"
+              className="currencyAnimate relative sm:left-[-30px] xs:left-[-15px] top-[13px]"
               src={currency}
               alt="currency"
             />
@@ -56,15 +56,17 @@ const CowLevelSlide0 = ({ open, setOpen }) => {
         </div>
       </div>
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
-        <div className="sm:mt-[30%] xs:mt-[60%]">
-          <p className="text-center text-2xl font-bold tracking-wide leading-tight">
+        <div className="sm:mt-[30%] xs:mt-[65%]">
+          <p className="text-center sm:text-2xl xs:text-lg font-bold tracking-wide sm:leading-tight xs:leading-normal">
             COW LEVEL IS A <br /> FINTECH-FOR-GAMING COMPANY
           </p>
-          <p className="text-center text-lg font-semibold">THAT'S NO BULL</p>
+          <p className="text-center sm:text-lg xs:text-xs font-semibold">
+            THAT'S NO BULL
+          </p>
         </div>
       </div>
       <img
-        className="absolute cursor-pointer h-[40px] right-[11%] bottom-[50px]"
+        className="absolute cursor-pointer h-[40px] right-[10%] bottom-[5%]"
         src={downarrownarrow}
         alt="downarrownarrow"
       />

@@ -4,6 +4,16 @@
 .section {
   height: 100vh;
   display: block !important;
+  opacity: 0.5;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+}
+
+.section.active {
+  opacity: 1;
 }
 
 .fp-warning,
@@ -29,7 +39,7 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   left: -30px;
-  top: 40px; /* Adjust the color of the arrow to match the speech box */
+  top: 40%; /* Adjust the color of the arrow to match the speech box */
 }
 .blue_speech_left_arrow {
   position: absolute;
@@ -68,7 +78,7 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   right: -30px;
-  top: 50%; /* Adjust the color of the arrow to match the speech box */
+  top: 40%; /* Adjust the color of the arrow to match the speech box */
 }
 .blue_speech_left_arrow:after {
   position: absolute;

@@ -11,9 +11,9 @@ const SignupForm = ({ fullpageApi, open, setOpen }) => {
         // style={{ background: 'rgb(249, 59, 63)' }}
       >
         <div className="z-[100] sticky left-0 right-0 top-0">
-          <div className="max-w-[1200px] mx-auto p-5 flex justify-between items-center">
+          <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
             <img
-              className="w-[60px] h-[40px]"
+              className="sm:w-[60px] xs:w-[50px]"
               src={cowheaderlogo}
               alt="cowheaderlogo"
             />
@@ -25,7 +25,7 @@ const SignupForm = ({ fullpageApi, open, setOpen }) => {
                 ></i>
               ) : (
                 <FaBars
-                  className="text-3xl cursor-pointer rotate-animationR"
+                  className="sm:text-3xl xs:text-lg cursor-pointer rotate-animationR"
                   onClick={() => setOpen(true)}
                 />
               )}
@@ -37,40 +37,40 @@ const SignupForm = ({ fullpageApi, open, setOpen }) => {
           className="absolute top-0 w-screen h-full"
           style={{ background: 'rgb(249, 59, 63)' }}
         >
-          <h1 className="text-center text-white sm:text-4xl xs:text-lg font-bold sm:pt-20 xs:pt-[70px]">
+          <h1 className="text-center text-white sm:text-4xl xs:text-xs xs:w-[90%] m-auto font-bold sm:pt-20 xs:pt-[70px]">
             GET THE ONLY COW THAT WILL
             <br />
             FIT IN YOUR INBOX.
             <br />
             SUBSCRIBE TO OUR MOOSLETTER.
           </h1>
-          <p className="text-center text-black mt-5 xs:w-[80%] xs:mx-auto">
+          <p className="text-center sm:text-base xs:text-xs text-black sm:mt-5 xs:mt-1 xs:w-[90%] xs:mx-auto">
             (It’s like a regular newsletter, but with more cow jokes.)
           </p>
-          <div className="flex justify-center sm:flex-row xs:flex-col xs:mt-5 xs:w-[90%] xs:mx-auto mt-5">
+          <div className="flex justify-center sm:flex-row xs:flex-col xs:w-[90%] xs:mx-auto sm:mt-5 xs:mt-1">
             <input
               type="text"
-              className="bg-white sm:h-[45px] xs:h-[30px] sm:w-[130px] xs:mt-5 xs:w-[100%] outline-none pl-[1em] pt-0 pb-0 text-black"
+              className="bg-white sm:h-[45px] xs:h-[20px] sm:w-[130px] xs:mt-2 xs:w-[98%] outline-none sm:pl-[1em] xs:pl-1 pt-0 pb-0 text-black"
               placeholder="First Name *"
             />
             <input
               type="text"
-              className="bg-white sm:h-[45px] xs:h-[30px] sm:w-[130px] xs:mt-5 xs:w-[100%] outline-none pl-[1em] pt-0 pb-0 text-black sm:ml-2"
+              className="bg-white sm:h-[45px] xs:h-[20px] sm:w-[130px] xs:mt-2 xs:w-[98%] outline-none sm:pl-[1em] xs:pl-1 pt-0 pb-0 text-black sm:ml-2 xs:ml-0"
               placeholder="Last Name *"
             />
             <input
               type="email"
-              className="bg-white sm:h-[45px] xs:h-[30px] sm:w-[200px] xs:w-[100%] xs:mt-5 outline-none pl-[1em] pt-0 pb-0 text-black sm:ml-2"
+              className="bg-white sm:h-[45px] xs:h-[20px] sm:w-[200px] xs:w-[98%] xs:mt-2 outline-none sm:pl-[1em] xs:pl-1 pt-0 pb-0 text-black sm:ml-2 xs:ml-0"
               placeholder="Email *"
             />
             <button
               type="submit"
-              className="sm:h-[45px] xs:h-[30px] sm:w-[130px] xs:w-full sm:ml-2 xs:mt-5 text-white bg-black border border-[#c9ac78] border-1"
+              className="sm:h-[45px] xs:h-[25px] sm:w-[130px] xs:w-[98%] sm:ml-2 xs:mt-2 text-white bg-black border border-[#c9ac78] border-1"
             >
               SIGN UP
             </button>
           </div>
-          <p className="text-black mt-10 text-center xs:z-[5]">
+          <p className="text-black sm:mt-10 xs:mt-1 text-center sm:text-base xs:text-xs xs:z-[5]">
             We value your privacy.
           </p>
           <img

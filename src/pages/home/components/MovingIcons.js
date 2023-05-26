@@ -18,12 +18,36 @@ const MovingIcons = () => {
       >
         <div className="relative w-[100%]">
           <Marquee speed={150} className="absolute w-full bottom-0">
-            <img className="w-[100px] mr-[100px]" src={mi1} alt="mi1" />
-            <img className="w-[100px] mr-[100px]" src={mi2} alt="mi2" />
-            <img className="w-[100px] mr-[100px]" src={mi3} alt="mi3" />
-            <img className="w-[100px] mr-[100px]" src={mi4} alt="mi4" />
-            <img className="w-[100px] mr-[100px]" src={mi5} alt="mi5" />
-            <img className="w-[100px] mr-[100px]" src={mi6} alt="mi6" />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi1}
+              alt="mi1"
+            />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi2}
+              alt="mi2"
+            />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi3}
+              alt="mi3"
+            />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi4}
+              alt="mi4"
+            />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi5}
+              alt="mi5"
+            />
+            <img
+              className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"
+              src={mi6}
+              alt="mi6"
+            />
           </Marquee>
         </div>
       </div>
@@ -39,10 +63,10 @@ const MovingIcons = () => {
               <div className="blue_speech_right_arrow" />
             </div>
           </Fade>
-          <div className="absolute xs:inline-block sm:hidden top-0 left-0">
+          <div className="absolute xs:inline-block sm:hidden sm:top-0 xs:top-[10%] left-0">
             <Fade left>
-              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[40%] sm:h-[120px] xs:h-auto text-white">
-                <span className="sm:text-sm xs:text-xs">
+              <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[30%] sm:h-[120px] xs:h-auto text-white">
+                <span className="sm:text-sm xs:text-[8px]">
                   We built an exchange environment around this growing asset
                   class in line with game publishers and partners to create a
                   whole new financial market.
@@ -53,7 +77,7 @@ const MovingIcons = () => {
           </div>
           <Fade bottom>
             <img
-              className="xs:w-[50%] sm:w-auto"
+              className="xs:w-[40%] sm:w-auto"
               src={borisavatar}
               alt="borisavatar"
             />
@@ -66,7 +90,7 @@ const MovingIcons = () => {
             />
           </div>
           <img
-            className="xs:inline-block sm:hidden absolute top-[100px] right-0 w-[80px]"
+            className="xs:inline-block sm:hidden absolute sm:top-[100px] xs:top-[50%] right-0 sm:w-[80px] xs:w-[50px]"
             src={cowlinkimage}
             alt="cowlinkimage"
           />
