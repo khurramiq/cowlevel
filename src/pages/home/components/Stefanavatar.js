@@ -13,7 +13,7 @@ import MobileLinks from '../../../components/MobileLinks';
 
 const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
   return (
-    <div className="section relative overflow-x-hidden">
+    <div className="section relative overflow-x-hidden scrollbar-hidden">
       {/* Header */}
       <div className="z-[100] sticky left-0 right-0 top-0">
         <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
@@ -134,15 +134,17 @@ const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
               src={oure}
               alt="elevatorscene"
             />
-            <img
-              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
-                state?.destination?.index === 5 && state?.direction === 'up'
-                  ? 'fadeout'
-                  : 'z-[0]'
-              }`}
-              src={runlookingbehind}
-              alt="runlookingbehind"
-            />
+            {state?.destination?.index === 5 && state?.direction === 'up' && (
+              <img
+                className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                  state?.destination?.index === 5 && state?.direction === 'up'
+                    ? 'fadeout'
+                    : 'z-[0]'
+                }`}
+                src={runlookingbehind}
+                alt="runlookingbehind"
+              />
+            )}
           </div>
         </div>
         <button
