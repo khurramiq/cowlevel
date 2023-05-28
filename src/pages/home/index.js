@@ -87,10 +87,10 @@ const Home = () => {
                 setOpen={setOpen}
                 state={state}
               />
-              <div className="section relative overflow-hidden">
+              <div className="section relative overflow-hidden scrollbar-hidden">
                 <CowLevelHeader open={open} setOpen={setOpen} />
                 <div
-                  className={`absolute top-0 w-screen h-full overflow-hidden bg-[#F4423F]
+                  className={`absolute top-0 w-screen h-full overflow-hidden bg-[#F4423F] scrollbar-hidden
                   ${
                     state?.destination?.index === 9 &&
                     state?.direction === 'down'
