@@ -1,4 +1,6 @@
 import clh from '../../../assets/images/clh.png';
+import oph from '../../../assets/images/oph.png';
+import handshakeopn from '../../../assets/images/handshakeopn.png';
 import handshakeClose from '../../../assets/images/handshakeClose.png';
 import closedElevator from '../../../assets/images/closedElevator.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
@@ -6,7 +8,7 @@ import CowMoving from './CowMoving';
 import { FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
 
-const HandClose = ({ fullpageApi, open, setOpen }) => {
+const HandClose = ({ fullpageApi, open, setOpen, state }) => {
   return (
     <div className="section relative overflow-x-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -40,18 +42,52 @@ const HandClose = ({ fullpageApi, open, setOpen }) => {
             alt="closedElevator"
           />
           <img
-            className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[1]"
+            className={`absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]
+            ${
+              state?.destination?.index === 7 && state?.direction === 'down'
+                ? 'fadein'
+                : 'z-[2]'
+            }
+            `}
             src={handshakeClose}
             alt="handshakeClose"
           />
-          <img
-            className="relative sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden"
-            src={clh}
-            alt="closinghand"
-          />
+          {state?.destination?.index === 7 && state?.direction === 'down' && (
+            <img
+              className={`absolute w-full top-[-50px] xs:inline-block sm:hidden z-[1]
+            ${
+              state?.destination?.index === 7 && state?.direction === 'down'
+                ? 'fadeout'
+                : 'z-[1]'
+            }
+            `}
+              src={handshakeopn}
+              alt="handshakeClose"
+            />
+          )}
+          <div className="relative w-full h-full flex justify-center">
+            <img
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                state?.destination?.index === 7 && state?.direction === 'down'
+                  ? 'fadein'
+                  : 'z-[1]'
+              }`}
+              src={clh}
+              alt="elevatorscene"
+            />
+            <img
+              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                state?.destination?.index === 7 && state?.direction === 'down'
+                  ? 'fadeout'
+                  : 'z-[0]'
+              }`}
+              src={oph}
+              alt="oph"
+            />
+          </div>
         </div>
       </div>
-      <CowMoving fullpageApi={fullpageApi} />
+      <CowMoving fullpageApi={fullpageApi} state={state} />
     </div>
   );
 };

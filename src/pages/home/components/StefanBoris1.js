@@ -1,24 +1,62 @@
 import React from 'react';
+import bs from '../../../assets/images/bs6.png';
+import mbs from '../../../assets/images/mbs6.png';
 import bs3 from '../../../assets/images/bs3.png';
 import mbs3 from '../../../assets/images/mbs3.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import CowLevelHeader from '../../../components/CowLevelHeader';
 
-const StefanBoris1 = ({ open, setOpen }) => {
+const StefanBoris1 = ({ open, setOpen, state }) => {
   return (
     <div className="section relative overflow-hidden bg-[#D6D0C4]">
       <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute w-screen h-full overflow-hidden">
-        <img
-          className="relative w-full xs:inline-block sm:hidden"
-          src={mbs3}
-          alt="handOpen"
-        />
-        <img
-          className="relative w-full sm:inline-block xs:hidden"
-          src={bs3}
-          alt="handOpen"
-        />
+        <div className="relative w-screen h-full overflow-hidden">
+          <img
+            className={`absolute top-0 w-full xs:inline-block sm:hidden
+            ${
+              state?.destination?.index === 2 && state?.direction === 'up'
+                ? 'fadein'
+                : 'z-[1]'
+            }
+            `}
+            src={mbs3}
+            alt="handOpen"
+          />
+          <img
+            className={`absolute top-0 w-full xs:inline-block sm:hidden
+            ${
+              state?.destination?.index === 2 && state?.direction === 'up'
+                ? 'fadeout'
+                : 'z-[0]'
+            }
+            `}
+            src={mbs}
+            alt="handOpen"
+          />
+          <img
+            className={`absolute top-0 w-full sm:inline-block xs:hidden
+            ${
+              state?.destination?.index === 2 && state?.direction === 'up'
+                ? 'fadeout'
+                : 'z-[0]'
+            }
+            `}
+            src={bs}
+            alt="handOpen"
+          />
+          <img
+            className={`absolute top-0 w-full sm:inline-block xs:hidden
+            ${
+              state?.destination?.index === 2 && state?.direction === 'up'
+                ? 'fadein'
+                : 'z-[1]'
+            }
+            `}
+            src={bs3}
+            alt="handOpen"
+          />
+        </div>
       </div>
       <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[50%] bottom-0 z-[1]">
         <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">

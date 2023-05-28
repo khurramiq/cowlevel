@@ -1,5 +1,7 @@
 import React from 'react';
 import bs from '../../../assets/images/bs6.png';
+import bs3 from '../../../assets/images/bs3.png';
+import mbs3 from '../../../assets/images/mbs3.png';
 import mbs from '../../../assets/images/mbs6.png';
 import youtube_icon from '../../../assets/images/youtube_icon.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
@@ -7,7 +9,7 @@ import Counter from './Counter';
 import { FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
 
-const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
+const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
   return (
     <div className="section relative overflow-x-hidden bg-[#A49E90]">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -36,12 +38,42 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen }) => {
       <div className="top-0 absolute w-screen h-full overflow-hidden">
         <div className="relative w-screen h-full overflow-hidden">
           <img
-            className="w-full sm:hidden xs:inline-block"
+            className={`absolute top-0 w-full sm:hidden xs:inline-block
+            ${
+              state?.destination?.index === 3 && state?.direction === 'down'
+                ? 'fadein'
+                : 'z-[1]'
+            }
+            `}
             src={mbs}
             alt="handOpen"
           />
           <img
-            className="w-full xs:hidden sm:inline-block"
+            className={`absolute top-0 w-full sm:hidden xs:inline-block
+            ${
+              state?.destination?.index === 3 && state?.direction === 'down'
+                ? 'fadeout'
+                : 'z-[0]'
+            }
+            `}
+            src={mbs3}
+            alt="handOpen"
+          />
+          <img
+            className={`absolute top-0 w-full xs:hidden sm:inline-block ${
+              state?.destination?.index === 3 && state?.direction === 'down'
+                ? 'fadeout'
+                : 'z[0]'
+            }`}
+            src={bs3}
+            alt="handOpen"
+          />
+          <img
+            className={`absolute top-0 w-full xs:hidden sm:inline-block ${
+              state?.destination?.index === 3 && state?.direction === 'down'
+                ? 'fadein'
+                : 'z-[1]'
+            }`}
             src={bs}
             alt="handOpen"
           />

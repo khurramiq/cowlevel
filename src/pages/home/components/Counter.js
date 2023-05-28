@@ -98,7 +98,7 @@ const Counter = ({ startCounter, fullpageApi }) => {
     <div className="absolute flex justify-center items-center top-[100%] w-screen h-full overflow-hidden bg-[#FFFBE8]">
       <div>
         <div className="flex items-center justify-center">
-          <span className="xs:text-sm sm:text-[3em] mr-2">$</span>
+          <span className="tick xs:mr-1 sm:mr-2">$</span>
           <Flip value={count1} />
           {/* <Flip value={count2} />
           <Flip value={count3} /> */}
@@ -106,14 +106,14 @@ const Counter = ({ startCounter, fullpageApi }) => {
           <Flip value={count5} />
           <Flip value={count6} />
         </div>
-        <p className="xs:w-[90%] sm:w-full m-auto sm:text-[36px] xs:text-lg sm:mt-[50px] xs:mt-1 font-bold text-center leading-[1.16]">
+        <p className="xs:w-[90%] sm:w-full m-auto sm:text-[36px] xs:text-lg sm:mt-[50px] xs:mt-5 font-bold text-center xs:leading-[1.16]">
           OVER $200K OF IN-GAME ITEMS <br />
           CHANGE HANDS EVERY MINUTE.
         </p>
         <p className="text-center sm:mt-[30px] xs:mt-1 font-semibold sm:text-[24px] xs:text-sm">
           HOLY COW!
         </p>
-        <p className="xs:w-[90%] sm:w-full m-auto text-center sm:mt-[30px] xs:mt-1 font-normal sm:text-[18px] xs:text-xs  leading-[1.3]">
+        <p className="xs:w-[90%] sm:w-full m-auto text-center sm:mt-[30px] xs:mt-1 font-normal sm:text-[18px] xs:text-xs  xs:leading-[1.3]">
           But the market lacks transparency, is ripe with fraud, and has
           operated <br />
           without any regulation or compliance framework. Until now.

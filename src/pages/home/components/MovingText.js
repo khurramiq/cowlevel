@@ -24,8 +24,11 @@ const MovingText = () => {
           <Marquee
             speed={150}
             pauseOnHover
-            className="absolute left-[30px] sm:top-[7px] xs:top-[6px] bg-transparent pl-[20px] pr-[20px]"
-            style={{ width: 'calc(100% - 60px)' }}
+            className="absolute left-[30px] sm:top-[20px] xs:top-[6px] bg-transparent pl-[20px] pr-[20px]"
+            style={{
+              width: 'calc(100% - 60px)',
+              overflow: 'hidden',
+            }}
           >
             <div className="text-[#ae4db5] sm:text-[30px] xs:text-sm">
               &nbsp;&nbsp;GODS UNCHAINED{' '}

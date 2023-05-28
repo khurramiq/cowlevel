@@ -4,7 +4,7 @@
 .section {
   height: 100vh;
   display: block !important;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
   -moz-transition: opacity 1s ease;
@@ -12,9 +12,9 @@
   -o-transition: opacity 1s ease;
 }
 
-.section.active {
+/* .section.active {
   opacity: 1;
-}
+} */
 
 .fp-warning,
 .fp-watermark {
@@ -148,10 +148,6 @@
   letter-spacing: 6px;
   text-shadow: 4px 4px 5px #9b9797;
   box-shadow: -1px 3px 5px 4px #979292;
-}
-
-.tick {
-  font-size: 3em;
 }
 
 .scrollToTopButton {

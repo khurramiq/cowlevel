@@ -1,13 +1,17 @@
 import React from 'react';
 import oure from '../../../assets/images/oure.png';
+import runlookingbehind from '../../../assets/images/runlookingbehind.png';
+import elevatorscene from '../../../assets/images/av1.png';
 import stef from '../../../assets/images/stef.png';
+import steffRunningOutFromCar from '../../../assets/images/steffRunningOutFromCar.png';
 import closedElevator from '../../../assets/images/closedElevator.png';
+import withoutstef from '../../../assets/images/withoutstef.png';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import MovingText from './MovingText';
 import { FaAngleUp, FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
 
-const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
+const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
   return (
     <div className="section relative overflow-x-hidden">
       {/* Header */}
@@ -38,40 +42,108 @@ const Stefanavatar = ({ fullpageApi, open, setOpen }) => {
       <div className="top-0 absolute xs:flex xs:items-center h-screen w-screen overflow-hidden bg-[#CAD5CC]">
         <div className="relative top-0 w-full h-full xs:text-left md:text-center">
           <img
-            className="absolute top-0 w-full xs:inline-block sm:hidden"
+            className={`absolute top-0 w-full xs:inline-block sm:hidden
+            ${
+              state?.destination?.index === 5 && state?.direction === 'down'
+                ? 'fadein'
+                : 'z-[1]'
+            }
+            `}
             src={closedElevator}
             alt="closedElevator"
+          />
+          <img
+            className={`absolute top-0 w-full xs:inline-block sm:hidden
+            ${
+              state?.destination?.index === 5 && state?.direction === 'down'
+                ? 'fadeout'
+                : 'z-[0]'
+            }
+            `}
+            src={withoutstef}
+            alt="withoutstef"
           />
           <img
             className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]"
             src={stef}
             alt="elevatorscene"
           />
-          <img
-            className="relative sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden"
-            src={oure}
-            alt="elevatorscene"
-          />
+          <div className="relative w-full h-full flex justify-center">
+            <img
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                state?.destination?.index === 5 && state?.direction === 'down'
+                  ? 'fadein'
+                  : 'z-[1]'
+              }`}
+              src={oure}
+              alt="elevatorscene"
+            />
+            <img
+              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                state?.destination?.index === 5 && state?.direction === 'down'
+                  ? 'fadeout'
+                  : 'z-[0]'
+              }`}
+              src={elevatorscene}
+              alt="elevatorscene"
+            />
+          </div>
         </div>
       </div>
       <MovingText />
       <div className="absolute xs:flex xs:items-center top-[200%] w-screen h-full overflow-hidden bg-[#CAD5CC]">
         <div className="relative top-0 w-full h-full xs:text-left md:text-center">
           <img
-            className="absolute top-0 w-full xs:inline-block sm:hidden"
+            className={`absolute top-0 w-full xs:inline-block sm:hidden`}
             src={closedElevator}
             alt="closedElevator"
           />
           <img
-            className="absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]"
+            className={`absolute w-full top-[-50px] xs:inline-block sm:hidden z-[2]
+            ${
+              state?.destination?.index === 5 && state?.direction === 'up'
+                ? 'fadein'
+                : 'z-[2]'
+            }
+            `}
             src={stef}
-            alt="elevatorscene"
+            alt="stef"
           />
-          <img
-            className="relative sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block xs:hidden"
-            src={oure}
-            alt="elevatorscene"
-          />
+          {state?.destination?.index === 5 && state?.direction === 'up' && (
+            <img
+              className={`absolute w-full top-[0] xs:inline-block sm:hidden
+              ${
+                state?.destination?.index === 5 && state?.direction === 'up'
+                  ? 'fadeout'
+                  : 'z-[1]'
+              }
+              `}
+              src={steffRunningOutFromCar}
+              alt="steffRunningOutFromCar"
+            />
+          )}
+          <div className="relative w-full h-full flex justify-center">
+            <img
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden 
+              ${
+                state?.destination?.index === 5 && state?.direction === 'up'
+                  ? 'fadein'
+                  : 'z-[1]'
+              }
+              `}
+              src={oure}
+              alt="elevatorscene"
+            />
+            <img
+              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                state?.destination?.index === 5 && state?.direction === 'up'
+                  ? 'fadeout'
+                  : 'z-[0]'
+              }`}
+              src={runlookingbehind}
+              alt="runlookingbehind"
+            />
+          </div>
         </div>
         <button
           className="scrollToTopButton"
