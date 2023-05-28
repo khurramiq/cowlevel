@@ -35,15 +35,17 @@ const CowSkin = ({ open, setOpen, fullpageApi, state }) => {
             zIndex="z-[0]"
             fade="fadeout"
           />
-          <div
-            className={`absolute top-0 h-full w-full bg-white z-[1] 
+          {state?.destination?.index === 7 && state?.direction === 'up' && (
+            <div
+              className={`absolute top-0 h-full w-full bg-white z-[1] 
             ${
               state?.destination?.index === 7 && state?.direction === 'up'
                 ? 'block'
                 : 'hidden'
             }            
             `}
-          />
+            />
+          )}
           {state?.destination?.index === 8 && state?.direction === 'up' && (
             <div
               className={`absolute top-0 h-full w-full bg-[#F4423F] z-[1] 

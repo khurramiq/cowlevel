@@ -15,6 +15,7 @@ import CowLevelSlide0 from './components/CowLevelSlide0';
 import './styles.css';
 import CowSkin from './components/CowSkin';
 import SignupFormInner from './components/SignupFormInner';
+import mcows from '../../assets/images/mcows.png';
 
 const Home = () => {
   const [startCounter, setStartCounter] = useState(false);
@@ -86,7 +87,7 @@ const Home = () => {
                 setOpen={setOpen}
                 state={state}
               />
-              <div className="section relative">
+              <div className="section relative overflow-hidden">
                 <CowLevelHeader open={open} setOpen={setOpen} />
                 <div
                   className={`absolute top-0 w-screen h-full overflow-hidden bg-[#F4423F]
@@ -112,6 +113,21 @@ const Home = () => {
                     <FaAngleUp size="large" />
                   </button>
                 </div>
+                {state?.destination?.index === 9 &&
+                  state?.direction === 'down' && (
+                    <img
+                      className={`absolute top-0 h-full w-full xs:block sm:hidden
+                    ${
+                      state?.destination?.index === 9 &&
+                      state?.direction === 'down'
+                        ? 'fadeout'
+                        : 'z-[0]'
+                    }                    
+                    `}
+                      src={mcows}
+                      alt="cowskinpattern"
+                    />
+                  )}
                 <SignupFormInner
                   state={state}
                   fade={'fadeout'}
