@@ -39,7 +39,7 @@ const Footer = () => {
               Blegistrasse 1, 6343 Rotkreuz, Switzerland
               <br />
               <span className="sm:text-[14px] xs:text-xs hover:text-[#cf2e2e] cursor-pointer">
-                Info@bws546.xyz
+                info@cowlevel.ch
               </span>
             </p>
 
@@ -58,7 +58,7 @@ const Footer = () => {
               <p className="sm:text-[18px] xs:text-xs sm:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
-                  jobs@bws546.xyz
+                  info@cowlevel.ch
                 </span>
               </p>
             </div>

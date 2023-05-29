@@ -17,14 +17,14 @@ const MovingText = () => {
         </div>
         <div className="relative sm:w-[50%] xs:w-[70%] translate-x-[-10%] sm:translate-y-[-30px] xs:translate-y-[-30px]">
           <img
-            className="sm:h-[60px] xs:h-[30px] w-full absolute"
+            className="sm:h-[60px] xs:h-[30px] w-full absolute top-0"
             src={board}
             alt="board"
           />
           <Marquee
             speed={150}
             pauseOnHover
-            className="absolute left-[30px] sm:top-[20px] xs:top-[6px] bg-transparent pl-[20px] pr-[20px]"
+            className="absolute sm:h-[60px] xs:h-[30px] top-0 left-[30px] bg-transparent pl-[20px] pr-[20px]"
             style={{
               width: 'calc(100% - 60px)',
               overflow: 'hidden',
