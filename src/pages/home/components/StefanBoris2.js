@@ -94,7 +94,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
                   src={youtube_icon}
                   alt="youtube_icon"
                 />
-                <p className="text-white sm:text-sm xs:text-xs sm:mt-0 xs:mt-2 text-center text-shadow-p">
+                <p className="text-white sm:text-sm xs:text-sm sm:mt-0 xs:mt-2 text-center text-shadow-p">
                   WATCH THE
                   <br />
                   ELEVATOR PITCH
