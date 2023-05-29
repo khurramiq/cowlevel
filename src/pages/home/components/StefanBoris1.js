@@ -62,7 +62,7 @@ const StefanBoris1 = ({ open, setOpen, state }) => {
         <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">
           <p
             className="sm:w-[70%] sm:text-xl xs:text-lg text-shadow-p text-white
-          xs:w-[90%] sm:text-left xs:text-center 
+          xs:w-[100%] sm:text-left xs:text-center 
           "
           >
             OUR CRIME-FIGHTING FOUNDERS, BORIS & STEFAN, WANT TO MAKE BUYING AND
