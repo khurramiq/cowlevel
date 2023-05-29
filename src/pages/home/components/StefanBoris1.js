@@ -61,7 +61,7 @@ const StefanBoris1 = ({ open, setOpen, state }) => {
       <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[50%] bottom-0 z-[1]">
         <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">
           <p
-            className="sm:w-[70%] sm:text-xl xs:text-xs text-shadow-p text-white
+            className="sm:w-[70%] sm:text-xl xs:text-lg text-shadow-p text-white
           xs:w-[90%] sm:text-left xs:text-center 
           "
           >
