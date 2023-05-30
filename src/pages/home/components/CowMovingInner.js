@@ -65,7 +65,7 @@ const CowMovingInner = ({
             </div>
           </Fade>
           <img
-            className="md:w-[30%] sm:w-[30%] xs:w-[60%]"
+            className="md:w-[30%] sm:w-[20%] xs:w-[60%]"
             src={twomaninbelowcow}
             alt="twomaninbelowcow"
           />
