@@ -77,7 +77,7 @@ const MovingIcons = () => {
           </div>
           <Fade bottom>
             <img
-              className="xs:w-[40%] md:w-auto"
+              className="xs:w-[40%] sm:w-[30%] md:w-auto"
               src={borisavatar}
               alt="borisavatar"
             />

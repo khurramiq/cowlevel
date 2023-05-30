@@ -45,7 +45,7 @@ const MovingText = () => {
         <div className="h-full flex justify-center sm:items-start xs:items-end">
           <Fade bottom>
             <img
-              className="xs:w-[55%] sm:w-auto"
+              className="xs:w-[55%] sm:w-[30%] w-auto"
               src={stefanfipme}
               alt="twomaninbelowcow"
             />
