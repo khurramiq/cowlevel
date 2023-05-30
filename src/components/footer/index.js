@@ -21,18 +21,18 @@ const Footer = () => {
           <div className="sm:w-[50%] xs:w-[100%] text-white">
             <div>
               <img
-                className="sm:w-[80px] xs:w-[50px]"
+                className="md:w-[80px] xs:w-[50px]"
                 src={footerlogo}
                 alt="footerlogo"
               />
             </div>
-            <ul className="sm:text-[14px] xs:text-xs mt-3">
+            <ul className="sm:text-[14px] xs:text-xs md:mt-3 xs:mt-2">
               <li>CONTACT</li>
               <li>PRIVACY POLICY</li>
               <li>COOKIES</li>
               <li>TERMS & CONDITIONS</li>
             </ul>
-            <p className="sm:text-[14px] xs:text-xs font-bold sm:mt-3 xs:mt-1 leading-tight">
+            <p className="sm:text-[14px] xs:text-xs font-bold md:mt-3 xs:mt-1 leading-tight">
               COW LEVEL AG
             </p>
             <p className="leading-tight sm:text-base xs:text-xs">
@@ -43,11 +43,11 @@ const Footer = () => {
               </span>
             </p>
 
-            <div className="flex sm:mt-5 sm:mb-1 xs:mt-1">
-              <img className="sm:w-[40px] xs:w-[20px] mr-2" src={fb} alt="fb" />
-              <img className="sm:w-[40px] xs:w-[20px] mr-2" src={tw} alt="tw" />
-              <img className="sm:w-[40px] xs:w-[20px] mr-2" src={yt} alt="yt" />
-              <img className="sm:w-[40px] xs:w-[20px] mr-2" src={li} alt="li" />
+            <div className="flex md:mt-5 sm:mb-1 xs:mt-1">
+              <img className="md:w-[40px] xs:w-[20px] mr-2" src={fb} alt="fb" />
+              <img className="md:w-[40px] xs:w-[20px] mr-2" src={tw} alt="tw" />
+              <img className="md:w-[40px] xs:w-[20px] mr-2" src={yt} alt="yt" />
+              <img className="md:w-[40px] xs:w-[20px] mr-2" src={li} alt="li" />
             </div>
           </div>
           <div className="sm:w-[50%] xs:w-[100%] xs:mt-2 xs:block sm:flex justify-end items-center">
@@ -55,7 +55,7 @@ const Footer = () => {
               <h3 className="md:text-[28px] xs:text-xs xs:mt-0">
                 JOIN THE HERD
               </h3>
-              <p className="md:text-[18px] xs:text-xs sm:mt-2 xs:mt-0">
+              <p className="md:text-[18px] xs:text-xs md:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
                   info@cowlevel.ch

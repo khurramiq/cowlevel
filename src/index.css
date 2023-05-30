@@ -247,7 +247,7 @@
 
 @media only screen and (max-width: 960px) {
   .footer_cow_nose {
-    width: 70%;
+    width: 60%;
     animation-duration: 4s;
     animation-fill-mode: both;
     animation-name: cow_nosexs;
