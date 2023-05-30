@@ -44,7 +44,7 @@ const ElevatorScene = ({ fullpageApi, open, setOpen, state }) => {
           />
         </div>
         <img
-          className={`absolute top-0 sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block  xs:hidden 
+          className={`absolute top-0 sm:w-full sm:h-full  md:w-auto md:h-full sm:inline-block  xs:hidden 
           ${
             state?.destination?.index === 4 && state?.direction === 'up'
               ? 'fadein'
@@ -55,7 +55,7 @@ const ElevatorScene = ({ fullpageApi, open, setOpen, state }) => {
           alt="elevatorscene"
         />
         <img
-          className={`absolute top-0 sm:w-full sm:h-auto md:w-auto md:h-full sm:inline-block  xs:hidden 
+          className={`absolute top-0 sm:w-full sm:h-full md:w-auto md:h-full sm:inline-block  xs:hidden 
           ${
             state?.destination?.index === 4 && state?.direction === 'up'
               ? 'fadeout'

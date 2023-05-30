@@ -35,7 +35,7 @@ const StefanBoris1 = ({ open, setOpen, state }) => {
             alt="handOpen"
           />
           <img
-            className={`absolute top-0 w-full sm:inline-block xs:hidden
+            className={`absolute top-0 w-full sm:h-full sm:inline-block xs:hidden
             ${
               state?.destination?.index === 2 && state?.direction === 'up'
                 ? 'fadeout'
@@ -46,7 +46,7 @@ const StefanBoris1 = ({ open, setOpen, state }) => {
             alt="handOpen"
           />
           <img
-            className={`absolute top-0 w-full sm:inline-block xs:hidden
+            className={`absolute top-0 w-full sm:h-full sm:inline-block xs:hidden
             ${
               state?.destination?.index === 2 && state?.direction === 'up'
                 ? 'fadein'

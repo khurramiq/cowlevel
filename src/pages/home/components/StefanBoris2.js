@@ -60,7 +60,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
             alt="handOpen"
           />
           <img
-            className={`absolute top-0 w-full xs:hidden sm:inline-block ${
+            className={`absolute top-0 sm:h-full w-full xs:hidden sm:inline-block ${
               state?.destination?.index === 3 && state?.direction === 'down'
                 ? 'fadeout'
                 : 'z[0]'
@@ -69,7 +69,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
             alt="handOpen"
           />
           <img
-            className={`absolute top-0 w-full xs:hidden sm:inline-block ${
+            className={`absolute top-0 sm:h-full w-full xs:hidden sm:inline-block ${
               state?.destination?.index === 3 && state?.direction === 'down'
                 ? 'fadein'
                 : 'z-[1]'

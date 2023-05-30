@@ -67,7 +67,7 @@ const HandClose = ({ fullpageApi, open, setOpen, state }) => {
           )}
           <div className="relative w-full h-full flex justify-center">
             <img
-              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden ${
                 state?.destination?.index === 7 && state?.direction === 'down'
                   ? 'fadein'
                   : 'z-[1]'
@@ -76,7 +76,7 @@ const HandClose = ({ fullpageApi, open, setOpen, state }) => {
               alt="elevatorscene"
             />
             <img
-              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+              className={`absolute top-0 sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden ${
                 state?.destination?.index === 7 && state?.direction === 'down'
                   ? 'fadeout'
                   : 'z-[0]'

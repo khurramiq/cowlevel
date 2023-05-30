@@ -70,7 +70,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
           />
           <div className="relative w-full h-full flex justify-center">
             <img
-              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden ${
                 state?.destination?.index === 5 && state?.direction === 'down'
                   ? 'fadein'
                   : 'z-[1]'
@@ -79,7 +79,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
               alt="elevatorscene"
             />
             <img
-              className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+              className={`absolute top-0 sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden ${
                 state?.destination?.index === 5 && state?.direction === 'down'
                   ? 'fadeout'
                   : 'z-[0]'
@@ -124,7 +124,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
           )}
           <div className="relative w-full h-full flex justify-center">
             <img
-              className={`absolute top-0  sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden 
+              className={`absolute top-0  sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden 
               ${
                 state?.destination?.index === 5 && state?.direction === 'up'
                   ? 'fadein'
@@ -136,7 +136,7 @@ const Stefanavatar = ({ fullpageApi, open, setOpen, state }) => {
             />
             {state?.destination?.index === 5 && state?.direction === 'up' && (
               <img
-                className={`absolute top-0 sm:w-full md:w-auto sm:h-auto md:h-full sm:inline-block xs:hidden ${
+                className={`absolute top-0 sm:w-full md:w-auto sm:h-full md:h-full sm:inline-block xs:hidden ${
                   state?.destination?.index === 5 && state?.direction === 'up'
                     ? 'fadeout'
                     : 'z-[0]'
