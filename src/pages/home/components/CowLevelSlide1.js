@@ -9,7 +9,7 @@ import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const CowLevelSlide1 = ({ open, setOpen }) => {
   return (
-    <div className="section relative  bg-[#FFFBE8]">
+    <div className="section relative w-full h-full overflow-hidden  bg-[#FFFBE8]">
       <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
         <div className="sm:w-[50%] xs:w-[80%] rotate-[5deg]">
