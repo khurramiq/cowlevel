@@ -14,7 +14,7 @@ const HandClose = ({ fullpageApi, open, setOpen, state }) => {
       <div className="z-[100] sticky left-0 right-0 top-0">
         <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
           <img
-            className="sm:w-[60px] xs:w-[50px]"
+            className="md:w-[60px] xs:w-[50px]"
             src={cowheaderlogo}
             alt="cowheaderlogo"
           />
@@ -26,7 +26,7 @@ const HandClose = ({ fullpageApi, open, setOpen, state }) => {
               ></i>
             ) : (
               <FaBars
-                className="sm:text-3xl xs:text-lg cursor-pointer rotate-animationR"
+                className="md:text-3xl xs:text-lg cursor-pointer rotate-animationR"
                 onClick={() => setOpen(true)}
               />
             )}
