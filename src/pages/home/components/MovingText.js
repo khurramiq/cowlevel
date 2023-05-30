@@ -15,7 +15,7 @@ const MovingText = () => {
         <div className="md:w-[120px] xs:w-[60px] relative md:top-[50px] xs:top-[0px] sm:left-[-20%] xs:left-[-10%] rotate-[7deg]">
           <img className="badgeAmimation" src={fiPMELogo} alt="fiPMELogo" />
         </div>
-        <div className="relative md:w-[50%] xs:w-[70%] translate-x-[-10%] md:translate-y-[-30px] xs:translate-y-[-30px]">
+        <div className="relative md:w-[50%] xs:w-[70%] translate-x-[-10%] md:translate-y-[-30px] xs:translate-y-[0px]">
           <img
             className="md:h-[60px] sm:h-[40px] xs:h-[30px] w-full absolute top-0"
             src={board}
