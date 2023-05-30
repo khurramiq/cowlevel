@@ -30,20 +30,20 @@ const CowMovingInner = ({
               `}
     >
       <div
-        class={`flex justify-end items-end w-[120%] sm:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[-10px]`}
+        class={`flex justify-end items-end w-[120%] md:h-[60%] xs:h-[50%] bg-[#C73431] origin-bottom-left rotate-[-7deg] translate-x-[-10px]`}
       >
         <div className="w-[110%]">
           <img
-            className="sm:max-w-[250px] xs:max-w-[150px] moving_cow"
+            className="md:max-w-[250px] sm:max-w-[100px] xs:max-w-[150px] moving_cow"
             src={movingcow}
             alt="movingcow"
           />
         </div>
       </div>
       <div
-        className={`sm:h-[40%] xs:h-[50%] xs:flex xs:items-center sm:block overflow-hidden`}
+        className={`md:h-[40%] xs:h-[50%] xs:flex xs:items-end md:block overflow-hidden`}
       >
-        <div className="relative h-full flex justify-center sm:items-start xs:items-end">
+        <div className="relative h-full flex justify-center md:items-end  xs:items-end">
           <div className="sm:hidden xs:inline-block absolute top-[10%] left-[10px]">
             <Fade bottom>
               <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[272px] xs:w-[25%] sm:h-[94px] xs:h-auto text-white">
@@ -56,8 +56,8 @@ const CowMovingInner = ({
             </Fade>
           </div>
           <Fade bottom>
-            <div className="xs:hidden sm:inline-block relative left-[50px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[290px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
-              <span className="sm:text-sm xs:text-xs">
+            <div className="xs:hidden sm:inline-block relative left-[30px] md:bottom-[50%] sm:bottom-[70%] border-[3px] border-white md:p-[10px] sm:p-[5px] text-[100%] rounded-none mb-0 sm:w-[290px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
+              <span className="md:text-sm sm:text-[10px] xs:text-xs">
                 An investment in cow level is an investment in the protection of
                 gamers…
               </span>
@@ -65,19 +65,19 @@ const CowMovingInner = ({
             </div>
           </Fade>
           <img
-            className="sm:w-[397px] xs:w-[60%]"
+            className="md:w-[25%] sm:w-[40%] xs:w-[60%]"
             src={twomaninbelowcow}
             alt="twomaninbelowcow"
           />
           <Fade bottom>
-            <div className="relative left-[-50px] xs:hidden sm:inline-block border-[3px] border-white p-[10px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] sm:h-[94px] xs:h-auto text-white">
+            <div className="relative left-[-30px] md:bottom-[50%] sm:bottom-[70%] xs:hidden sm:inline-block border-[3px] border-white md:p-[10px] sm:p-[5px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
               <div className="red_speech_left_arrow" />
-              <span className="sm:text-sm xs:text-xs">
+              <span className="md:text-sm sm:text-[10px] xs:text-xs">
                 …and the creation of wealth through gaming. Thank you for your
                 support.
               </span>
               <img
-                className="absolute right-0 bottom-[-100px] w-[80px]"
+                className="absolute right-0 md:bottom-[-100px] sm:bottom-[-50px] md:w-[80px] sm:w-[50px]"
                 src={cowlinkimage}
                 alt="cowlinkimage"
               />

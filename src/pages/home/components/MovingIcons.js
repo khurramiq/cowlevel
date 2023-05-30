@@ -13,7 +13,7 @@ const MovingIcons = () => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#3D6EB1]">
       <div
-        class="flex justify-center items-end w-[120%] sm:h-[60%] xs:h-[50%] bg-[#325C95] origin-bottom-right rotate-[7deg] sm:translate-x-[-200px] xs:translate-x-[-50px]"
+        class="flex justify-center items-end w-[120%] md:h-[60%] xs:h-[50%] bg-[#325C95] origin-bottom-right rotate-[7deg] md:translate-x-[-200px] xs:translate-x-[-50px]"
         style={{ zIndex: -10 }}
       >
         <div className="relative w-[100%]">
@@ -51,11 +51,11 @@ const MovingIcons = () => {
           </Marquee>
         </div>
       </div>
-      <div className="sm:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
+      <div className="md:h-[40%] xs:h-[50%] xs:w-[90%] mx-auto overflow-hidden">
         <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <Fade left>
-            <div className="relative sm:inline-block xs:hidden sm:top-0 xs:top-[-100px] left-[60px] border-[3px] border-white p-[10px] text-[100%] rounded-none mb-0 sm:w-[355px] xs:w-[40%] sm:h-auto xs:h-auto text-white">
-              <span className="sm:text-sm xs:text-xs">
+            <div className="relative sm:inline-block xs:hidden sm:top-0 xs:top-[-100px] left-[60px] border-[3px] border-white md:p-[10px] sm:p-[5px] text-[100%] rounded-none mb-0 sm:w-[355px] xs:w-[40%] sm:h-auto xs:h-auto text-white">
+              <span className="md:text-sm sm:text-[10px] xs:text-xs">
                 We built an exchange environment around this growing asset class
                 in line with game publishers and partners to create a whole new
                 financial market.
@@ -77,14 +77,14 @@ const MovingIcons = () => {
           </div>
           <Fade bottom>
             <img
-              className="xs:w-[40%] sm:w-auto"
+              className="xs:w-[40%] md:w-auto"
               src={borisavatar}
               alt="borisavatar"
             />
           </Fade>
           <div className="xs:hidden sm:inline-block relative w-[272px]">
             <img
-              className="absolute left-5 bottom-[-200px] w-[80px]"
+              className="absolute left-5 md:bottom-[-200px] sm:bottom-[-100px] w-[80px] sm:w-[50px]"
               src={cowlinkimage}
               alt="cowlinkimage"
             />

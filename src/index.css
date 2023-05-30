@@ -72,7 +72,7 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   right: -30px;
-  top: 40px; /* Adjust the color of the arrow to match the speech box */
+  top: 40%; /* Adjust the color of the arrow to match the speech box */
 }
 .blue_speech_right_arrow {
   position: absolute;
@@ -245,7 +245,7 @@
   -webkit-animation: rotateR 0.5s;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 960px) {
   .footer_cow_nose {
     width: 70%;
     animation-duration: 4s;

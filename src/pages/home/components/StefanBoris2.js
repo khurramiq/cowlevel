@@ -77,20 +77,20 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
             src={bs}
             alt="handOpen"
           />
-          <div className="absolute sm:flex sm:items-start sm:h-[30%] xs:h-[50%] bottom-0 z-[1]">
-            <div className="sm:flex sm:justify-between sm:items-start sm:w-[50%] xs:block xs:w-[90%] mx-auto">
+          <div className="absolute md:flex md:items-start md:h-[30%] sm:h-[60%] xs:h-[50%] bottom-0 z-[1]">
+            <div className="md:flex md:justify-between md:items-start md:w-[50%] xs:block xs:w-[90%] mx-auto">
               <p
-                className="sm:w-[70%] sm:text-xl xs:text-lg text-shadow-p text-white
-          xs:w-[100%] sm:text-left xs:text-center 
+                className="md:w-[70%] md:text-xl xs:text-lg text-shadow-p text-white
+          xs:w-[100%] md:text-left xs:text-center 
           "
               >
                 OUR CRIME-FIGHTING FOUNDERS, BORIS & STEFAN, WANT TO MAKE BUYING
                 AND EXCHANGING IN-GAME ITEMS AS SAFE & SECURE AS TRADING COMPANY
                 SHARES.
               </p>
-              <div className="sm:w-[30%] xs:w-[100%] sm:items-center sm:justify-start sm:mt-0 xs:flex xs:flex-col xs:justify-center xs:items-center xs:mt-2">
+              <div className="md:w-[30%] xs:w-[100%] md:items-center md:justify-start md:mt-0 xs:flex xs:flex-col xs:justify-center xs:items-center xs:mt-2">
                 <img
-                  className="sm:max-w-[120px] xs:max-w-[80px]"
+                  className="md:max-w-[120px] sm:max-w-[100px] xs:max-w-[80px]"
                   src={youtube_icon}
                   alt="youtube_icon"
                 />

@@ -17,6 +17,9 @@
 
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
+  .tick {
+    font-size: 2em;
+  }
 }
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
