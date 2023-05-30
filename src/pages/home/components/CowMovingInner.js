@@ -56,7 +56,7 @@ const CowMovingInner = ({
             </Fade>
           </div>
           <Fade bottom>
-            <div className="xs:hidden sm:inline-block relative md:top-[0px] sm:top-[-50%] left-[30px] border-[3px] border-white md:p-[10px] sm:p-[5px] text-[100%] rounded-none mb-0 sm:w-[290px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
+            <div className="xs:hidden sm:inline-block relative md:top-[0px] sm:top-[-50%] sm:left-[10px] md:left-[30px] border-[3px] border-white md:p-[10px] sm:p-[5px] text-[100%] rounded-none mb-0 sm:w-[290px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
               <span className="md:text-sm sm:text-[10px] xs:text-xs">
                 An investment in cow level is an investment in the protection of
                 gamers…
@@ -70,7 +70,7 @@ const CowMovingInner = ({
             alt="twomaninbelowcow"
           />
           <Fade bottom>
-            <div className="relative md:top-0 sm:top-[-50%] left-[-30px] xs:hidden sm:inline-block border-[3px] border-white md:p-[10px] sm:p-[5px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
+            <div className="relative md:top-0 sm:top-[-50%] sm:left-[-10px] md:left-[-30px] xs:hidden sm:inline-block border-[3px] border-white md:p-[10px] sm:p-[5px] text-[15px] rounded-none mb-0 sm:w-[272px] xs:w-[30%] md:h-[94px] xs:h-auto text-white">
               <div className="red_speech_left_arrow" />
               <span className="md:text-sm sm:text-[10px] xs:text-xs">
                 …and the creation of wealth through gaming. Thank you for your
