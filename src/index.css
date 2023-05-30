@@ -245,18 +245,9 @@
   -webkit-animation: rotateR 0.5s;
 }
 
-@media only screen and (max-width: 576px) {
-  .footer_cow_nose {
-    width: 60%;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-name: cow_nosexs;
-    animation-iteration-count: infinite;
-  }
-}
 @media only screen and (max-width: 960px) {
   .footer_cow_nose {
-    width: 40%;
+    width: 50%;
     animation-duration: 4s;
     animation-fill-mode: both;
     animation-name: cow_nosexs;
@@ -266,13 +257,13 @@
 
 @keyframes cow_nosexs {
   0% {
-    width: 70%;
+    width: 50%;
   }
   50% {
-    width: 60%;
+    width: 40%;
   }
   100% {
-    width: 70%;
+    width: 50%;
   }
 }
 @keyframes cow_nose {
