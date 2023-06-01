@@ -10,7 +10,7 @@ const Footer = ({ viewMode }) => {
   return (
     <div
       className={`absolute sm:top-[252%] ${
-        viewMode ? 'xs: top-[370%]' : 'xs: top-[350%]'
+        viewMode ? 'xs: top-[385%]' : 'xs: top-[340%]'
       } h-full w-screen overflow-hidden bg-[#262629]`}
     >
       <div className="relative h-[250px] md:ml-20 md:block xs:flex xs:justify-center">

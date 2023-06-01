@@ -352,7 +352,7 @@ const Slide4 = ({ open, setOpen }) => {
               {/* 3 */}
               <div
                 className={`m-1 ${
-                  viewMode && 'mt-4'
+                  viewMode && 'mt-5'
                 } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
@@ -389,7 +389,9 @@ const Slide4 = ({ open, setOpen }) => {
               </div>
               {/* 5 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
+                className={`m-1 ${
+                  viewMode && 'mt-5'
+                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -505,7 +507,9 @@ const Slide4 = ({ open, setOpen }) => {
               </div>
               {/* 11 */}
               <div
-                className="m-1 relative  text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
+                className={`m-1 ${
+                  viewMode && 'mt-5'
+                } relative  text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -554,7 +558,9 @@ const Slide4 = ({ open, setOpen }) => {
               </div>
               {/* 14 */}
               <div
-                className={`m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]`}
+                className={`m-1 ${
+                  viewMode && 'mt-10'
+                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
