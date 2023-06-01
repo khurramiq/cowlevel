@@ -45,7 +45,7 @@ import MobileLinks from '../../../components/MobileLinks';
 const Slide4 = ({ open, setOpen }) => {
   const [viewMode, setViewMode] = useState(false);
   return (
-    <div className="section relative  bg-[#FFFBE8] overflow-x-hidden">
+    <div className="section relative  bg-[#FFFBE8] overflow-x-hidden scrollbar-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
         <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
           <img
