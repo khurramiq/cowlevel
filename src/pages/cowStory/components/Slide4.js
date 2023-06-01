@@ -313,6 +313,7 @@ const Slide4 = ({ open, setOpen }) => {
         <div className="mt-[100px] w-[70%] sm:hidden xs:block">
           <div class="w-full">
             <div className="block text-center">
+              {/* 1 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -330,6 +331,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'GABRIEL BUCETA'} role={'Video Editor'} />
               </div>
+              {/* 2 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -347,6 +349,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
               </div>
+              {/* 3 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -364,6 +367,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
               </div>
+              {/* 4 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -381,6 +385,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
               </div>
+              {/* 5 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -401,6 +406,7 @@ const Slide4 = ({ open, setOpen }) => {
                   role={'Marketing/PR'}
                 />
               </div>
+              {/* 6 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -421,6 +427,7 @@ const Slide4 = ({ open, setOpen }) => {
                   role={'Key Advisor USA'}
                 />
               </div>
+              {/* 7 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -438,12 +445,13 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'ALEXANDRU'} role={'Advisor'} />
               </div>
+              {/* 8 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] h-[200px] mt-5 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <div className="p-1">
+                <div className="p-1 mt-4">
                   <img className="w-full" src={daura} alt="daura" />
                 </div>
                 <div className="p-1">
@@ -454,6 +462,7 @@ const Slide4 = ({ open, setOpen }) => {
                   />
                 </div>
               </div>
+              {/* 9 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -471,6 +480,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'JOHN ROSE'} role={'Advisor'} />
               </div>
+              {/* 10 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -491,6 +501,7 @@ const Slide4 = ({ open, setOpen }) => {
                   role={'Advisor'}
                 />
               </div>
+              {/* 11 */}
               <div
                 className="m-1 relative  text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -508,6 +519,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'DUSKA GIORGETTI'} role={'Advisor'} />
               </div>
+              {/* 12 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -525,6 +537,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'JON BAUMANN'} role={'Advisor'} />
               </div>
+              {/* 13 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
@@ -537,6 +550,7 @@ const Slide4 = ({ open, setOpen }) => {
                   <img className="w-full" src={the_2_pie} alt="the_2_pie" />
                 </div>
               </div>
+              {/* 14 */}
               <div
                 className={`m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
@@ -554,6 +568,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'PASCAL SCHMID'} role={'Advisor'} />
               </div>
+              {/* 15 */}
               <div
                 className={`m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
                 onMouseEnter={() => setViewMode(true)}
@@ -571,6 +586,7 @@ const Slide4 = ({ open, setOpen }) => {
                 />
                 <TeamMemberInfo name={'SUNNY KARKHANIS'} role={'Advisor'} />
               </div>
+              {/* 16 */}
               <div
                 className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
                 onMouseEnter={() => setViewMode(true)}
