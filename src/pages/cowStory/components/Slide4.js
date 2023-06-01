@@ -450,7 +450,10 @@ const Slide4 = ({ open, setOpen }) => {
                 <TeamMemberInfo name={'ALEXANDRU'} role={'Advisor'} />
               </div>
               {/* 8 */}
-              <div className="m-1 relative text-center group inline-block w-[40%] h-[200px] mt-5 ease-in-out duration-[1.5s]">
+              <div
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] mt-5 ease-in-out duration-[1.5s]"
+                onClick={() => setViewMode(false)}
+              >
                 <div className="p-1 mt-4">
                   <img className="w-full" src={daura} alt="daura" />
                 </div>
@@ -540,7 +543,10 @@ const Slide4 = ({ open, setOpen }) => {
                 <TeamMemberInfo name={'JON BAUMANN'} role={'Advisor'} />
               </div>
               {/* 13 */}
-              <div className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]">
+              <div
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
+                onClick={() => setViewMode(false)}
+              >
                 <div className="p-1">
                   <img className="w-full" src={smex} alt="smex" />
                 </div>
@@ -587,7 +593,10 @@ const Slide4 = ({ open, setOpen }) => {
                 <TeamMemberInfo name={'SUNNY KARKHANIS'} role={'Advisor'} />
               </div>
               {/* 16 */}
-              <div className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]">
+              <div
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
+                onClick={() => setViewMode(false)}
+              >
                 <div className="p-1">
                   <img className="w-full" src={tenity_logo} alt="tenity_logo" />
                 </div>
