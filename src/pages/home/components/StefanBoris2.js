@@ -88,7 +88,7 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
                 AND EXCHANGING IN-GAME ITEMS AS SAFE & SECURE AS TRADING COMPANY
                 SHARES.
               </p>
-              <div className="md:w-[30%] xs:w-[100%] md:items-center md:justify-start md:mt-0 xs:flex xs:flex-col sm:flex-row xs:justify-center xs:items-center xs:mt-2">
+              <div className="md:w-[30%] xs:w-[100%] md:items-center md:justify-start md:mt-0 xs:flex xs:flex-col sm:flex-row md:flex-col xs:justify-center xs:items-center xs:mt-2">
                 <img
                   className="md:max-w-[120px] sm:max-w-[80px] xs:max-w-[80px]"
                   src={youtube_icon}
