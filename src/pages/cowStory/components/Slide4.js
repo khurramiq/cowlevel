@@ -41,18 +41,21 @@ import TeamMemberInfo from './TeamMemberInfo';
 import Footer from './Footer';
 import { FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
+import { Link } from 'react-router-dom';
 
-const Slide4 = ({ open, setOpen }) => {
+const Slide4 = ({ open, setOpen, fullpageApi }) => {
   const [viewMode, setViewMode] = useState(false);
   return (
     <div className="section relative  bg-[#FFFBE8] overflow-x-hidden scrollbar-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
         <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
-          <img
-            className="md:w-[60px] xs:w-[50px]"
-            src={cowheaderlogo}
-            alt="cowheaderlogo"
-          />
+          <Link to="/" onClick={() => fullpageApi.moveTo(1)}>
+            <img
+              className="md:w-[60px] xs:w-[50px]"
+              src={cowheaderlogo}
+              alt="cowheaderlogo"
+            />
+          </Link>
           <div className="relative">
             {open ? (
               <i

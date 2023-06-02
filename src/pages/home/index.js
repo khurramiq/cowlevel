@@ -43,13 +43,27 @@ const Home = () => {
             setStartCounter(false);
           }
         }}
+        afterRender={() => {}}
         render={({ state, fullpageApi }) => {
           console.log('state', state);
           return (
             <div className="relative">
-              <CowLevelSlide0 open={open} setOpen={setOpen} />
-              <CowLevelSlide1 open={open} setOpen={setOpen} />
-              <StefanBoris1 open={open} setOpen={setOpen} state={state} />
+              <CowLevelSlide0
+                open={open}
+                setOpen={setOpen}
+                fullpageApi={fullpageApi}
+              />
+              <CowLevelSlide1
+                open={open}
+                setOpen={setOpen}
+                fullpageApi={fullpageApi}
+              />
+              <StefanBoris1
+                open={open}
+                setOpen={setOpen}
+                state={state}
+                fullpageApi={fullpageApi}
+              />
               <StefanBoris2
                 fullpageApi={fullpageApi}
                 startCounter={startCounter}
@@ -88,7 +102,11 @@ const Home = () => {
                 state={state}
               />
               <div className="section relative overflow-hidden scrollbar-hidden">
-                <CowLevelHeader open={open} setOpen={setOpen} />
+                <CowLevelHeader
+                  open={open}
+                  setOpen={setOpen}
+                  fullpageApi={fullpageApi}
+                />
                 <div
                   className={`absolute top-0 w-screen h-full overflow-hidden bg-[#F4423F] scrollbar-hidden
                   ${

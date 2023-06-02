@@ -8,7 +8,7 @@ import CowMovingInner from './CowMovingInner';
 const CowSkin = ({ open, setOpen, fullpageApi, state }) => {
   return (
     <div className="section relative">
-      <CowLevelHeader open={open} setOpen={setOpen} />
+      <CowLevelHeader open={open} setOpen={setOpen} fullpageApi={fullpageApi} />
       <div className="absolute top-0 w-screen h-full overflow-hidden">
         <div className="relative w-full h-full flex justify-center">
           <img

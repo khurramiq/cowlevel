@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import MobileLinks from './MobileLinks';
 import { Link } from 'react-router-dom';
 
-const CowLevelHeader = ({ open, setOpen }) => {
+const CowLevelHeader = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="z-[100] absolute left-0 right-0 top-0">
       <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
@@ -26,7 +26,7 @@ const CowLevelHeader = ({ open, setOpen }) => {
               onClick={() => setOpen(true)}
             />
           )}
-          {open && <MobileLinks />}
+          {open && <MobileLinks fullpageApi={fullpageApi} />}
         </div>
       </div>
     </div>

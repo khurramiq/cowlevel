@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const MobileLinks = () => {
+const MobileLinks = ({ fullpageApi }) => {
   return (
     <ul className="absolute pt-2 pb-2 top-[50px] right-[0px] w-[250px] text-[#212934] text-[18px] bg-[#FFFBE8]">
-      <Link to={'/cow-story'} className="hover:text-red-600">
+      <Link
+        to={'/cow-story'}
+        className="hover:text-red-600"
+        onClick={() => fullpageApi.moveTo(1)}
+      >
         <li className="mb-1 ml-5">COW STORY</li>
       </Link>
       <Link to={'/invest'} className="hover:text-red-600">

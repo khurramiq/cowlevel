@@ -25,12 +25,11 @@ const CowStory = () => {
         // }
       }}
       render={({ state, fullpageApi }) => {
-        // console.log('state', state);
         return (
           <div className="relative">
             <Slide1 open={open} setOpen={setOpen} />
-            <Slide2 open={open} setOpen={setOpen} />
-            <Slide3 open={open} setOpen={setOpen} />
+            <Slide2 open={open} setOpen={setOpen} state={state} />
+            <Slide3 open={open} setOpen={setOpen} state={state} />
             <Slide4 open={open} setOpen={setOpen} />
           </div>
         );

@@ -4,12 +4,12 @@ import investInTheCow from '../assets/images/investInTheCow.png';
 import { Link } from 'react-router-dom';
 import MobileLinks from './MobileLinks';
 
-const CowLevelHeaderWithLinks = ({ open, setOpen }) => {
+const CowLevelHeaderWithLinks = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="z-[100] absolute left-0 right-0 top-0">
       <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
         <div>
-          <Link to="/">
+          <Link to="/" onClick={() => fullpageApi.moveTo(1)}>
             <img
               className="sm:w-[90px]  xs:w-[50px]"
               src={headerLogo}

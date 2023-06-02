@@ -7,7 +7,7 @@ import mobileslider1 from '../../../assets/images/mobileslider1.png';
 import downarrownarrow from '../../../assets/images/downarrownarrow.png';
 import CowLevelHeaderWithLinks from '../../../components/CowLevelHeaderWithLinks';
 
-const CowLevelSlide0 = ({ open, setOpen }) => {
+const CowLevelSlide0 = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative w-full h-full overflow-hidden  bg-[#FFFBE8]">
       <CowLevelHeaderWithLinks open={open} setOpen={setOpen} />
@@ -67,6 +67,7 @@ const CowLevelSlide0 = ({ open, setOpen }) => {
       </div>
       <img
         className="absolute cursor-pointer h-[40px] right-[10%] bottom-[5%]"
+        onClick={() => fullpageApi.moveTo(2)}
         src={downarrownarrow}
         alt="downarrownarrow"
       />

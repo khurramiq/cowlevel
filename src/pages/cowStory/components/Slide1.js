@@ -8,16 +8,18 @@ const Slide1 = ({ open, setOpen }) => {
     <div className="section relative  bg-[#FFFBE8]">
       <CowLevelHeaderWithLinks open={open} setOpen={setOpen} />
       <div className="absolute flex justify-center items-center w-screen h-full overflow-hidden">
-        <img
-          className="relative w-full xs:inline-block sm:hidden"
-          src={cow_story_mobile1}
-          alt="cow_story_mobile1"
-        />
-        <img
-          className="relative sm:inline-block xs:hidden"
-          src={cow_story_slide1}
-          alt="cow_story_slide1"
-        />
+        <div className="relative w-screen h-full overflow-hidden">
+          <img
+            className="absolute top-[20%] w-full xs:inline-block sm:hidden"
+            src={cow_story_mobile1}
+            alt="cow_story_mobile1"
+          />
+          <img
+            className="relative w-full sm:top-[20%] md:top-0 sm:inline-block xs:hidden"
+            src={cow_story_slide1}
+            alt="cow_story_slide1"
+          />
+        </div>
       </div>
     </div>
   );
