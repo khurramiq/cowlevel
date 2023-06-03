@@ -95,14 +95,8 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           </strong>
         </p>
         <div className="mt-[100px] w-[50%] xs:hidden sm:block">
-          <div
-            class="flex justify-center"
-            // style={{ border: '1px solid red' }}
-          >
-            <div
-              className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[200px] hover:h-[330px] ease-in-out duration-[1.5s]"
-              // style={{ border: '1px solid red' }}
-            >
+          <div class="flex justify-center">
+            <div className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[200px] hover:h-[330px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[100px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor1}
@@ -113,12 +107,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter1}
                 alt="teamImgAfter1"
               />
-              <TeamMemberInfo name={'GABRIEL BUCETA'} role={'Video Editor'} />
+              <TeamMemberInfo
+                name={'GABRIEL BUCETA'}
+                role={'Video Editor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div
-              className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[1.5s]"
-              // style={{ border: '1px solid red' }}
-            >
+            <div className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor2}
@@ -129,12 +124,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter2}
                 alt="teamImgAfter2"
               />
-              <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+              <TeamMemberInfo
+                name={'STEFAN KAEMPER'}
+                role={'Founder, COB'}
+                linkedin="https://www.linkedin.com/in/stefan-kaemper/"
+              />
             </div>
-            <div
-              className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[1.5s]"
-              // style={{ border: '1px solid red' }}
-            >
+            <div className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor3}
@@ -145,12 +141,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter3}
                 alt="teamImgAfter3"
               />
-              <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+              <TeamMemberInfo
+                name={'BORIS OBODDA'}
+                role={'Founder, CEO'}
+                linkedin="https://www.linkedin.com/in/boris-obodda-03359235/"
+              />
             </div>
-            <div
-              className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[165px] hover:h-[290px] ease-in-out duration-[1.5s]"
-              // style={{ border: '1px solid red' }}
-            >
+            <div className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[165px] hover:h-[310px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor4}
@@ -161,14 +158,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter4}
                 alt="teamImgAfter4"
               />
-              <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+              <TeamMemberInfo
+                name={'MARINA CHERKASHINA'}
+                role={'Lead Project Manager'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
           </div>
           <div class="flex justify-center">
-            <div
-              className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[1.5s]"
-              // style={{ border: '1px solid red' }}
-            >
+            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor5}
@@ -179,9 +177,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter5}
                 alt="teamImgAfter5"
               />
-              <TeamMemberInfo name={'BENJAMIN KRATSCH'} role={'Marketing/PR'} />
+              <TeamMemberInfo
+                name={'BENJAMIN KRATSCH'}
+                role={'Marketing/PR'}
+                linkedin="https://www.linkedin.com/in/benjaminkratsch"
+              />
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor6}
@@ -192,9 +194,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter6}
                 alt="teamImgAfter6"
               />
-              <TeamMemberInfo name={'HEATHER BLAIR'} role={'Key Advisor USA'} />
+              <TeamMemberInfo
+                name={'HEATHER BLAIR'}
+                role={'Key Advisor USA'}
+                linkedin="https://www.linkedin.com/in/heatherblair/"
+              />
             </div>
-            <div className="m-1 relative text-center group w-[16%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[16%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor7}
@@ -205,9 +211,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter7}
                 alt="teamImgAfter7"
               />
-              <TeamMemberInfo name={'ALEXANDRU'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'ALEXANDRU'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div class="block w-[8%]">
+            <div class="block w-[12%]">
               <div className="p-1">
                 <img className="w-full" src={daura} alt="daura" />
               </div>
@@ -215,7 +225,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <img className="w-full" src={swiss_gaming} alt="swiss_gaming" />
               </div>
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor8}
@@ -226,9 +236,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter8}
                 alt="teamImgAfter8"
               />
-              <TeamMemberInfo name={'JOHN ROSE'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'JOHN ROSE'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[280px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[280px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor9}
@@ -239,11 +253,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter9}
                 alt="teamImgAfter9"
               />
-              <TeamMemberInfo name={'ABDELHAKIM EL OMRANI'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'ABDELHAKIM EL OMRANI'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
           </div>
           <div class="flex justify-center">
-            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor10}
@@ -254,9 +272,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter10}
                 alt="teamImgAfter10"
               />
-              <TeamMemberInfo name={'DUSKA GIORGETTI'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'DUSKA GIORGETTI'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor11}
@@ -267,9 +289,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter11}
                 alt="teamImgAfter11"
               />
-              <TeamMemberInfo name={'JON BAUMANN'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'JON BAUMANN'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div class="block w-[8%]">
+            <div class="block w-[12%]">
               <div className="p-1">
                 <img className="w-full" src={smex} alt="smex" />
               </div>
@@ -277,7 +303,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <img className="w-full" src={the_2_pie} alt="the_2_pie" />
               </div>
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor12}
@@ -288,9 +314,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter12}
                 alt="teamImgAfter12"
               />
-              <TeamMemberInfo name={'PASCAL SCHMID'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'PASCAL SCHMID'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[1.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
               <img
                 className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
                 src={teamImgBefor13}
@@ -301,9 +331,13 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 src={teamImgAfter13}
                 alt="teamImgAfter13"
               />
-              <TeamMemberInfo name={'SUNNY KARKHANIS'} role={'Advisor'} />
+              <TeamMemberInfo
+                name={'SUNNY KARKHANIS'}
+                role={'Advisor'}
+                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+              />
             </div>
-            <div class="block w-[8%]">
+            <div class="block w-[12%]">
               <div className="p-1">
                 <img className="w-full" src={tenity_logo} alt="tenity_logo" />
               </div>
@@ -318,7 +352,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
             <div className="block text-center">
               {/* 1 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -332,11 +366,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter1}
                   alt="teamImgAfter1"
                 />
-                <TeamMemberInfo name={'GABRIEL BUCETA'} role={'Video Editor'} />
+                <TeamMemberInfo
+                  name={'GABRIEL BUCETA'}
+                  role={'Video Editor'}
+                  linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                />
               </div>
               {/* 2 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -350,13 +388,17 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter2}
                   alt="teamImgAfter2"
                 />
-                <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+                <TeamMemberInfo
+                  name={'STEFAN KAEMPER'}
+                  role={'Founder, COB'}
+                  linkedin="https://www.linkedin.com/in/stefan-kaemper/"
+                />
               </div>
               {/* 3 */}
               <div
                 className={`m-1 ${
                   viewMode && 'mt-5'
-                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
+                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -370,11 +412,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter3}
                   alt="teamImgAfter3"
                 />
-                <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+                <TeamMemberInfo
+                  name={'BORIS OBODDA'}
+                  role={'Founder, CEO'}
+                  linkedin="https://www.linkedin.com/in/boris-obodda-03359235/"
+                />
               </div>
               {/* 4 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -388,13 +434,17 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter4}
                   alt="teamImgAfter4"
                 />
-                <TeamMemberInfo name={'STEFAN KAEMPER'} role={'Founder, COB'} />
+                <TeamMemberInfo
+                  name={'MARINA CHERKASHINA'}
+                  role={'Lead Project Manager'}
+                  linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                />
               </div>
               {/* 5 */}
               <div
                 className={`m-1 ${
                   viewMode && 'mt-5'
-                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
+                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -411,11 +461,12 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'BENJAMIN KRATSCH'}
                   role={'Marketing/PR'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch"
                 />
               </div>
               {/* 6 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -432,11 +483,12 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'HEATHER BLAIR'}
                   role={'Key Advisor USA'}
+                  linkedin="https://www.linkedin.com/in/heatherblair/"
                 />
               </div>
               {/* 7 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -450,11 +502,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter7}
                   alt="teamImgAfter7"
                 />
-                <TeamMemberInfo name={'ALEXANDRU'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'ALEXANDRU'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 8 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] h-[200px] mt-5 ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] mt-5 ease-in-out duration-[2.5s]"
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1 mt-4">
@@ -470,7 +526,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               </div>
               {/* 9 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -484,11 +540,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter8}
                   alt="teamImgAfter8"
                 />
-                <TeamMemberInfo name={'JOHN ROSE'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'JOHN ROSE'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 10 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -505,13 +565,14 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'ABDELHAKIM EL OMRANI'}
                   role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
                 />
               </div>
               {/* 11 */}
               <div
                 className={`m-1 ${
                   viewMode && 'mt-5'
-                } relative  text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
+                } relative  text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -525,11 +586,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter10}
                   alt="teamImgAfter10"
                 />
-                <TeamMemberInfo name={'DUSKA GIORGETTI'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'DUSKA GIORGETTI'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 12 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[320px] ease-in-out duration-[2.5s]"
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -543,11 +608,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter11}
                   alt="teamImgAfter11"
                 />
-                <TeamMemberInfo name={'JON BAUMANN'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'JON BAUMANN'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 13 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[2.5s]"
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1">
@@ -561,7 +630,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <div
                 className={`m-1 ${
                   viewMode && 'mt-10'
-                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[1.5s]`}
+                } relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] ease-in-out duration-[2.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -575,11 +644,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter12}
                   alt="teamImgAfter12"
                 />
-                <TeamMemberInfo name={'PASCAL SCHMID'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'PASCAL SCHMID'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 15 */}
               <div
-                className={`m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[1.5s]`}
+                className={`m-1 relative text-center group inline-block w-[40%] hover:w-[80%] h-[100px] hover:h-[290px] hover:mt-10 ease-in-out duration-[2.5s]`}
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
@@ -593,11 +666,15 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   src={teamImgAfter13}
                   alt="teamImgAfter13"
                 />
-                <TeamMemberInfo name={'SUNNY KARKHANIS'} role={'Advisor'} />
+                <TeamMemberInfo
+                  name={'SUNNY KARKHANIS'}
+                  role={'Advisor'}
+                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                />
               </div>
               {/* 16 */}
               <div
-                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[1.5s]"
+                className="m-1 relative text-center group inline-block w-[40%] h-[200px] ease-in-out duration-[2.5s]"
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1">

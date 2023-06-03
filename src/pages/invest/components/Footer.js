@@ -1,4 +1,4 @@
-import footerflower from '../../../assets/images/cow_story/footerWhiteLogo.png';
+import footerflower from '../../../assets/images/invest/blueFooterNose.png';
 import footerlogo from '../../../assets/images/footerlogo.png';
 import footer_animation from '../../../assets/images/footer_animation.gif';
 import fb from '../../../assets/images/fb.png';
@@ -6,12 +6,10 @@ import tw from '../../../assets/images/tw.png';
 import yt from '../../../assets/images/yt.png';
 import li from '../../../assets/images/li.png';
 
-const Footer = ({ viewMode }) => {
+const Footer = () => {
   return (
     <div
-      className={`absolute sm:top-[252%] ${
-        viewMode ? 'xs: top-[390%]' : 'xs: top-[340%]'
-      } h-full w-screen overflow-hidden bg-[#262629] ease-in-out duration-[2.5s]`}
+      className={`absolute h-full w-screen overflow-hidden bg-[#262629] ease-in-out duration-[2.5s]`}
     >
       <div className="relative h-[250px] md:ml-20 md:block xs:flex xs:justify-center">
         <img
