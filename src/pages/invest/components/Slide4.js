@@ -63,7 +63,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           alt="investinthecowbuttonwhite"
         />
         <h4 className="text-xl mt-10">The first digitalized stock on SME-X</h4>
-        <p className="text-center text-base mt-3 leading-tight">
+        <p className="w-[90%] text-center text-base mt-3 mb-10 leading-tight">
           Private Equity, Venture Capital, Home Office, or other{' '}
           <br className="xs:hidden sm:inline" />
           professional investors, please contact us.
