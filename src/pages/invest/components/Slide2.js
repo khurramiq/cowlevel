@@ -12,7 +12,7 @@ const Slide2 = ({ open, setOpen, state }) => {
       <div className="absolute flex justify-center items-center w-screen h-full overflow-hidden">
         <div className="relative parent w-screen h-full overflow-hidden">
           <img
-            className={`absolute picture xs:inline-block sm:hidden
+            className={`absolute w-[90%] picture xs:inline-block sm:hidden
             ${
               state?.destination?.index === 1 && state?.direction === 'up'
                 ? 'fadein'
@@ -24,7 +24,7 @@ const Slide2 = ({ open, setOpen, state }) => {
           />
           {state?.destination?.index === 1 && state?.direction === 'up' && (
             <img
-              className={`absolute picture xs:inline-block sm:hidden
+              className={`absolute w-[90%] picture xs:inline-block sm:hidden
             ${
               state?.destination?.index === 1 && state?.direction === 'up'
                 ? 'fadeout'

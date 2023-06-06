@@ -8,9 +8,9 @@ const Slide1 = ({ open, setOpen }) => {
     <div className="section relative  bg-[#3D6FB2]">
       <Header open={open} setOpen={setOpen} />
       <div className="absolute flex justify-center items-center w-screen h-full overflow-hidden">
-        <div className="relative flex align-items w-screen h-full overflow-hidden">
+        <div className="relative flex align-items w-full h-full overflow-hidden">
           <img
-            className="absolute picture xs:block sm:hidden"
+            className="absolute picture w-[90%] xs:block sm:hidden"
             src={invest_mobile1}
             alt="invest_mobile1"
           />

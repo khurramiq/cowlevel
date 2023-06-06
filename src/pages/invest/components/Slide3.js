@@ -11,9 +11,9 @@ const Slide3 = ({ open, setOpen, state }) => {
     <div className={'section relative  bg-[#3D6FB2]'}>
       <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute flex justify-center items-center w-full h-full overflow-hidden">
-        <div className="relative parent w-screen h-full overflow-hidden">
+        <div className="relative parent w-full h-full overflow-hidden">
           <img
-            className={`absolute picture xs:block sm:hidden
+            className={`absolute w-[90%] picture xs:block sm:hidden
             ${
               state?.destination?.index === 2 && state?.direction === 'down'
                 ? 'fadein'
@@ -25,7 +25,7 @@ const Slide3 = ({ open, setOpen, state }) => {
           />
           {state?.destination?.index === 2 && state?.direction === 'down' && (
             <img
-              className={`absolute picture xs:block sm:hidden
+              className={`absolute picture w-[90%] xs:block sm:hidden
             ${
               state?.destination?.index === 2 && state?.direction === 'down'
                 ? 'fadeout'
