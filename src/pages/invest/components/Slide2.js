@@ -7,7 +7,7 @@ import CowLevelHeader from '../../../components/CowLevelHeader';
 
 const Slide2 = ({ open, setOpen, state }) => {
   return (
-    <div className={'section relative  bg-[#3D6FB2]'}>
+    <div className={'section relative  bg-[#3D6FB2] overflow-x-hidden'}>
       <CowLevelHeader open={open} setOpen={setOpen} />
       <div className="absolute flex justify-center items-center w-screen h-full overflow-hidden">
         <div className="relative parent w-screen h-full overflow-hidden">

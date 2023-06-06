@@ -5,7 +5,7 @@ import Header from './Header';
 
 const Slide1 = ({ open, setOpen }) => {
   return (
-    <div className="section relative  bg-[#3D6FB2]">
+    <div className="section relative  bg-[#3D6FB2] overflow-hidden overflow-x-hidden">
       <Header open={open} setOpen={setOpen} />
       <div className="absolute flex justify-center items-center w-screen h-full overflow-hidden">
         <div className="relative flex align-items w-full h-full overflow-hidden">
