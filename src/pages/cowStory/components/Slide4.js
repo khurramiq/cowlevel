@@ -161,7 +161,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'MARINA CHERKASHINA'}
                 role={'Lead Project Manager'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/maryna-cherkashyna-73582a1a6/"
               />
             </div>
           </div>
@@ -214,7 +214,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'ALEXANDRU'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/alexandru-turkonje/"
               />
             </div>
             <div class="block w-[12%]">
@@ -239,7 +239,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'JOHN ROSE'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/mrjohnmrose/"
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[280px] ease-in-out duration-[2.5s]">
@@ -256,7 +256,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'ABDELHAKIM EL OMRANI'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/abdelhakim-el-omrani-57725b14a/"
               />
             </div>
           </div>
@@ -275,7 +275,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'DUSKA GIORGETTI'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/duska-giorgetti-860a4317b/"
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
@@ -292,7 +292,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'JON BAUMANN'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/jon-baumann-baj/"
               />
             </div>
             <div class="block w-[12%]">
@@ -317,7 +317,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'PASCAL SCHMID'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/pascal-schmid-foundationandcryptoexpert/"
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
@@ -334,7 +334,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <TeamMemberInfo
                 name={'SUNNY KARKHANIS'}
                 role={'Advisor'}
-                linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                linkedin="https://www.linkedin.com/in/sanjeev-sunny-karkhanis/"
               />
             </div>
             <div class="block w-[12%]">
@@ -437,7 +437,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'MARINA CHERKASHINA'}
                   role={'Lead Project Manager'}
-                  linkedin="https://www.linkedin.com/in/gabrielbuceta/"
+                  linkedin="https://www.linkedin.com/in/maryna-cherkashyna-73582a1a6/"
                 />
               </div>
               {/* 5 */}
@@ -505,7 +505,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'ALEXANDRU'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/alexandru-turkonje/"
                 />
               </div>
               {/* 8 */}
@@ -543,7 +543,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'JOHN ROSE'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/mrjohnmrose/"
                 />
               </div>
               {/* 10 */}
@@ -565,7 +565,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'ABDELHAKIM EL OMRANI'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/abdelhakim-el-omrani-57725b14a/"
                 />
               </div>
               {/* 11 */}
@@ -589,7 +589,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'DUSKA GIORGETTI'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/duska-giorgetti-860a4317b/"
                 />
               </div>
               {/* 12 */}
@@ -611,7 +611,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'JON BAUMANN'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/jon-baumann-baj/"
                 />
               </div>
               {/* 13 */}
@@ -647,7 +647,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'PASCAL SCHMID'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/pascal-schmid-foundationandcryptoexpert/"
                 />
               </div>
               {/* 15 */}
@@ -669,7 +669,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <TeamMemberInfo
                   name={'SUNNY KARKHANIS'}
                   role={'Advisor'}
-                  linkedin="https://www.linkedin.com/in/benjaminkratsch/"
+                  linkedin="https://www.linkedin.com/in/sanjeev-sunny-karkhanis/"
                 />
               </div>
               {/* 16 */}

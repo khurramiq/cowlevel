@@ -87,7 +87,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
               {!cow1 && (
                 <div className="absolute top-[110px] left-[-100px] w-[300px] border border-solid border-white rounded-[10px] bg-[#6DE226] rotate-[10deg] fadein z-[1]">
-                  <div className="arrow top-[-10px] border-b-[10px] border-b-[#6DE226]" />
+                  <div className="arrow1 top-[-10px] border-b-[10px] border-b-[#6DE226]" />
                   <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
                     GREEN COW
                   </h3>
@@ -108,7 +108,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
               {!cow2 && (
                 <div className="absolute top-[110px] xs:left-[-120px] sm:left-[-100px] w-[300px] border border-solid border-white rounded-[10px] bg-[#1667DB] rotate-[10deg] fadein">
-                  <div className="arrow top-[-10px] border-b-[10px] border-b-[#1667DB]" />
+                  <div className="arrow1 top-[-10px] border-b-[10px] border-b-[#1667DB]" />
                   <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
                     RARE BLUE COW
                   </h3>
@@ -129,7 +129,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
               {!cow3 && (
                 <div className="absolute top-[110px] xs:left-[-150px] sm:left-[-100px] w-[300px] border border-solid border-white rounded-[10px] bg-[#A572E6] rotate-[10deg] fadein">
-                  <div className="arrow top-[-10px] border-b-[10px] border-b-[#A572E6]" />
+                  <div className="arrow1 top-[-10px] border-b-[10px] border-b-[#A572E6]" />
                   <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
                     EPIC PURPLE COW
                   </h3>
@@ -150,7 +150,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
               {!cow4 && (
                 <div className="absolute top-[110px] xs:left-[-200px] sm:left-[-100px] w-[300px] border border-solid border-white rounded-[10px] bg-[#C45A22] rotate-[10deg] fadein">
-                  <div className="arrow top-[-10px] border-b-[10px] border-b-[#C45A22]" />
+                  <div className="arrow1 top-[-10px] border-b-[10px] border-b-[#C45A22]" />
                   <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
                     LEGENDARY ORANGE COW
                   </h3>
@@ -172,7 +172,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
               {!cow5 && (
                 <div className="absolute top-[110px] xs:left-[-250px] sm:left-[-100px] w-[300px] border border-solid border-white rounded-[10px] bg-[#FCD04B] rotate-[10deg] fadein">
-                  <div className="arrow top-[-10px] border-b-[10px] border-b-[#FCD04B]" />
+                  <div className="arrow1 top-[-10px] border-b-[10px] border-b-[#FCD04B]" />
                   <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
                     TITAN COW
                   </h3>

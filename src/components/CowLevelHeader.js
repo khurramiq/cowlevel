@@ -1,5 +1,5 @@
 import cowheaderlogo from '../assets/images/cowheaderlogo.png';
-import white_cow from '../assets/images/fipme/white_cow.png';
+import white_cow from '../assets/images/cowheaderlogo.png';
 import { FaBars } from 'react-icons/fa';
 import MobileLinks from './MobileLinks';
 import { Link } from 'react-router-dom';

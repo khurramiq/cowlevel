@@ -11,16 +11,32 @@ const MobileLinks = ({ fullpageApi }) => {
       >
         <li className="mb-1 ml-5">COW STORY</li>
       </Link>
-      <Link to={'/invest'} className="hover:text-red-600">
+      <Link
+        to={'/invest'}
+        onClick={() => fullpageApi.moveTo(1)}
+        className="hover:text-red-600"
+      >
         <li className="mb-1 ml-5">INVEST</li>
       </Link>
-      <Link to={'/fipme'} className="hover:text-red-600">
+      <Link
+        to={'/fipme'}
+        onClick={() => fullpageApi.moveTo(1)}
+        className="hover:text-red-600"
+      >
         <li className="mb-1 ml-5">FiPME</li>
       </Link>
-      <Link to={'/solutions'} className="hover:text-red-600">
+      <Link
+        to={'/solutions'}
+        onClick={() => fullpageApi.moveTo(1)}
+        className="hover:text-red-600"
+      >
         <li className="mb-1 ml-5">SOLUTIONS</li>
       </Link>
-      <Link to={'/moos'} className="hover:text-red-600">
+      <Link
+        to={'/moos'}
+        onClick={() => fullpageApi.moveTo(1)}
+        className="hover:text-red-600"
+      >
         <li className="ml-5">MOOS</li>
       </Link>
     </ul>

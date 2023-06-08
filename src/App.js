@@ -5,6 +5,8 @@ import './index.css';
 import CowStory from './pages/cowStory';
 import Invest from './pages/invest';
 import FipMe from './pages/fipme';
+import Solutions from './pages/solutions';
+import Moos from './pages/moos';
 
 const App = () => (
   <Routes>
@@ -12,11 +14,8 @@ const App = () => (
     <Route path="/cow-story" element={<CowStory />} />
     <Route path="/invest" element={<Invest />} />
     <Route path="/fipme" element={<FipMe />} />
-    <Route
-      path="/solutions"
-      element={<h1 className="text-center">solutions</h1>}
-    />
-    <Route path="/moos" element={<h1 className="text-center">moos</h1>} />
+    <Route path="/solutions" element={<Solutions />} />
+    <Route path="/moos" element={<Moos />} />
   </Routes>
 );
 export default App;
