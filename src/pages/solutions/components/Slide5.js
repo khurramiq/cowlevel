@@ -17,6 +17,7 @@ const Slide5 = ({ open, setOpen, fullpageApi, state }) => {
   const [cow3, setCow3] = useState(true);
   const [cow4, setCow4] = useState(true);
   const [cow5, setCow5] = useState(true);
+  //
   return (
     <div className="section relative  overflow-x-hidden scrollbar-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
