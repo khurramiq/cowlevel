@@ -140,7 +140,7 @@ const Home = () => {
                       state?.direction === 'down'
                         ? 'fadeout'
                         : 'z-[0]'
-                    }                    
+                    }
                     `}
                       src={mcows}
                       alt="cowskinpattern"
@@ -156,13 +156,13 @@ const Home = () => {
                 {state?.destination?.index === 9 &&
                   state?.direction === 'down' && (
                     <img
-                      className={`absolute top-0 h-full w-full sm:block xs:hidden 
+                      className={`absolute top-0 h-full w-full sm:block xs:hidden
                   ${
                     state?.destination?.index === 9 &&
                     state?.direction === 'down'
                       ? 'fadeout'
                       : 'z-[0]'
-                  }                  
+                  }
                   `}
                       src={cowskinpattern}
                       alt="cowskinpattern"

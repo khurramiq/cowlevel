@@ -16,7 +16,7 @@ const MovingIcons = () => {
         class="flex justify-center items-end w-[120%] md:h-[60%] xs:h-[50%] bg-[#325C95] origin-bottom-right rotate-[7deg] md:translate-x-[-200px] xs:translate-x-[-50px]"
         style={{ zIndex: -10 }}
       >
-        <div className="relative w-[100%]">
+        <div className="relative w-[80%] translate-x-[5%]">
           <Marquee speed={150} className="absolute w-full bottom-0">
             <img
               className="sm:w-[100px] xs:w-[50px] sm:mr-[100px] xs:mr-[50px]"

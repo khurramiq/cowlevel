@@ -36,7 +36,7 @@ const Slide2 = ({ open, setOpen, state }) => {
             />
           )}
           <img
-            className={`absolute md:w-[70%] sm:w-auto picture m-auto sm:inline-block xs:hidden
+            className={`sm:w-auto picture m-auto sm:inline-block xs:hidden
             ${
               state?.destination?.index === 1 && state?.direction === 'up'
                 ? 'fadein'
@@ -48,7 +48,7 @@ const Slide2 = ({ open, setOpen, state }) => {
           />
           {state?.destination?.index === 1 && state?.direction === 'up' && (
             <img
-              className={`absolute md:w-[70%] sm:w-auto picture sm:inline-block xs:hidden
+              className={`sm:w-auto picture sm:inline-block xs:hidden
             ${
               state?.destination?.index === 1 && state?.direction === 'up'
                 ? 'fadeout'

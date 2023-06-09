@@ -44,7 +44,7 @@ const Slide4 = ({ open, setOpen, fullpageApi, state }) => {
         >
           <div className="relative parent w-screen h-full overflow-hidden">
             <img
-              className={`absolute picture xs:block sm:hidden
+              className={`picture xs:block sm:hidden
             ${
               state?.destination?.index === 3 && state?.direction === 'down'
                 ? 'fadeout'
@@ -55,7 +55,7 @@ const Slide4 = ({ open, setOpen, fullpageApi, state }) => {
               alt="slideMobile2"
             />
             <img
-              className={`absolute md:w-[70%] sm:w-auto picture m-auto sm:inline-block xs:hidden
+              className={`sm:w-auto picture m-auto sm:inline-block xs:hidden
             ${
               state?.destination?.index === 3 && state?.direction === 'down'
                 ? 'fadeout'

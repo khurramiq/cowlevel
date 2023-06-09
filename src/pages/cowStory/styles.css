@@ -16,10 +16,35 @@
   cursor: pointer;
 }
 
+.picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .prev {
   left: -50px;
 }
 
 .next {
   right: -50px;
+}
+.cow_standing {
+  width: 100%;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-name: cow_standing;
+  animation-iteration-count: infinite;
+}
+@keyframes cow_standing {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
 }
