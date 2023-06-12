@@ -4,6 +4,7 @@ import twomaninbelowcow from '../../../assets/images/twomaninbelowcow.png';
 import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Fade from 'react-reveal/Fade';
 import { FaAngleUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const CowMovingInner = ({
   fullpageApi,
@@ -76,11 +77,17 @@ const CowMovingInner = ({
                 …and the creation of wealth through gaming. Thank you for your
                 support.
               </span>
-              <img
-                className="absolute right-0 md:bottom-[-100px] sm:bottom-[-50px] md:w-[80px] sm:w-[50px]"
-                src={cowlinkimage}
-                alt="cowlinkimage"
-              />
+              <Link
+                to={'/invest'}
+                onClick={() => fullpageApi.moveTo(1)}
+                className="hover:text-red-600"
+              >
+                <img
+                  className="absolute right-0 md:bottom-[-100px] sm:bottom-[-50px] md:w-[80px] sm:w-[50px]"
+                  src={cowlinkimage}
+                  alt="cowlinkimage"
+                />
+              </Link>
             </div>
           </Fade>
           <div className="sm:hidden xs:inline-block absolute top-[10%] right-[-180px]">
@@ -91,11 +98,17 @@ const CowMovingInner = ({
                   …and the creation of wealth through gaming. Thank you for your
                   support.
                 </span>
-                <img
-                  className="absolute right-0 bottom-[-50px] w-[50px]"
-                  src={cowlinkimage}
-                  alt="cowlinkimage"
-                />
+                <Link
+                  to={'/invest'}
+                  onClick={() => fullpageApi.moveTo(1)}
+                  className="hover:text-red-600"
+                >
+                  <img
+                    className="absolute right-0 bottom-[-50px] w-[50px]"
+                    src={cowlinkimage}
+                    alt="cowlinkimage"
+                  />
+                </Link>
               </div>
             </Fade>
           </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import footerflower from '../../assets/images/footerflower.png';
 import footerlogo from '../../assets/images/footerlogo.png';
 import footer_animation from '../../assets/images/footer_animation.gif';
@@ -44,10 +45,40 @@ const Footer = () => {
             </p>
 
             <div className="flex md:mt-5 sm:mb-1 xs:mt-1">
-              <img className="md:w-[40px] xs:w-[20px] mr-2" src={fb} alt="fb" />
-              <img className="md:w-[40px] xs:w-[20px] mr-2" src={tw} alt="tw" />
-              <img className="md:w-[40px] xs:w-[20px] mr-2" src={yt} alt="yt" />
-              <img className="md:w-[40px] xs:w-[20px] mr-2" src={li} alt="li" />
+              <a href="https://de-de.facebook.com/CowLevelAG/" target="_blank">
+                <img
+                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  src={fb}
+                  alt="fb"
+                />
+              </a>
+              <a href="https://twitter.com/CowLevel1" target="_blank">
+                <img
+                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  src={tw}
+                  alt="tw"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCX6ZAFWb80J7B7CqQi00JmA/featured"
+                target="_blank"
+              >
+                <img
+                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  src={yt}
+                  alt="yt"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/cow-level-ag/"
+                target="_blank"
+              >
+                <img
+                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  src={li}
+                  alt="li"
+                />
+              </a>
             </div>
           </div>
           <div className="sm:w-[50%] xs:w-[100%] xs:mt-2 xs:block sm:flex justify-end items-center">
@@ -58,7 +89,7 @@ const Footer = () => {
               <p className="md:text-[18px] xs:text-xs md:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
-                  info@cowlevel.ch
+                  <a href="mailto:info@cowlevel.ch">info@cowlevel.ch</a>
                 </span>
               </p>
             </div>

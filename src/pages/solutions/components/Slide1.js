@@ -15,7 +15,7 @@ const Slide1 = ({ open, setOpen }) => {
             alt="slideMobile1"
           />
           <img
-            className="md:w-[70%] sm:w-auto picture m-auto sm:block xs:hidden"
+            className="sm:w-auto picture m-auto sm:block xs:hidden"
             src={slide1}
             alt="slide1"
           />

@@ -8,8 +8,9 @@ import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import borisavatar from '../../../assets/images/borisavatar.png';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
-const MovingIcons = () => {
+const MovingIcons = ({ fullpageApi }) => {
   return (
     <div className="absolute top-[100%] w-screen h-screen overflow-hidden bg-[#3D6EB1]">
       <div
@@ -83,17 +84,29 @@ const MovingIcons = () => {
             />
           </Fade>
           <div className="xs:hidden sm:inline-block relative w-[272px]">
+            <Link
+              to={'/solutions'}
+              onClick={() => fullpageApi.moveTo(1)}
+              className="hover:text-red-600"
+            >
+              <img
+                className="absolute left-5 md:bottom-[-200px] sm:bottom-[-100px] md:w-[80px] sm:w-[50px]"
+                src={cowlinkimage}
+                alt="cowlinkimage"
+              />
+            </Link>
+          </div>
+          <Link
+            to={'/solutions'}
+            onClick={() => fullpageApi.moveTo(1)}
+            className="hover:text-red-600"
+          >
             <img
-              className="absolute left-5 md:bottom-[-200px] sm:bottom-[-100px] w-[80px] sm:w-[50px]"
+              className="xs:inline-block sm:hidden absolute sm:top-[100px] xs:top-[50%] right-0 sm:w-[80px] xs:w-[50px]"
               src={cowlinkimage}
               alt="cowlinkimage"
             />
-          </div>
-          <img
-            className="xs:inline-block sm:hidden absolute sm:top-[100px] xs:top-[50%] right-0 sm:w-[80px] xs:w-[50px]"
-            src={cowlinkimage}
-            alt="cowlinkimage"
-          />
+          </Link>
         </div>
       </div>
     </div>

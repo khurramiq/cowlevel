@@ -4,8 +4,9 @@ import cowlinkimage from '../../../assets/images/cowlinkimage.png';
 import Marquee from 'react-fast-marquee';
 import stefanfipme from '../../../assets/images/stefanfipme.png';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
-const MovingText = () => {
+const MovingText = ({ fullpageApi }) => {
   return (
     <div className="absolute top-[100%] w-screen h-full overflow-hidden bg-[#EC3E37]">
       <div
@@ -58,11 +59,17 @@ const MovingText = () => {
                 supervised platform for players to safely and quickly trade
                 in-game items.
               </span>
-              <img
-                className="absolute sm:right-0 xs:right-[10px] md:bottom-[-100px] xs:bottom-[-50px] md:w-[80px] xs:w-[50px]"
-                src={cowlinkimage}
-                alt="cowlinkimage"
-              />
+              <Link
+                to={'/fipme'}
+                onClick={() => fullpageApi.moveTo(1)}
+                className="hover:text-red-600"
+              >
+                <img
+                  className="absolute sm:right-0 xs:right-[10px] md:bottom-[-100px] xs:bottom-[-50px] md:w-[80px] xs:w-[50px]"
+                  src={cowlinkimage}
+                  alt="cowlinkimage"
+                />
+              </Link>
             </div>
           </Fade>
         </div>

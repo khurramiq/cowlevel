@@ -79,11 +79,16 @@ const CowLevelHeaderWithLinks = ({ fullpageApi, open, setOpen }) => {
             )}
             {open && <MobileLinks />}
           </div>
-          <img
-            className="w-[120px] sm:inline-block xs:hidden"
-            src={investInTheCow}
-            alt="investInTheCow"
-          />
+          <Link
+            to="/test-page/#invest_form"
+            onClick={() => fullpageApi.moveTo(4)}
+          >
+            <img
+              className="w-[120px] sm:inline-block xs:hidden"
+              src={investInTheCow}
+              alt="investInTheCow"
+            />
+          </Link>
         </div>
       </div>
     </div>

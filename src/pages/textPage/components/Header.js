@@ -4,7 +4,12 @@ import investInTheCow from '../../../assets/images/investInTheCow.png';
 import { Link } from 'react-router-dom';
 import MobileLinks from '../../../components/MobileLinks';
 
-const Header = ({ fullpageApi, open, setOpen }) => {
+const Header = ({ elementRef, fullpageApi, open, setOpen }) => {
+  const handleMoveToForm = () => {
+    if (elementRef.current) {
+      elementRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="z-[100] absolute left-0 right-0 top-0">
       <div className="max-w-[1200px] mx-auto sm:p-5 xs:p-3 flex justify-between items-center">
@@ -59,16 +64,13 @@ const Header = ({ fullpageApi, open, setOpen }) => {
             )}
             {open && <MobileLinks />}
           </div>
-          <Link
-            to="/test-page/#invest_form"
-            onClick={() => fullpageApi.moveTo(4)}
-          >
-            <img
-              className="w-[120px] sm:inline-block xs:hidden"
-              src={investInTheCow}
-              alt="investInTheCow"
-            />
-          </Link>
+
+          <img
+            onClick={() => handleMoveToForm()}
+            className="w-[120px] sm:inline-block xs:hidden cursor-pointer"
+            src={investInTheCow}
+            alt="investInTheCow"
+          />
         </div>
       </div>
     </div>

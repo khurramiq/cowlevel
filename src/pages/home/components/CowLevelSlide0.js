@@ -10,7 +10,11 @@ import CowLevelHeaderWithLinks from '../../../components/CowLevelHeaderWithLinks
 const CowLevelSlide0 = ({ fullpageApi, open, setOpen }) => {
   return (
     <div className="section relative w-full h-full overflow-hidden  bg-[#FFFBE8]">
-      <CowLevelHeaderWithLinks open={open} setOpen={setOpen} />
+      <CowLevelHeaderWithLinks
+        fullpageApi1={fullpageApi}
+        open={open}
+        setOpen={setOpen}
+      />
       <div className="absolute left-0 top-0 right-0 bottom-0 flex items-center justify-center">
         <div className="sm:w-[50%] xs:w-[80%] rotate-[5deg]">
           <img

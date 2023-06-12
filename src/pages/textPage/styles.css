@@ -1,0 +1,85 @@
+.parent {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fadein {
+  animation-name: fadein;
+  animation-duration: 0.7s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 0.7s;
+  -ms-animation-name: fadein;
+  -ms-animation-duration: 0.7s;
+  opacity: 1;
+  z-index: 1;
+}
+.arrow1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  /* border-bottom: 10px solid #000; */
+}
+
+.invest_cows {
+  scale: 1;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: invest_cows;
+  animation-iteration-count: infinite;
+}
+.invest_cows1 {
+  scale: 1;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: invest_cows1;
+  animation-iteration-count: infinite;
+}
+
+@keyframes invest_cows0 {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes invest_cows1 {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.9;
+  }
+}
+@keyframes invest_cows {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}

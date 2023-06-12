@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import bs from '../../../assets/images/bs6.png';
 import bs3 from '../../../assets/images/bs3.png';
@@ -89,16 +90,21 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
                 SHARES.
               </p>
               <div className="md:w-[30%] xs:w-[100%] md:items-center md:justify-start md:mt-0 xs:flex xs:flex-col sm:flex-row md:flex-col xs:justify-center xs:items-center xs:mt-2">
-                <img
-                  className="md:max-w-[120px] sm:max-w-[80px] xs:max-w-[80px]"
-                  src={youtube_icon}
-                  alt="youtube_icon"
-                />
-                <p className="text-white sm:text-sm xs:text-sm sm:mt-0 xs:mt-2 md:text-center xs:text-center sm:text-left sm:ml-2 text-shadow-p">
-                  WATCH THE
-                  <br />
-                  ELEVATOR PITCH
-                </p>
+                <a
+                  href="https://firebasestorage.googleapis.com/v0/b/garage-388416.appspot.com/o/uploads%2FCow-Level-Elevator-Pitch.mp4?alt=media&token=71d101b7-55d0-4879-8533-a99edb883e4a&_gl=1*1wpx4h1*_ga*MTk1MzM5NDg2LjE2MzU1NDgwMTE.*_ga_CW55HF8NVT*MTY4NjQ0ODU5My4xOS4xLjE2ODY0NDkwMzAuMC4wLjA."
+                  target="_blank"
+                >
+                  <img
+                    className="md:max-w-[120px] sm:max-w-[80px] xs:max-w-[80px]"
+                    src={youtube_icon}
+                    alt="youtube_icon"
+                  />
+                  <p className="text-white sm:text-sm xs:text-sm sm:mt-0 xs:mt-2 md:text-center xs:text-center sm:text-left sm:ml-2 text-shadow-p">
+                    WATCH THE
+                    <br />
+                    ELEVATOR PITCH
+                  </p>
+                </a>
               </div>
             </div>
           </div>

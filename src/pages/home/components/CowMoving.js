@@ -2,12 +2,11 @@ import cowskinpattern from '../../../assets/images/cowskinpattern.png';
 import mcows from '../../../assets/images/mcows.png';
 import CowMovingInner from './CowMovingInner';
 
-const CowMoving = ({ fullpageApi, state }) => {
+const CowMoving = ({ state }) => {
   return (
     <div className="absolute top-[100%] w-screen h-full overflow-hidden">
       <div className="relative w-full h-full flex justify-center">
         <CowMovingInner
-          fullpageApi={fullpageApi}
           state={state}
           destination={7}
           direction={'up'}
