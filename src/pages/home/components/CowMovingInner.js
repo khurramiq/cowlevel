@@ -83,7 +83,7 @@ const CowMovingInner = ({
                 className="hover:text-red-600"
               >
                 <img
-                  className="absolute right-0 md:bottom-[-100px] sm:bottom-[-50px] md:w-[80px] sm:w-[50px]"
+                  className="absolute right-0 md:right-[150px] md:bottom-[-100px] sm:bottom-[-50px] md:w-[80px] sm:w-[50px]"
                   src={cowlinkimage}
                   alt="cowlinkimage"
                 />

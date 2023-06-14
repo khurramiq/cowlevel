@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react';
 import cowheaderlogo from '../../../assets/images/cowheaderlogo.png';
 import whitethan from '../../../assets/images/invest/whitethan.png';
@@ -234,6 +235,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 <div className="xs:block sm:flex justify-between">
                   <select className="text-[#9ea0a4] xs:w-full sm:w-[49%] p-1 outline-none">
                     <option value="">--Please Choose an Option--</option>
+                    <option value="GREEN COW (10 shares = 51 CHF)">
+                      GREEN COW (10 shares = 51 CHF)
+                    </option>
+                    <option value="RARE BLUE COW (100 shares = 510 CHF)">
+                      RARE BLUE COW (100 shares = 510 CHF)
+                    </option>
+                    <option value="EPIC PURPLE COW (500 shares = 2,550 CHF)">
+                      EPIC PURPLE COW (500 shares = 2,550 CHF)
+                    </option>
+                    <option value="LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)">
+                      LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)
+                    </option>
+                    <option value="TITAN COW (10,000 shares = 51,000 CHF)">
+                      TITAN COW (10,000 shares = 51,000 CHF)
+                    </option>
                   </select>
                   <input
                     className="text-[#9ea0a4] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
@@ -251,7 +267,11 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               </div>
               <p className="mt-3 text-center">
                 * If you don’t have a Daura Username, please register at{' '}
-                <span className="text-[#EC3739]">Daura.ch </span>
+                <span className="text-[#EC3739]">
+                  <a href="https://daura.ch/" target="_blank">
+                    Daura.ch
+                  </a>
+                </span>
                 and return to this form.
               </p>
               <div className="text-center mt-3">

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react';
 import redthan from '../../../assets/images/cow_story/redthan.png';
 // before images
@@ -97,16 +98,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
         <div className="mt-[100px] w-[50%] xs:hidden sm:block">
           <div class="flex justify-center">
             <div className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[200px] hover:h-[330px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[100px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor1}
-                alt="teamImgBefor1"
-              />
-              <img
-                className="absolute top-[100px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter1}
-                alt="teamImgAfter1"
-              />
+              <a
+                href="https://www.linkedin.com/in/gabrielbuceta/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[100px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor1}
+                  alt="teamImgBefor1"
+                />
+                <img
+                  className="absolute top-[100px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter1}
+                  alt="teamImgAfter1"
+                />
+              </a>
               <TeamMemberInfo
                 name={'GABRIEL BUCETA'}
                 role={'Video Editor'}
@@ -114,16 +120,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor2}
-                alt="teamImgBefor2"
-              />
-              <img
-                className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter2}
-                alt="teamImgAfter2"
-              />
+              <a
+                href="https://www.linkedin.com/in/stefan-kaemper/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor2}
+                  alt="teamImgBefor2"
+                />
+                <img
+                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter2}
+                  alt="teamImgAfter2"
+                />
+              </a>
               <TeamMemberInfo
                 name={'STEFAN KAEMPER'}
                 role={'Founder, COB'}
@@ -131,16 +142,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[20%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor3}
-                alt="teamImgBefor3"
-              />
-              <img
-                className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter3}
-                alt="teamImgAfter3"
-              />
+              <a
+                href="https://www.linkedin.com/in/boris-obodda-03359235/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor3}
+                  alt="teamImgBefor3"
+                />
+                <img
+                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter3}
+                  alt="teamImgAfter3"
+                />
+              </a>
               <TeamMemberInfo
                 name={'BORIS OBODDA'}
                 role={'Founder, CEO'}
@@ -148,16 +164,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[15%] hover:w-[150px] h-[165px] hover:h-[310px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor4}
-                alt="teamImgBefor4"
-              />
-              <img
-                className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter4}
-                alt="teamImgAfter4"
-              />
+              <a
+                href="https://www.linkedin.com/in/maryna-cherkashyna-73582a1a6/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor4}
+                  alt="teamImgBefor4"
+                />
+                <img
+                  className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter4}
+                  alt="teamImgAfter4"
+                />
+              </a>
               <TeamMemberInfo
                 name={'MARINA CHERKASHINA'}
                 role={'Lead Project Manager'}
@@ -167,16 +188,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           </div>
           <div class="flex justify-center">
             <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor5}
-                alt="teamImgBefor5"
-              />
-              <img
-                className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter5}
-                alt="teamImgAfter5"
-              />
+              <a
+                href="https://www.linkedin.com/in/benjaminkratsch"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor5}
+                  alt="teamImgBefor5"
+                />
+                <img
+                  className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter5}
+                  alt="teamImgAfter5"
+                />
+              </a>
               <TeamMemberInfo
                 name={'BENJAMIN KRATSCH'}
                 role={'Marketing/PR'}
@@ -184,16 +210,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor6}
-                alt="teamImgBefor6"
-              />
-              <img
-                className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter6}
-                alt="teamImgAfter6"
-              />
+              <a
+                href="https://www.linkedin.com/in/heatherblair/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor6}
+                  alt="teamImgBefor6"
+                />
+                <img
+                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter6}
+                  alt="teamImgAfter6"
+                />
+              </a>
               <TeamMemberInfo
                 name={'HEATHER BLAIR'}
                 role={'Key Advisor USA'}
@@ -201,16 +232,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[16%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor7}
-                alt="teamImgBefor7"
-              />
-              <img
-                className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter7}
-                alt="teamImgAfter7"
-              />
+              <a
+                href="https://www.linkedin.com/in/alexandru-turkonje/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor7}
+                  alt="teamImgBefor7"
+                />
+                <img
+                  className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter7}
+                  alt="teamImgAfter7"
+                />
+              </a>
               <TeamMemberInfo
                 name={'ALEXANDRU'}
                 role={'Advisor'}
@@ -219,23 +255,36 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
             </div>
             <div class="block w-[12%]">
               <div className="p-1">
-                <img className="w-full" src={daura} alt="daura" />
+                <a href="https://daura.ch/en/" target="_blank">
+                  <img className="w-full" src={daura} alt="daura" />
+                </a>
               </div>
               <div className="p-1">
-                <img className="w-full" src={swiss_gaming} alt="swiss_gaming" />
+                <a href="https://swissgaming.org/" target="_blank">
+                  <img
+                    className="w-full"
+                    src={swiss_gaming}
+                    alt="swiss_gaming"
+                  />
+                </a>
               </div>
             </div>
             <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor8}
-                alt="teamImgBefor8"
-              />
-              <img
-                className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter8}
-                alt="teamImgAfter8"
-              />
+              <a
+                href="https://www.linkedin.com/in/mrjohnmrose/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor8}
+                  alt="teamImgBefor8"
+                />
+                <img
+                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter8}
+                  alt="teamImgAfter8"
+                />
+              </a>
               <TeamMemberInfo
                 name={'JOHN ROSE'}
                 role={'Advisor'}
@@ -243,16 +292,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[280px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor9}
-                alt="teamImgBefor9"
-              />
-              <img
-                className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter9}
-                alt="teamImgAfter9"
-              />
+              <a
+                href="https://www.linkedin.com/in/abdelhakim-el-omrani-57725b14a/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor9}
+                  alt="teamImgBefor9"
+                />
+                <img
+                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter9}
+                  alt="teamImgAfter9"
+                />
+              </a>
               <TeamMemberInfo
                 name={'ABDELHAKIM EL OMRANI'}
                 role={'Advisor'}
@@ -262,16 +316,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           </div>
           <div class="flex justify-center">
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor10}
-                alt="teamImgBefor10"
-              />
-              <img
-                className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter10}
-                alt="teamImgAfter10"
-              />
+              <a
+                href="https://www.linkedin.com/in/duska-giorgetti-860a4317b/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor10}
+                  alt="teamImgBefor10"
+                />
+                <img
+                  className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter10}
+                  alt="teamImgAfter10"
+                />
+              </a>
               <TeamMemberInfo
                 name={'DUSKA GIORGETTI'}
                 role={'Advisor'}
@@ -279,16 +338,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor11}
-                alt="teamImgBefor11"
-              />
-              <img
-                className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter11}
-                alt="teamImgAfter11"
-              />
+              <a
+                href="https://www.linkedin.com/in/jon-baumann-baj/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor11}
+                  alt="teamImgBefor11"
+                />
+                <img
+                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter11}
+                  alt="teamImgAfter11"
+                />
+              </a>
               <TeamMemberInfo
                 name={'JON BAUMANN'}
                 role={'Advisor'}
@@ -297,23 +361,35 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
             </div>
             <div class="block w-[12%]">
               <div className="p-1">
-                <img className="w-full" src={smex} alt="smex" />
+                <a href="https://daura.ch/en/" target="_blank">
+                  <img className="w-full" src={smex} alt="smex" />
+                </a>
               </div>
               <div className="p-1">
-                <img className="w-full" src={the_2_pie} alt="the_2_pie" />
+                <a
+                  href="https://www.linkedin.com/company/two-pi-team/"
+                  target="_blank"
+                >
+                  <img className="w-full" src={the_2_pie} alt="the_2_pie" />
+                </a>
               </div>
             </div>
             <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor12}
-                alt="teamImgBefor12"
-              />
-              <img
-                className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter12}
-                alt="teamImgAfter12"
-              />
+              <a
+                href="https://www.linkedin.com/in/pascal-schmid-foundationandcryptoexpert/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor12}
+                  alt="teamImgBefor12"
+                />
+                <img
+                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter12}
+                  alt="teamImgAfter12"
+                />
+              </a>
               <TeamMemberInfo
                 name={'PASCAL SCHMID'}
                 role={'Advisor'}
@@ -321,16 +397,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               />
             </div>
             <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
-              <img
-                className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
-                src={teamImgBefor13}
-                alt="teamImgBefor13"
-              />
-              <img
-                className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
-                src={teamImgAfter13}
-                alt="teamImgAfter13"
-              />
+              <a
+                href="https://www.linkedin.com/in/sanjeev-sunny-karkhanis/"
+                target="_blank"
+              >
+                <img
+                  className="absolute top-[60px] w-full z-[1] group-hover:z-[0]"
+                  src={teamImgBefor13}
+                  alt="teamImgBefor13"
+                />
+                <img
+                  className="absolute top-[60px] w-full z-[0] group-hover:z-[1]"
+                  src={teamImgAfter13}
+                  alt="teamImgAfter13"
+                />
+              </a>
               <TeamMemberInfo
                 name={'SUNNY KARKHANIS'}
                 role={'Advisor'}
@@ -339,10 +420,14 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
             </div>
             <div class="block w-[12%]">
               <div className="p-1">
-                <img className="w-full" src={tenity_logo} alt="tenity_logo" />
+                <a href="https://www.tenity.com/" target="_blank">
+                  <img className="w-full" src={tenity_logo} alt="tenity_logo" />
+                </a>
               </div>
               <div className="p-1">
-                <img className="w-full" src={reg_search} alt="reg_search" />
+                <a href="https://www.regsearch.ai/" target="_blank">
+                  <img className="w-full" src={reg_search} alt="reg_search" />
+                </a>
               </div>
             </div>
           </div>
@@ -356,16 +441,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor1}
-                  alt="teamImgBefor1"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter1}
-                  alt="teamImgAfter1"
-                />
+                <a
+                  href="https://www.linkedin.com/in/gabrielbuceta/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor1}
+                    alt="teamImgBefor1"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter1}
+                    alt="teamImgAfter1"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'GABRIEL BUCETA'}
                   role={'Video Editor'}
@@ -378,16 +468,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor2}
-                  alt="teamImgBefor2"
-                />
-                <img
-                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter2}
-                  alt="teamImgAfter2"
-                />
+                <a
+                  href="https://www.linkedin.com/in/stefan-kaemper/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor2}
+                    alt="teamImgBefor2"
+                  />
+                  <img
+                    className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter2}
+                    alt="teamImgAfter2"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'STEFAN KAEMPER'}
                   role={'Founder, COB'}
@@ -402,16 +497,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor3}
-                  alt="teamImgBefor3"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter3}
-                  alt="teamImgAfter3"
-                />
+                <a
+                  href="https://www.linkedin.com/in/boris-obodda-03359235/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor3}
+                    alt="teamImgBefor3"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter3}
+                    alt="teamImgAfter3"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'BORIS OBODDA'}
                   role={'Founder, CEO'}
@@ -424,16 +524,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor4}
-                  alt="teamImgBefor4"
-                />
-                <img
-                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter4}
-                  alt="teamImgAfter4"
-                />
+                <a
+                  href="https://www.linkedin.com/in/maryna-cherkashyna-73582a1a6/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor4}
+                    alt="teamImgBefor4"
+                  />
+                  <img
+                    className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter4}
+                    alt="teamImgAfter4"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'MARINA CHERKASHINA'}
                   role={'Lead Project Manager'}
@@ -448,16 +553,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor5}
-                  alt="teamImgBefor5"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter5}
-                  alt="teamImgAfter5"
-                />
+                <a
+                  href="https://www.linkedin.com/in/benjaminkratsch"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor5}
+                    alt="teamImgBefor5"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter5}
+                    alt="teamImgAfter5"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'BENJAMIN KRATSCH'}
                   role={'Marketing/PR'}
@@ -470,16 +580,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor6}
-                  alt="teamImgBefor6"
-                />
-                <img
-                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter6}
-                  alt="teamImgAfter6"
-                />
+                <a
+                  href="https://www.linkedin.com/in/heatherblair/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor6}
+                    alt="teamImgBefor6"
+                  />
+                  <img
+                    className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter6}
+                    alt="teamImgAfter6"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'HEATHER BLAIR'}
                   role={'Key Advisor USA'}
@@ -492,16 +607,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor7}
-                  alt="teamImgBefor7"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter7}
-                  alt="teamImgAfter7"
-                />
+                <a
+                  href="https://www.linkedin.com/in/alexandru-turkonje/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor7}
+                    alt="teamImgBefor7"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter7}
+                    alt="teamImgAfter7"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'ALEXANDRU'}
                   role={'Advisor'}
@@ -514,14 +634,18 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1 mt-4">
-                  <img className="w-full" src={daura} alt="daura" />
+                  <a href="https://daura.ch/en/" target="_blank">
+                    <img className="w-full" src={daura} alt="daura" />
+                  </a>
                 </div>
                 <div className="p-1">
-                  <img
-                    className="w-full"
-                    src={swiss_gaming}
-                    alt="swiss_gaming"
-                  />
+                  <a href="https://swissgaming.org/" target="_blank">
+                    <img
+                      className="w-full"
+                      src={swiss_gaming}
+                      alt="swiss_gaming"
+                    />
+                  </a>
                 </div>
               </div>
               {/* 9 */}
@@ -530,16 +654,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor8}
-                  alt="teamImgBefor8"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter8}
-                  alt="teamImgAfter8"
-                />
+                <a
+                  href="https://www.linkedin.com/in/mrjohnmrose/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor8}
+                    alt="teamImgBefor8"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter8}
+                    alt="teamImgAfter8"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'JOHN ROSE'}
                   role={'Advisor'}
@@ -552,16 +681,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor9}
-                  alt="teamImgBefor9"
-                />
-                <img
-                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter9}
-                  alt="teamImgAfter9"
-                />
+                <a
+                  href="https://www.linkedin.com/in/abdelhakim-el-omrani-57725b14a/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor9}
+                    alt="teamImgBefor9"
+                  />
+                  <img
+                    className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter9}
+                    alt="teamImgAfter9"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'ABDELHAKIM EL OMRANI'}
                   role={'Advisor'}
@@ -576,16 +710,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor10}
-                  alt="teamImgBefor10"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter10}
-                  alt="teamImgAfter10"
-                />
+                <a
+                  href="https://www.linkedin.com/in/duska-giorgetti-860a4317b/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor10}
+                    alt="teamImgBefor10"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter10}
+                    alt="teamImgAfter10"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'DUSKA GIORGETTI'}
                   role={'Advisor'}
@@ -598,16 +737,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor11}
-                  alt="teamImgBefor11"
-                />
-                <img
-                  className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter11}
-                  alt="teamImgAfter11"
-                />
+                <a
+                  href="https://www.linkedin.com/in/jon-baumann-baj/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[30px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor11}
+                    alt="teamImgBefor11"
+                  />
+                  <img
+                    className="absolute top-[30px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter11}
+                    alt="teamImgAfter11"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'JON BAUMANN'}
                   role={'Advisor'}
@@ -620,10 +764,17 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1">
-                  <img className="w-full" src={smex} alt="smex" />
+                  <a href="https://daura.ch/en/" target="_blank">
+                    <img className="w-full" src={smex} alt="smex" />
+                  </a>
                 </div>
                 <div className="p-1">
-                  <img className="w-full" src={the_2_pie} alt="the_2_pie" />
+                  <a
+                    href="https://www.linkedin.com/company/two-pi-team/"
+                    target="_blank"
+                  >
+                    <img className="w-full" src={the_2_pie} alt="the_2_pie" />
+                  </a>
                 </div>
               </div>
               {/* 14 */}
@@ -634,16 +785,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor12}
-                  alt="teamImgBefor12"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter12}
-                  alt="teamImgAfter12"
-                />
+                <a
+                  href="https://www.linkedin.com/in/pascal-schmid-foundationandcryptoexpert/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor12}
+                    alt="teamImgBefor12"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter12}
+                    alt="teamImgAfter12"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'PASCAL SCHMID'}
                   role={'Advisor'}
@@ -656,16 +812,21 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onMouseEnter={() => setViewMode(true)}
                 onMouseLeave={() => setViewMode(false)}
               >
-                <img
-                  className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
-                  src={teamImgBefor13}
-                  alt="teamImgBefor13"
-                />
-                <img
-                  className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
-                  src={teamImgAfter13}
-                  alt="teamImgAfter13"
-                />
+                <a
+                  href="https://www.linkedin.com/in/sanjeev-sunny-karkhanis/"
+                  target="_blank"
+                >
+                  <img
+                    className="absolute top-[0px] w-full z-[1] group-hover:z-[0]"
+                    src={teamImgBefor13}
+                    alt="teamImgBefor13"
+                  />
+                  <img
+                    className="absolute top-[0px] w-full z-[0] group-hover:z-[1]"
+                    src={teamImgAfter13}
+                    alt="teamImgAfter13"
+                  />
+                </a>
                 <TeamMemberInfo
                   name={'SUNNY KARKHANIS'}
                   role={'Advisor'}
@@ -678,10 +839,18 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 onClick={() => setViewMode(false)}
               >
                 <div className="p-1">
-                  <img className="w-full" src={tenity_logo} alt="tenity_logo" />
+                  <a href="https://www.tenity.com/" target="_blank">
+                    <img
+                      className="w-full"
+                      src={tenity_logo}
+                      alt="tenity_logo"
+                    />
+                  </a>
                 </div>
                 <div className="p-1">
-                  <img className="w-full" src={reg_search} alt="reg_search" />
+                  <a href="https://www.regsearch.ai/" target="_blank">
+                    <img className="w-full" src={reg_search} alt="reg_search" />
+                  </a>
                 </div>
               </div>
             </div>
