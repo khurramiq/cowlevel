@@ -231,7 +231,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 linkedin="https://www.linkedin.com/in/heatherblair/"
               />
             </div>
-            <div className="m-1 relative text-center group w-[16%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
+            <div className="m-1 relative text-center group w-[16%] hover:w-[150px] h-[200px] hover:h-[310px] ease-in-out duration-[2.5s]">
               <a
                 href="https://www.linkedin.com/in/alexandru-turkonje/"
                 target="_blank"
