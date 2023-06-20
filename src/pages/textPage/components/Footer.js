@@ -19,7 +19,7 @@ const Footer = () => {
           alt="footerflower"
         />
       </div>
-      <div className="absolute md:bottom-[90px] xs:bottom-[40px] left-0 right-0">
+      <div className="absolute md:bottom-[70px] xs:bottom-[40px] left-0 right-0">
         <div className="sm:flex sm:items-end  xs:block xs:w-[90%] w-[1200px] mx-auto">
           <div className="sm:w-[50%] xs:w-[100%] text-white">
             <div>
@@ -29,34 +29,34 @@ const Footer = () => {
                 alt="footerlogo"
               />
             </div>
-            <ul className="sm:text-[14px] xs:text-xs md:mt-3 xs:mt-2">
+            <ul className="sm:text-[12px] xs:text-xs md:mt-3 xs:mt-2">
               <li>CONTACT</li>
               <li>PRIVACY POLICY</li>
               <li>COOKIES</li>
               <li>TERMS & CONDITIONS</li>
             </ul>
-            <p className="sm:text-[14px] xs:text-xs font-bold md:mt-3 xs:mt-1 leading-tight">
+            <p className="sm:text-[12px] xs:text-xs font-bold md:mt-2 xs:mt-1 leading-tight">
               COW LEVEL AG
             </p>
-            <p className="leading-tight sm:text-base xs:text-xs">
+            <p className="leading-tight sm:text-[12px] xs:text-xs">
               Blegistrasse 1, 6343 Rotkreuz, Switzerland
               <br />
-              <span className="sm:text-[14px] xs:text-xs hover:text-[#cf2e2e] cursor-pointer">
+              <span className="sm:text-[12px] xs:text-xs hover:text-[#cf2e2e] cursor-pointer">
                 info@cowlevel.ch
               </span>
             </p>
 
-            <div className="flex md:mt-5 sm:mb-1 xs:mt-1">
+            <div className="flex md:mt-3 sm:mb-1 xs:mt-1">
               <a href="https://de-de.facebook.com/CowLevelAG/" target="_blank">
                 <img
-                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  className="md:w-[30px] xs:w-[20px] mr-2"
                   src={fb}
                   alt="fb"
                 />
               </a>
               <a href="https://twitter.com/CowLevel1" target="_blank">
                 <img
-                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  className="md:w-[30px] xs:w-[20px] mr-2"
                   src={tw}
                   alt="tw"
                 />
@@ -66,7 +66,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <img
-                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  className="md:w-[30px] xs:w-[20px] mr-2"
                   src={yt}
                   alt="yt"
                 />
@@ -76,7 +76,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <img
-                  className="md:w-[40px] xs:w-[20px] mr-2"
+                  className="md:w-[30px] xs:w-[20px] mr-2"
                   src={li}
                   alt="li"
                 />
@@ -85,10 +85,10 @@ const Footer = () => {
           </div>
           <div className="sm:w-[50%] xs:w-[100%] xs:mt-2 xs:block sm:flex justify-end items-center">
             <div className="text-white pr-5">
-              <h3 className="md:text-[28px] xs:text-xs xs:mt-0">
+              <h3 className="md:text-[16px] xs:text-xs xs:mt-0">
                 JOIN THE HERD
               </h3>
-              <p className="md:text-[18px] xs:text-xs md:mt-2 xs:mt-0">
+              <p className="md:text-[14px] xs:text-xs md:mt-2 xs:mt-0">
                 Apply for &nbsp;
                 <span className="hover:text-[#cf2e2e] cursor-pointer">
                   <a href="mailto:info@cowlevel.ch">info@cowlevel.ch</a>

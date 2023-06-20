@@ -215,7 +215,7 @@ const Slide5 = ({ open, setOpen, fullpageApi, state }) => {
                   <div className="absolute text-start left-[0px] top-[-220px] md:left-[-90px] w-[300px] border border-solid border-white rounded-[10px] bg-[#FFFBE8] fadein z-[1]">
                     <div className="arrow xs:left-[20%] xs:translate-x-[-20%] md:left-[50%] md:translate-x-[-50%] bottom-[-10px] border-t-[10px] border-t-[#FFFBE8]" />
                     <h3 className="border-b-[1px] border-solid p-2 text-black text-lg font-[500]">
-                      In-GAME WEALTH
+                      IN-GAME WEALTH
                     </h3>
                     <p className="text-black font-normal p-2 leading-tight">
                       Gamers accumulate in-game assets, which are priced on the

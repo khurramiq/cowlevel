@@ -190,42 +190,42 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
         </div>
       </div>
       <div className="w-screen text-white flex flex-col justify-center items-center overflow-hidden bg-[#325D96]">
-        <div className="xs:w-[90%] sm:w-[70%] xs:block sm:flex">
+        <div className="xs:w-[90%] sm:w-[60%] xs:block sm:flex">
           <div className="xs:w-[100%] sm:w-[40%]">
-            <h2 className="text-2xl">
+            <h2 className="text-xl">
               YOU CAN INVEST IN THE COW <br className="xs:hidden sm:inline" />{' '}
               <span className="ml-5">RIGHT HERE, RIGHT NOW.</span>
             </h2>
-            <ol className="text-lg leading-tight mt-3 pl-5">
-              <li>1. DECIDE HOW MUCH TO INVEST</li>
-              <li>
+            <ol className="text-[14px] leading-tight mt-3 pl-5">
+              <li className="mb-1">1. DECIDE HOW MUCH TO INVEST</li>
+              <li className="mb-1">
                 2. ENTER YOUR CONTACT DETAILS AND{' '}
                 <br className="xs:hidden sm:inline" /> DAURA USERNAME*
               </li>
-              <li>
+              <li className="mb-1">
                 3. WE SEND YOU THE INVOICE FOR{' '}
                 <br className="xs:hidden sm:inline" /> PAYMENT
               </li>
-              <li>4. TRANSFER THE PAYMENT</li>
+              <li className="mb-1">4. TRANSFER THE PAYMENT</li>
             </ol>
           </div>
           <div className="xs:w-[100%] xs:mt-5 sm:mt-0 sm:w-[60%]">
             <div className="w-[100%] m-auto">
               <div className="xs:block sm:flex justify-between">
                 <input
-                  className="text-[#9ea0a4] xs:w-full sm:w-[49%] p-1 pl-2 outline-none"
+                  className="text-[#9ea0a4] text-[14px] xs:w-full sm:w-[49%] p-1 pl-2 outline-none"
                   type="text"
                   placeholder="FIRST NAME*"
                 />
                 <input
-                  className="text-[#9ea0a4] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
+                  className="text-[#9ea0a4] text-[14px] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
                   type="text"
                   placeholder="LAST NAME*"
                 />
               </div>
               <div className="mt-3">
                 <input
-                  className="text-[#9ea0a4] w-full p-1 pl-2 outline-none"
+                  className="text-[#9ea0a4] text-[14px] w-full p-1 pl-2 outline-none"
                   type="text"
                   placeholder="EMAIL*"
                 />
@@ -233,7 +233,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               <div className="mt-3">
                 <p>Invest Amount</p>
                 <div className="xs:block sm:flex justify-between">
-                  <select className="text-[#9ea0a4] xs:w-full sm:w-[49%] p-1 outline-none">
+                  <select className="text-[#9ea0a4] text-[14px] xs:w-full sm:w-[49%] p-1 outline-none">
                     <option value="">--Please Choose an Option--</option>
                     <option value="GREEN COW (10 shares = 51 CHF)">
                       GREEN COW (10 shares = 51 CHF)
@@ -252,7 +252,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                     </option>
                   </select>
                   <input
-                    className="text-[#9ea0a4] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
+                    className="text-[#9ea0a4] text-[14px] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
                     type="text"
                     placeholder="ANY AMOUT"
                   />
@@ -260,12 +260,12 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
               </div>
               <div className="mt-3">
                 <input
-                  className="text-[#9ea0a4] w-full p-1 pl-2 outline-none"
+                  className="text-[#9ea0a4] text-[14px] w-full p-1 pl-2 outline-none"
                   type="text"
                   placeholder="DAURA USERNAME*"
                 />
               </div>
-              <p className="mt-3 text-center">
+              <p className="mt-3 text-[14px] text-center">
                 * If you don’t have a Daura Username, please register at{' '}
                 <span className="text-[#EC3739]">
                   <a href="https://daura.ch/" target="_blank">

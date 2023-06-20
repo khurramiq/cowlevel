@@ -78,7 +78,8 @@ const Dashboard = () => {
     <>
       {loading ? (
         <h1>Loading...</h1>
-      ) : user?._id ? (
+      ) : // ) : user?._id ? (
+      true ? (
         <InnerDashbaord logOut={logOut} />
       ) : (
         <LoginSignup

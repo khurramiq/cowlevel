@@ -187,7 +187,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
             </div>
           </div>
           <div class="flex justify-center">
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[200px] hover:h-[290px] ease-in-out duration-[2.5s]">
               <a
                 href="https://www.linkedin.com/in/benjaminkratsch"
                 target="_blank"
@@ -209,7 +209,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 linkedin="https://www.linkedin.com/in/benjaminkratsch"
               />
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[260px] ease-in-out duration-[2.5s]">
               <a
                 href="https://www.linkedin.com/in/heatherblair/"
                 target="_blank"
@@ -248,7 +248,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 />
               </a>
               <TeamMemberInfo
-                name={'ALEXANDRU'}
+                name={'ALEXANDRU TURKONJE'}
                 role={'Advisor'}
                 linkedin="https://www.linkedin.com/in/alexandru-turkonje/"
               />
@@ -269,7 +269,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 </a>
               </div>
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
               <a
                 href="https://www.linkedin.com/in/mrjohnmrose/"
                 target="_blank"
@@ -374,7 +374,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                 </a>
               </div>
             </div>
-            <div className="m-1 relative text-center group w-[10%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
+            <div className="m-1 relative text-center group w-[12%] hover:w-[150px] h-[165px] hover:h-[230px] ease-in-out duration-[2.5s]">
               <a
                 href="https://www.linkedin.com/in/pascal-schmid-foundationandcryptoexpert/"
                 target="_blank"
@@ -623,7 +623,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
                   />
                 </a>
                 <TeamMemberInfo
-                  name={'ALEXANDRU'}
+                  name={'ALEXANDRU TURKONJE'}
                   role={'Advisor'}
                   linkedin="https://www.linkedin.com/in/alexandru-turkonje/"
                 />
