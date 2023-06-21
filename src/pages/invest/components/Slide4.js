@@ -14,7 +14,7 @@ import { FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
 import Footer from './Footer';
 
-const Slide4 = ({ open, setOpen, fullpageApi }) => {
+const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
   const [cow1, setCow1] = useState(true);
   const [cow2, setCow2] = useState(true);
   const [cow3, setCow3] = useState(true);
@@ -59,6 +59,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           your investment.
         </p>
         <img
+          onClick={() => scrollToView()}
           className="w-[120px] mt-10"
           src={investinthecowbuttonwhite}
           alt="investinthecowbuttonwhite"
@@ -189,7 +190,10 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
           </div>
         </div>
       </div>
-      <div className="w-screen text-white flex flex-col justify-center items-center overflow-hidden bg-[#325D96]">
+      <div
+        ref={elementRef}
+        className="w-screen text-white flex flex-col justify-center items-center overflow-hidden bg-[#325D96]"
+      >
         <div className="xs:w-[90%] sm:w-[60%] xs:block sm:flex">
           <div className="xs:w-[100%] sm:w-[40%]">
             <h2 className="text-xl">

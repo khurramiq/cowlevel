@@ -10,15 +10,23 @@ const TextPage = () => {
   const elementRef = useRef(null);
   useEffect(() => {
     if (elementRef.current) {
-      elementRef.current.scrollIntoView({ behavior: 'smooth' });
+      scrollToView();
     }
   }, []);
+  const scrollToView = () => {
+    elementRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="relative">
       <Slide1 elementRef={elementRef} open={open} setOpen={setOpen} />
       {/* <Slide2 open={open} setOpen={setOpen} />
       <Slide3 open={open} setOpen={setOpen} /> */}
-      <Slide4 elementRef={elementRef} open={open} setOpen={setOpen} />
+      <Slide4
+        elementRef={elementRef}
+        open={open}
+        setOpen={setOpen}
+        scrollToView={scrollToView}
+      />
     </div>
   );
 };

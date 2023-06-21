@@ -148,6 +148,10 @@ const Slide4 = ({ open, setOpen, fullpageApi, state }) => {
           <p>REGISTER AT</p>
           <img className="w-[40px] ml-5" src={pipme_logo} alt="pipme_logo" />
         </div>
+        <p className="w-[40%] text-center mt-3">
+          FiPME Is fully approved by PolyReg, which is supervised by the Swiss
+          Financial Market Supervisory Authority (FINMA).
+        </p>
       </div>
     </div>
   );

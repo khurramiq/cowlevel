@@ -96,6 +96,10 @@ const Slide3 = ({ open, setOpen, state }) => {
             items, which will enhance their primary market and prevent abuse in
             the secondary market. Contact us for more information.
           </p>
+          <p className="w-[40%] text-center mt-3">
+            FiPME Is fully approved by PolyReg, which is supervised by the Swiss
+            Financial Market Supervisory Authority (FINMA).
+          </p>
         </div>
       )}
     </div>

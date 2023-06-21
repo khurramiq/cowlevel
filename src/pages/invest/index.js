@@ -1,5 +1,5 @@
 import ReactFullpage from '@fullpage/react-fullpage';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Slide1 from './components/Slide1';
 import Slide2 from './components/Slide2';
 import Slide3 from './components/Slide3';
@@ -8,6 +8,10 @@ import './styles.css';
 
 const Invest = () => {
   const [open, setOpen] = useState(false);
+  const elementRef = useRef(null);
+  const scrollToView = () => {
+    elementRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <ReactFullpage
       // navigation
@@ -30,7 +34,12 @@ const Invest = () => {
             <Slide1 open={open} setOpen={setOpen} />
             <Slide2 open={open} setOpen={setOpen} state={state} />
             <Slide3 open={open} setOpen={setOpen} state={state} />
-            <Slide4 open={open} setOpen={setOpen} />
+            <Slide4
+              elementRef={elementRef}
+              scrollToView={scrollToView}
+              open={open}
+              setOpen={setOpen}
+            />
           </div>
         );
       }}
