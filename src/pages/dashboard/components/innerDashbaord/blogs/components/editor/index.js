@@ -10,18 +10,14 @@ import draftToHtml from 'draftjs-to-html';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import './editor.css';
 
-const EditorConvertToHTML = ({ data, onChange }) => {
+const EditorConvertToHTML = ({ data, onChange, placeholder }) => {
+  console.log('data', data);
   const blocksFromHTML = convertFromHTML(data);
   const content = ContentState.createFromBlockArray(
     blocksFromHTML.contentBlocks,
     blocksFromHTML.entityMap
   );
-  // console.log("htmlToDraft(data)", htmlToDraft(data));
-  //   console.log(
-  //     "convertFromRaw",
-  //     convertFromRaw(convertToRaw(htmlToDraft(data)))
-  //   );
-  //   const [editorState, setEditorState] = useState(EditorState.createEmpty());
+
   const [editorState, setEditorState] = useState(
     EditorState.createWithContent(content)
   );
@@ -37,6 +33,7 @@ const EditorConvertToHTML = ({ data, onChange }) => {
       wrapperClassName="demo-wrapper"
       editorClassName="demo-editor"
       onEditorStateChange={onEditorStateChange}
+      placeholder={placeholder}
     />
   );
 };

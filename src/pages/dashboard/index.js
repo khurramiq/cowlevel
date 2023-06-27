@@ -80,7 +80,9 @@ const Dashboard = () => {
         <h1>Loading...</h1>
       ) : // ) : user?._id ? (
       true ? (
-        <InnerDashbaord logOut={logOut} />
+        <>
+          <InnerDashbaord logOut={logOut} />
+        </>
       ) : (
         <LoginSignup
           shouldSignup={shouldSignup}

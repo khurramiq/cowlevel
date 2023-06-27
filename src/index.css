@@ -182,6 +182,12 @@
   -o-transition: opacity 0.4s ease-in-out, background 0.2s ease-in-out;
 }
 
+.blog_content img {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

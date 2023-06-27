@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const AdminPanelLayout = ({ children }) => {
+const AdminPanelLayout = ({ tab, children }) => {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
@@ -12,20 +13,34 @@ const AdminPanelLayout = ({ children }) => {
         <nav className="p-4">
           <ul>
             <li className="mb-2">
-              <a
-                href="#"
-                className="block p-2 rounded-md text-white hover:bg-gray-700"
+              <Link
+                to="/admin-area/images"
+                className={`block p-2 rounded-md text-white ${
+                  tab === 'images' && 'bg-gray-700'
+                } hover:bg-gray-700`}
               >
-                BLOG
-              </a>
+                IMAGES
+              </Link>
             </li>
             <li className="mb-2">
-              <a
-                href="#"
-                className="block p-2 rounded-md text-white hover:bg-gray-700"
+              <Link
+                to="/admin-area/blogs"
+                className={`block p-2 rounded-md text-white ${
+                  tab === 'blogs' && 'bg-gray-700'
+                } hover:bg-gray-700`}
+              >
+                BLOGS
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                to="/admin-area/news"
+                className={`block p-2 rounded-md text-white ${
+                  tab === 'news' && 'bg-gray-700'
+                } hover:bg-gray-700`}
               >
                 NEWS
-              </a>
+              </Link>
             </li>
             {/* Add more sidebar items as needed */}
           </ul>

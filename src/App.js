@@ -9,6 +9,7 @@ import Solutions from './pages/solutions';
 import Moos from './pages/moos';
 import TextPage from './pages/textPage';
 import Dashboard from './pages/dashboard';
+import BlogPreview from './pages/dashboard/components/innerDashbaord/blogs/BlogPreview';
 
 const App = () => {
   return (
@@ -20,7 +21,10 @@ const App = () => {
       <Route path="/fipme" element={<FipMe />} />
       <Route path="/solutions" element={<Solutions />} />
       <Route path="/moos" element={<Moos />} />
-      <Route path="/admin-area" element={<Dashboard />} />
+      <Route path="/blog-preview/:id" element={<BlogPreview />} />
+      <Route path="/admin-area" element={<Dashboard />}>
+        <Route path="/admin-area/:tab" element={<Dashboard />} />
+      </Route>
     </Routes>
   );
 };
