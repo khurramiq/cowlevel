@@ -38,7 +38,7 @@ const SignupForm = ({ open, setOpen, state }) => {
           direction={'down'}
         />
         <div
-          className={`absolute top-0 h-full w-full bg-[#F4423F] z-[1] 
+          className={`absolute top-0 h-full w-full bg-[#F4423F] z-[-1] 
             ${
               state?.destination?.index === 10 && state?.direction === 'down'
                 ? 'fadeout'

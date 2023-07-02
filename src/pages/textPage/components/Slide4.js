@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import MobileLinks from '../../../components/MobileLinks';
 import Footer from './Footer';
+import api from '../../../utils/api';
 
 const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
   const [cow1, setCow1] = useState(true);
@@ -20,6 +21,60 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
   const [cow3, setCow3] = useState(true);
   const [cow4, setCow4] = useState(true);
   const [cow5, setCow5] = useState(true);
+  const [submit, setSubmit] = useState(false);
+  const [investForm, setInvestForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    investOption: '',
+    investAmount: '',
+    dauraUsername: '',
+  });
+  const handleInvestFormFields = (e) => {
+    setInvestForm((prev) => {
+      return { ...prev, [e.target.name]: e.target.value };
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    let regex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
+    const {
+      firstName,
+      lastName,
+      email,
+      investOption,
+      investAmount,
+      dauraUsername,
+    } = investForm;
+    if (
+      firstName !== '' &&
+      lastName !== '' &&
+      regex.test(email) &&
+      investOption !== '' &&
+      investAmount !== '' &&
+      dauraUsername !== ''
+    ) {
+      try {
+        var res = await api.post('/investForm/create', investForm);
+        if (res.data.savedInvestForm && !res.data.error) {
+          console.log('res.data.savedInvestForm', res.data.savedInvestForm);
+          setInvestForm({
+            firstName: '',
+            lastName: '',
+            email: '',
+            investOption: '',
+            investAmount: '',
+            dauraUsername: '',
+          });
+          setSubmit(true);
+        } else {
+          console.log('res.data.error', res.data.error);
+        }
+      } catch (e) {
+        console.log('e.message', e.message);
+      }
+    }
+  };
   return (
     <div className="section relative  bg-[#3D6FB2] overflow-x-hidden scrollbar-hidden">
       <div className="z-[100] sticky left-0 right-0 top-0">
@@ -51,7 +106,7 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
         <h3 className="text-2xl">INVEST</h3>
         <img src={whitethan} alt="whitethan" />
         <h4 className="text-xl mt-4">JOIN OUR INVESTOR DRIVE</h4>
-        <p className="xs:w-[90%] sm:w-[50%] text-center text-base mt-3 leading-tight">
+        <p className="xs:text-sm md:text-base xs:w-[90%] sm:w-[50%] text-center text-base mt-3 leading-tight">
           Your investment in Cow Level will help us to provide gamers with a
           secure way to trade items at the best price and enable publishers to
           access the secondary market. FiPME receives a small commission on each
@@ -73,9 +128,11 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
       </div>
       <div className="w-screen h-full text-white overflow-hidden">
         <div className="relative xs:h-[50%] sm:h-[35%] text-center">
-          <h3 className="text-3xl pt-[80px]">INVESTMENT LEVELS</h3>
+          <h3 className="text-xl pt-[80px]">INVESTMENT LEVELS</h3>
           <img className="inline-block" src={whitethan} alt="whitethan" />
-          <h4 className="text-xl mt-5 font-bold">WELCOME TO THE FOLD</h4>
+          <h4 className="md:text-xl xs:text-lg mt-5 font-bold">
+            WELCOME TO THE FOLD
+          </h4>
         </div>
         <div className="relative xs:h-[50%] sm:h-[65%] w-[120%] bg-[#325D96] origin-bottom-right rotate-[-10deg]">
           <div className="absolute flex justify-center left-[50%] sm:translate-x-[-50%] xs:translate-x-[-40%] md:top-[-56px] sm:top-[-30px] xs:top-[-15px] z-[1]">
@@ -194,97 +251,145 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
         ref={elementRef}
         className="w-screen text-white flex flex-col justify-center items-center overflow-hidden bg-[#325D96]"
       >
-        <div className="xs:w-[90%] sm:w-[70%] xs:block sm:flex">
-          {/* <Element name="test1"></Element> */}
+        <div className="xs:w-[90%] sm:w-[60%] xs:block sm:flex">
           <div className="xs:w-[100%] sm:w-[40%]">
-            <h2 className="text-2xl">
+            <h2 className="text-xl">
               YOU CAN INVEST IN THE COW <br className="xs:hidden sm:inline" />{' '}
               <span className="ml-5">RIGHT HERE, RIGHT NOW.</span>
             </h2>
-            <ol className="text-lg leading-tight mt-3 pl-5">
-              <li>1. DECIDE HOW MUCH TO INVEST</li>
-              <li>
+            <ol className="text-[14px] leading-tight mt-3 pl-5">
+              <li className="mb-1">1. DECIDE HOW MUCH TO INVEST</li>
+              <li className="mb-1">
                 2. ENTER YOUR CONTACT DETAILS AND{' '}
                 <br className="xs:hidden sm:inline" /> DAURA USERNAME*
               </li>
-              <li>
+              <li className="mb-1">
                 3. WE SEND YOU THE INVOICE FOR{' '}
                 <br className="xs:hidden sm:inline" /> PAYMENT
               </li>
-              <li>4. TRANSFER THE PAYMENT</li>
+              <li className="mb-1">4. TRANSFER THE PAYMENT</li>
             </ol>
           </div>
           <div className="xs:w-[100%] xs:mt-5 sm:mt-0 sm:w-[60%]">
-            <div className="w-[100%] m-auto">
-              <div className="xs:block sm:flex justify-between">
-                <input
-                  className="text-[#9ea0a4] xs:w-full sm:w-[49%] p-1 pl-2 outline-none"
-                  type="text"
-                  placeholder="FIRST NAME*"
-                />
-                <input
-                  className="text-[#9ea0a4] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
-                  type="text"
-                  placeholder="LAST NAME*"
-                />
-              </div>
-              <div className="mt-3">
-                <input
-                  className="text-[#9ea0a4] w-full p-1 pl-2 outline-none"
-                  type="text"
-                  placeholder="EMAIL*"
-                />
-              </div>
-              <div className="mt-3">
-                <p>Invest Amount</p>
+            <form onSubmit={(e) => handleSubmit(e)}>
+              <div className="w-[100%] m-auto">
                 <div className="xs:block sm:flex justify-between">
-                  <select className="text-[#9ea0a4] xs:w-full sm:w-[49%] p-1 outline-none">
-                    <option value="">--Please Choose an Option--</option>
-                    <option value="GREEN COW (10 shares = 51 CHF)">
-                      GREEN COW (10 shares = 51 CHF)
-                    </option>
-                    <option value="RARE BLUE COW (100 shares = 510 CHF)">
-                      RARE BLUE COW (100 shares = 510 CHF)
-                    </option>
-                    <option value="EPIC PURPLE COW (500 shares = 2,550 CHF)">
-                      EPIC PURPLE COW (500 shares = 2,550 CHF)
-                    </option>
-                    <option value="LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)">
-                      LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)
-                    </option>
-                    <option value="TITAN COW (10,000 shares = 51,000 CHF)">
-                      TITAN COW (10,000 shares = 51,000 CHF)
-                    </option>
-                  </select>
                   <input
-                    className="text-[#9ea0a4] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
+                    className="text-black text-[14px] xs:w-full sm:w-[49%] p-1 pl-2 outline-none"
                     type="text"
-                    placeholder="ANY AMOUT"
+                    name="firstName"
+                    value={investForm.firstName}
+                    onChange={(e) => handleInvestFormFields(e)}
+                    placeholder="FIRST NAME*"
+                    required
+                  />
+                  <input
+                    className="text-black text-[14px] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
+                    type="text"
+                    name="lastName"
+                    value={investForm.lastName}
+                    onChange={(e) => handleInvestFormFields(e)}
+                    placeholder="LAST NAME*"
+                    required
                   />
                 </div>
+                <div className="mt-3">
+                  <input
+                    className="text-black text-[14px] w-full p-1 pl-2 outline-none"
+                    type="email"
+                    name="email"
+                    value={investForm.email}
+                    onChange={(e) => handleInvestFormFields(e)}
+                    placeholder="EMAIL*"
+                    required
+                  />
+                </div>
+                <div className="mt-3">
+                  <p>Invest Amount</p>
+                  <div className="xs:block sm:flex justify-between">
+                    <select
+                      className="text-black text-[14px] xs:w-full sm:w-[49%] p-1 outline-none"
+                      name="investOption"
+                      value={investForm.investOption}
+                      onChange={(e) => handleInvestFormFields(e)}
+                      required
+                    >
+                      <option value="">--Please Choose an Option--</option>
+                      <option value="GREEN COW (10 shares = 51 CHF)">
+                        GREEN COW (10 shares = 51 CHF)
+                      </option>
+                      <option value="RARE BLUE COW (100 shares = 510 CHF)">
+                        RARE BLUE COW (100 shares = 510 CHF)
+                      </option>
+                      <option value="EPIC PURPLE COW (500 shares = 2,550 CHF)">
+                        EPIC PURPLE COW (500 shares = 2,550 CHF)
+                      </option>
+                      <option value="LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)">
+                        LEGENDARY ORANGE COW (1,000 shares = 5,100 CHF)
+                      </option>
+                      <option value="TITAN COW (10,000 shares = 51,000 CHF)">
+                        TITAN COW (10,000 shares = 51,000 CHF)
+                      </option>
+                    </select>
+                    <input
+                      className="text-black text-[14px] xs:w-full xs:mt-3 sm:mt-0 sm:w-[49%] p-1 pl-2 outline-none"
+                      type="number"
+                      name="investAmount"
+                      value={investForm.investAmount}
+                      onChange={(e) => handleInvestFormFields(e)}
+                      placeholder="ANY AMOUT"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="mt-3">
+                  <input
+                    className="text-black text-[14px] w-full p-1 pl-2 outline-none"
+                    type="text"
+                    name="dauraUsername"
+                    value={investForm.dauraUsername}
+                    onChange={(e) => handleInvestFormFields(e)}
+                    placeholder="DAURA USERNAME*"
+                    required
+                  />
+                </div>
+                <p className="mt-3 text-[14px] text-center">
+                  * If you don’t have a Daura Username, please register at{' '}
+                  <span className="text-[#EC3739]">
+                    <a href="https://daura.ch/" target="_blank">
+                      Daura.ch
+                    </a>
+                  </span>
+                  and return to this form.
+                </p>
+                <div className="text-center mt-3">
+                  <button
+                    type="submit"
+                    className="bg-[#ec3739] md:p-3 xs:p-2 w-[120px] rounded-[5px]"
+                  >
+                    SEND
+                  </button>
+                </div>
+                {submit && (
+                  <div className="relative border border-white xs:w-[100%] m-auto md:w-[100%] text-white p-[30px] mt-10">
+                    <div
+                      className="flex justify-center items-center border border-white border-t-0 border-r-0 w-[30px] h-[30px] absolute right-0 top-0 text-[24px] cursor-pointer"
+                      onClick={() => setSubmit(false)}
+                    >
+                      ×
+                    </div>
+                    <p className="text-center">
+                      <i
+                        class="fa-lg fa fa-check-circle"
+                        aria-hidden="true"
+                      ></i>
+                      &nbsp; Thanks for submitting your information. Look for
+                      our email in just a moo-ment.
+                    </p>
+                  </div>
+                )}
               </div>
-              <div className="mt-3">
-                <input
-                  className="text-[#9ea0a4] w-full p-1 pl-2 outline-none"
-                  type="text"
-                  placeholder="DAURA USERNAME*"
-                />
-              </div>
-              <p className="mt-3 text-center">
-                * If you don’t have a Daura Username, please register at{' '}
-                <span className="text-[#EC3739]">
-                  <a href="https://daura.ch/" target="_blank">
-                    Daura.ch
-                  </a>
-                </span>
-                and return to this form.
-              </p>
-              <div className="text-center mt-3">
-                <button className="bg-[#ec3739] p-3 w-[120px] rounded-[5px]">
-                  SEND
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
         <div className="xs:w-[90%] sm:w-[70%] xs:mt-2 sm:mt-10">
