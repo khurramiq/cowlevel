@@ -184,8 +184,12 @@ const Slide4 = ({ open, setOpen, fullpageApi, state }) => {
       }
       `}
       >
-        <h3 className="text-3xl font-[500]">MOOS</h3>
-        <img src={whitethan} alt="whitethan" />
+        <h3 className="text-3xl font-[500]">
+          <Link to={'/blogs'}>MOOS</Link>
+        </h3>
+        <Link to={'/blogs'}>
+          <img src={whitethan} alt="whitethan" />
+        </Link>
         <h4 className="text-base font-[500] mt-4 text-center">
           STUFF WE SAY AND DO
         </h4>

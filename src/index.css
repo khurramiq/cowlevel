@@ -251,6 +251,10 @@
   -webkit-animation: rotateR 0.5s;
 }
 
+.react-date-picker__wrapper {
+  border: none !important;
+}
+
 @media only screen and (max-width: 960px) {
   .footer_cow_nose {
     width: 50%;

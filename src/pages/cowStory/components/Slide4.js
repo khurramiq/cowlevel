@@ -81,7 +81,7 @@ const Slide4 = ({ open, setOpen, fullpageApi }) => {
         />
       </div>
       {/* Cow Story Slides */}
-      <div className="absolute top-0 flex flex-col justify-center items-center w-screen h-full overflow-hidden bg-[#FFFBE8]">
+      <div className="absolute top-0 flex flex-col justify-center items-center w-screen min-h-full overflow-hidden bg-[#FFFBE8]">
         <h3 className="text-[28px] text-center text-black">COW STORY</h3>
         <img src={redthan} alt="redthan" />
         <CowStorySlides />

@@ -1,5 +1,8 @@
 import BigEditor from './bigEditor';
 import api from '../../../../../../utils/api';
+import DatePicker from 'react-date-picker';
+import 'react-date-picker/dist/DatePicker.css';
+import 'react-calendar/dist/Calendar.css';
 
 const BlogPostForm = ({
   setCreateNew,
@@ -42,6 +45,15 @@ const BlogPostForm = ({
     } else {
       update();
     }
+  };
+
+  const handleDate_Change = (value) => {
+    setBlog((prev) => {
+      return {
+        ...prev,
+        publishDate: value,
+      };
+    });
   };
 
   const create = async () => {
@@ -188,6 +200,21 @@ const BlogPostForm = ({
             onChange={handleBlogFields}
             className="w-full p-2 border border-gray-300 rounded"
             required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            htmlFor="author"
+            className="block text-gray-700 font-bold mb-2"
+          >
+            Publish Date
+          </label>
+          <DatePicker
+            className="border bg-white border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full outline-none"
+            value={blog?.publishDate}
+            name={'publishDate'}
+            onChange={(date) => handleDate_Change(date)}
           />
         </div>
 

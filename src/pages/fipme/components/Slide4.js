@@ -134,21 +134,21 @@ const Slide4 = ({ open, setOpen, fullpageApi, state }) => {
           <br className="xs:inline sm:hidden" />
           MONEY EXCHANGE
         </h4>
-        <p className="xs:w-[90%] sm:w-[50%] text-center text-base mt-3 leading-tight">
+        <p className="xs:w-[90%] sm:w-[50%] text-center xs:text-sm md:text-base mt-3 leading-tight">
           FiPME is an online game market exchange where buying, selling, and
           trading in-game items is as easy as trading shares on the NASDAQ or
           buying items on eBay. Trades happen safely, securely, and instantly,
           assuring the best price for buyer and seller – even between different
           games.
         </p>
-        <p className="w-[90%] text-center mt-5">
+        <p className="xs:text-sm md:text-base w-[90%] text-center mt-5">
           Now you can invest in an asset you know and love.
         </p>
         <div className="flex items-center mt-5">
           <p>REGISTER AT</p>
           <img className="w-[40px] ml-5" src={pipme_logo} alt="pipme_logo" />
         </div>
-        <p className="w-[40%] text-center mt-3">
+        <p className="xs:text-sm md:text-base xs:w-[90%] md:w-[40%] text-center mt-3">
           FiPME Is fully approved by PolyReg, which is supervised by the Swiss
           Financial Market Supervisory Authority (FINMA).
         </p>

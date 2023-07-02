@@ -3,10 +3,10 @@
 import React, { useEffect, useState } from 'react';
 import red_than from '../../../../../assets/images/moos/red_than.png';
 import { Markup } from 'interweave';
+import dumyLogo from '../../../../../assets/images/dumyLogo.png';
 import { useParams } from 'react-router-dom';
 import Header from '../../../../moos/components/Header';
 import api from '../../../../../utils/api';
-import dumyLogo from '../../../../../assets/images/dumyLogo.png';
 import footerflower from '../../../../../assets/images/cow_story/footerWhiteLogo.png';
 import footerlogo from '../../../../../assets/images/footerlogo.png';
 import footer_animation from '../../../../../assets/images/footer_animation.gif';
@@ -19,12 +19,12 @@ import InputField from '../../../../../components/InputField';
 import Checkbox from '../../../../../components/Checkbox';
 import moment from 'moment';
 
-const BlogPreview = () => {
+const NewsPreview = () => {
   let { id } = useParams();
   const [open, setOpen] = useState(false);
   const [blog, setBlog] = useState(null);
   const [comment, setComment] = useState({
-    blogId: id,
+    newsId: id,
     comment: '',
     name: '',
     email: '',
@@ -34,7 +34,7 @@ const BlogPreview = () => {
     if (id) {
       getBlog();
       setComment({
-        blogId: id,
+        newsId: id,
         comment: '',
         name: '',
         email: '',
@@ -43,26 +43,16 @@ const BlogPreview = () => {
     }
   }, [id]);
 
-  const handleComment = (e) => {
-    setComment((prev) => {
-      return {
-        ...prev,
-        [e.target.name]: e.target.value,
-      };
-    });
-  };
-
   const onCommentPost = async (e) => {
     e.preventDefault();
     let regex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
     if (comment.name !== '' && regex.test(comment.email)) {
       try {
-        var res = await api.post(`/blog/comment`, comment);
-        console.log('res', res);
+        var res = await api.post(`/cowNew/comment`, comment);
         if (res.data.savedComment && !res.data.error) {
           setBlog(res.data.savedComment);
           setComment({
-            blogId: id,
+            newsId: id,
             comment: '',
             name: '',
             email: '',
@@ -77,12 +67,21 @@ const BlogPreview = () => {
     }
   };
 
+  const handleComment = (e) => {
+    setComment((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
   const getBlog = async (data) => {
     try {
-      var res = await api.get(`/blog/${id}`);
+      var res = await api.get(`/cowNew/${id}`);
       console.log('res', res);
-      if (res.data.blog && !res.data.error) {
-        setBlog(res.data.blog);
+      if (res.data.cowNew && !res.data.error) {
+        setBlog(res.data.cowNew);
       } else {
         console.log('res.data.error', res.data.error);
       }
@@ -105,16 +104,17 @@ const BlogPreview = () => {
           <hr className="mt-5" />
           <p className="mt-2">
             By {blog?.author} Published On:{' '}
-            {moment(blog?.publishDate).format('MMMM Do YYYY')} Categories: Blog
+            {moment(blog?.publishDate).format('MMMM Do YYYY')} Categories: News
             &nbsp;
-            {blog.comments.length} Comments
+            {blog?.comments?.length} Comments
           </p>
           <p className="mb-2">
             {/* Tags: Advisory Board, Consulting, Owl FIFA PSC, Rose Creative
             Marketing, SIXSTARK */}
           </p>
           <hr />
-          {blog.comments.length > 0 && (
+
+          {blog?.comments?.length > 0 && (
             <div className="mt-10">
               <h1>{blog.comments.length} Comments</h1>
               {blog.comments.map((item, i) => (
@@ -307,4 +307,4 @@ const BlogPreview = () => {
   );
 };
 
-export default BlogPreview;
+export default NewsPreview;

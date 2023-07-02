@@ -10,9 +10,11 @@ import li from '../../../assets/images/li.png';
 const Footer = ({ viewMode }) => {
   return (
     <div
-      className={`absolute sm:top-[252%] ${
-        viewMode ? 'xs: top-[390%]' : 'xs: top-[340%]'
-      } h-full w-screen overflow-hidden bg-[#262629] ease-in-out duration-[2.5s]`}
+      className={`absolute 
+      md:top-[252%] sm: top-[350%] ${
+        viewMode ? 'xs: top-[400%]' : 'xs: top-[340%]'
+      }       
+      h-full w-screen overflow-hidden bg-[#262629] ease-in-out duration-[2.5s]`}
     >
       <div className="relative h-[250px] md:ml-20 md:block xs:flex xs:justify-center">
         <img

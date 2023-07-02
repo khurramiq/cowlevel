@@ -43,7 +43,7 @@ const CowStorySlides = () => {
     // <div className="slider-container">
     <Slider
       {...settings}
-      className="xs:w-[70%] sm:w-[40%] md:w-[35%] h-auto text-center mt-5"
+      className="xs:w-[70%] sm:w-[80%] md:w-[35%] h-auto text-center mt-5"
     >
       {slidesArray.map((slide, i) => (
         <CowStorySlide key={i} title={slide.title} desc={slide.desc} />

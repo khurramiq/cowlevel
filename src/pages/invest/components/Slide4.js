@@ -51,7 +51,7 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
         <h3 className="text-2xl">INVEST</h3>
         <img src={whitethan} alt="whitethan" />
         <h4 className="text-xl mt-4">JOIN OUR INVESTOR DRIVE</h4>
-        <p className="xs:w-[90%] sm:w-[50%] text-center text-base mt-3 leading-tight">
+        <p className="xs:text-sm md:text-base xs:w-[90%] sm:w-[50%] text-center text-base mt-3 leading-tight">
           Your investment in Cow Level will help us to provide gamers with a
           secure way to trade items at the best price and enable publishers to
           access the secondary market. FiPME receives a small commission on each
@@ -73,9 +73,11 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
       </div>
       <div className="w-screen h-full text-white overflow-hidden">
         <div className="relative xs:h-[50%] sm:h-[35%] text-center">
-          <h3 className="text-3xl pt-[80px]">INVESTMENT LEVELS</h3>
+          <h3 className="text-xl pt-[80px]">INVESTMENT LEVELS</h3>
           <img className="inline-block" src={whitethan} alt="whitethan" />
-          <h4 className="text-xl mt-5 font-bold">WELCOME TO THE FOLD</h4>
+          <h4 className="md:text-xl xs:text-lg mt-5 font-bold">
+            WELCOME TO THE FOLD
+          </h4>
         </div>
         <div className="relative xs:h-[50%] sm:h-[65%] w-[120%] bg-[#325D96] origin-bottom-right rotate-[-10deg]">
           <div className="absolute flex justify-center left-[50%] sm:translate-x-[-50%] xs:translate-x-[-40%] md:top-[-56px] sm:top-[-30px] xs:top-[-15px] z-[1]">
@@ -279,7 +281,7 @@ const Slide4 = ({ elementRef, scrollToView, open, setOpen, fullpageApi }) => {
                 and return to this form.
               </p>
               <div className="text-center mt-3">
-                <button className="bg-[#ec3739] p-3 w-[120px] rounded-[5px]">
+                <button className="bg-[#ec3739] md:p-3 xs:p-2 w-[120px] rounded-[5px]">
                   SEND
                 </button>
               </div>

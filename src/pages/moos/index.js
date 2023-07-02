@@ -7,7 +7,7 @@ import Slide4 from './components/Slide4';
 import Slide5 from './components/Slide5';
 import './styles.css';
 
-const Moos = () => {
+const Moos = ({ blogsLoading, blogs, newsLoading, news }) => {
   const [open, setOpen] = useState(false);
   return (
     <ReactFullpage
@@ -32,7 +32,15 @@ const Moos = () => {
             <Slide2 open={open} setOpen={setOpen} state={state} />
             <Slide3 open={open} setOpen={setOpen} state={state} />
             <Slide4 open={open} setOpen={setOpen} state={state} />
-            <Slide5 open={open} setOpen={setOpen} state={state} />
+            <Slide5
+              open={open}
+              setOpen={setOpen}
+              state={state}
+              blogsLoading={blogsLoading}
+              blogs={blogs}
+              newsLoading={newsLoading}
+              news={news}
+            />
           </div>
         );
       }}

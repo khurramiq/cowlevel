@@ -11,6 +11,7 @@ const Blogs = () => {
     title: '',
     content: '',
     publish: false,
+    publishDate: new Date(),
     author: '',
   });
   const [blogs, setBlogs] = useState([]);
@@ -87,7 +88,7 @@ const Blogs = () => {
                 />
                 <div className="absolute top-0 right-0 p-2 space-x-2 z-10">
                   <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-                    <Link to={`/blog-preview/${item._id}`}>
+                    <Link to={`/blog/${item._id}`}>
                       <i className="fal fa-eye text-white"></i>
                     </Link>
                   </button>

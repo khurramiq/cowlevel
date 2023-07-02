@@ -43,7 +43,7 @@ const MovingText = ({ fullpageApi }) => {
         </div>
       </div>
       <div className="sm:h-[40%] xs:h-[50%] overflow-hidden">
-        <div className="h-full flex justify-center sm:items-start xs:items-end">
+        <div className="relative h-full flex justify-center sm:items-start xs:items-end">
           <Fade bottom>
             <img
               className="xs:w-[55%] sm:w-[30%] w-auto"
@@ -52,7 +52,7 @@ const MovingText = ({ fullpageApi }) => {
             />
           </Fade>
           <Fade bottom>
-            <div className="relative xs:top-[-52%] sm:top-0 sm:left-[-50px] xs:left-[-15px] border-[3px] border-white sm:p-[10px] xs:p-[5px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
+            <div className="relative xs:top-[-50%] sm:top-0 sm:left-[-50px] xs:left-[-15px] border-[3px] border-white sm:p-[10px] xs:p-[5px] text-[15px] rounded-none mb-0  sm:w-[272px] xs:w-[40%] text-white">
               <div className="red_speech_left_arrow" />
               <span className="md:text-sm sm:text-[10px] xs:text-[8px]">
                 The First International Play Money Exchange (FiPME) is a

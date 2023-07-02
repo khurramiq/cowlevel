@@ -64,7 +64,7 @@ const MovingIcons = ({ fullpageApi }) => {
               <div className="blue_speech_right_arrow" />
             </div>
           </Fade>
-          <div className="absolute xs:inline-block sm:hidden sm:top-0 xs:top-[10%] left-0">
+          <div className="absolute xs:inline-block sm:hidden sm:top-0 xs:top-[5%] left-0">
             <Fade left>
               <div className="relative border-[3px] border-white p-[5px] text-[100%] rounded-none mb-0 sm:w-[350px] xs:w-[30%] sm:h-[120px] xs:h-auto text-white">
                 <span className="sm:text-sm xs:text-[8px]">

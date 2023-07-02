@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MobileLinks = ({ fullpageApi }) => {
   return (
-    <ul className="absolute pt-2 pb-2 top-[50px] right-[0px] sm:w-[250px] xs:w-[200px] text-[#212934] text-[18px] bg-[#FFFBE8]">
+    <ul className="absolute pt-2 pb-2 top-[50px] right-[0px] w-[250px] text-[#212934] text-[18px] bg-[#FFFBE8]">
       <Link
         to={'/cow-story'}
         className="hover:text-red-600"

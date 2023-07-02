@@ -8,8 +8,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +24,11 @@
 }
 
 .prev {
-  left: -50px;
+  left: -30px;
 }
 
 .next {
-  right: -50px;
+  right: -30px;
 }
 .cow_standing {
   width: 100%;

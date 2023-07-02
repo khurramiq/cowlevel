@@ -1,5 +1,9 @@
 import BigEditor from './bigEditor';
 import api from '../../../../../../utils/api';
+import TextArea from '../../../../../../components/TextArea';
+import DatePicker from 'react-date-picker';
+import 'react-date-picker/dist/DatePicker.css';
+import 'react-calendar/dist/Calendar.css';
 
 const NewsPostForm = ({
   setCreateNew,
@@ -35,6 +39,15 @@ const NewsPostForm = ({
     });
   };
 
+  const handleDate_Change = (value) => {
+    setBlog((prev) => {
+      return {
+        ...prev,
+        publishDate: value,
+      };
+    });
+  };
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (!edit) {
@@ -57,6 +70,7 @@ const NewsPostForm = ({
         setBlog({
           coverImageURL: '',
           title: '',
+          shortText: '',
           content: '',
           publish: false,
           author: '',
@@ -74,12 +88,12 @@ const NewsPostForm = ({
       var res = await api.post('/cowNew/update', blog, {
         headers: { authorization: `${localStorage.getItem('token')}` },
       });
-      if (res.data.updatedBlog && !res.data.error) {
-        console.log('res.data.updatedBlog', res.data.updatedBlog);
+      if (res.data.updatedCowNew && !res.data.error) {
+        console.log('res.data.updatedCowNew', res.data.updatedCowNew);
         setBlogs((prev) => {
           return prev.map((item) => {
             if (item._id === blog._id) {
-              return res.data.updatedBlog;
+              return res.data.updatedCowNew;
             } else {
               return item;
             }
@@ -106,6 +120,7 @@ const NewsPostForm = ({
             setBlog({
               coverImageURL: '',
               title: '',
+              shortText: '',
               content: '',
               publish: false,
               author: '',
@@ -150,7 +165,15 @@ const NewsPostForm = ({
             required
           />
         </div>
-
+        <TextArea
+          label="Short Text For News"
+          id={'shortText'}
+          name={'shortText'}
+          placeholder={'End your text with [...]'}
+          value={blog.shortText}
+          onChange={handleBlogFields}
+          required
+        />
         <div className="mb-4">
           <label
             htmlFor="content"
@@ -158,14 +181,6 @@ const NewsPostForm = ({
           >
             Content
           </label>
-          {/* <textarea
-            id="content"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
-            rows={6}
-            required
-          /> */}
           <BigEditor
             data={blog.content}
             onChange={handleContentChange}
@@ -188,6 +203,20 @@ const NewsPostForm = ({
             onChange={handleBlogFields}
             className="w-full p-2 border border-gray-300 rounded"
             required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            htmlFor="author"
+            className="block text-gray-700 font-bold mb-2"
+          >
+            Publish Date
+          </label>
+          <DatePicker
+            className="border bg-white border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full outline-none"
+            value={blog?.publishDate}
+            name={'publishDate'}
+            onChange={(date) => handleDate_Change(date)}
           />
         </div>
 

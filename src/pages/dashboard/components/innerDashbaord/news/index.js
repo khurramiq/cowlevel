@@ -9,8 +9,10 @@ const News = () => {
   const [blog, setBlog] = useState({
     coverImageURL: '',
     title: '',
+    shortText: '',
     content: '',
     publish: false,
+    publishDate: new Date(),
     author: '',
   });
   const [blogs, setBlogs] = useState([]);
@@ -125,7 +127,7 @@ const News = () => {
                   <h4 className="text-center font-[500] mt-3 text-sm">
                     {item.title}
                   </h4>
-                  <p className="text-sm font-[300]">Blog</p>
+                  <p className="text-sm font-[300]">News</p>
                 </div>
               </div>
             ))}
