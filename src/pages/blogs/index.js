@@ -1,8 +1,15 @@
 import React from 'react';
 import Header1 from './components/Header1';
 import { Link } from 'react-router-dom';
+import { Pagination } from '@mui/material';
 
-const Blogs = ({ blogsLoading, blogs }) => {
+const Blogs = ({
+  blogsLoading,
+  blogs,
+  blogsCurrentPage,
+  setBlogsCurrentPage,
+  blogsTotalPages,
+}) => {
   return (
     <div>
       <Header1 />
@@ -17,42 +24,55 @@ const Blogs = ({ blogsLoading, blogs }) => {
             </h1>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {blogs.map((item, i) => (
-              <div key={i}>
-                <Link to={`/blog/${item._id}`}>
-                  <div className="relative overflow-hidden group">
-                    <img
-                      className="h-[230px] m-auto"
-                      src={item?.coverImageURL}
-                      alt="fipme"
-                    />
-                    <div
-                      className="absolute top-0 w-[0px] left-[-100%] group-hover:left-0 group-hover:w-[100%] ease-in-out duration-300 bottom-0 flex flex-col items-center justify-center"
-                      style={{
-                        backgroundImage:
-                          'linear-gradient(to top, #c72e31 0, rgba(255, 78, 80, 0.8) 100%)',
-                      }}
-                    >
-                      <div className="flex justify-center">
-                        <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[100%] bg-black mr-3">
-                          <i className="fal fa-link text-white"></i>
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {blogs.map((item, i) => (
+                <div key={i}>
+                  <Link to={`/blog/${item._id}`}>
+                    <div className="relative overflow-hidden group">
+                      <img
+                        className="h-[230px] m-auto"
+                        src={item?.coverImageURL}
+                        alt="fipme"
+                      />
+                      <div
+                        className="absolute top-0 w-[0px] left-[-100%] group-hover:left-0 group-hover:w-[100%] ease-in-out duration-300 bottom-0 flex flex-col items-center justify-center"
+                        style={{
+                          backgroundImage:
+                            'linear-gradient(to top, #c72e31 0, rgba(255, 78, 80, 0.8) 100%)',
+                        }}
+                      >
+                        <div className="flex justify-center">
+                          <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[100%] bg-black mr-3">
+                            <i className="fal fa-link text-white"></i>
+                          </div>
+                          <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[100%] bg-black">
+                            <i className="fal fa-search text-white"></i>
+                          </div>
                         </div>
-                        <div className="flex justify-center items-center w-[30px] h-[30px] rounded-[100%] bg-black">
-                          <i className="fal fa-search text-white"></i>
-                        </div>
+                        <h4 className="text-center font-[500] mt-3 text-sm w-[80%] mx-auto">
+                          {item.title}
+                        </h4>
+                        <p className="text-sm font-[300]">Blog</p>
                       </div>
-                      <h4 className="text-center font-[500] mt-3 text-sm w-[80%] mx-auto">
-                        {item.title}
-                      </h4>
-                      <p className="text-sm font-[300]">Blog</p>
                     </div>
-                  </div>
-                </Link>
-                <p className="mt-5 w-[80%] mx-auto">{item.title}</p>
-              </div>
-            ))}
-          </div>
+                  </Link>
+                  <p className="mt-5 w-[80%] mx-auto">{item.title}</p>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center mt-10">
+              <Pagination
+                count={blogsTotalPages}
+                color="secondary"
+                variant="outlined"
+                page={blogsCurrentPage}
+                onChange={(event, value) => {
+                  setBlogsCurrentPage(value);
+                }}
+              />
+            </div>
+          </>
         )}
       </div>
       {/* footer */}

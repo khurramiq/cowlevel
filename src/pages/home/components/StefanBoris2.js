@@ -90,7 +90,11 @@ const StefanBoris2 = ({ startCounter, fullpageApi, open, setOpen, state }) => {
                 SHARES.
               </p>
               <div className="md:w-[30%] xs:w-[100%] md:items-center md:justify-start md:mt-0 xs:flex xs:flex-col sm:flex-row md:flex-col xs:justify-center xs:items-center xs:mt-2">
-                <a href="https://firebasestorage.googleapis.com/v0/b/garage-388416.appspot.com/o/uploads%2FCow-Level-Elevator-Pitch.mp4?alt=media&token=71d101b7-55d0-4879-8533-a99edb883e4a&_gl=1*1wpx4h1*_ga*MTk1MzM5NDg2LjE2MzU1NDgwMTE.*_ga_CW55HF8NVT*MTY4NjQ0ODU5My4xOS4xLjE2ODY0NDkwMzAuMC4wLjA.">
+                {/* <a href="https://firebasestorage.googleapis.com/v0/b/garage-388416.appspot.com/o/uploads%2FCow-Level-Elevator-Pitch.mp4?alt=media&token=71d101b7-55d0-4879-8533-a99edb883e4a&_gl=1*1wpx4h1*_ga*MTk1MzM5NDg2LjE2MzU1NDgwMTE.*_ga_CW55HF8NVT*MTY4NjQ0ODU5My4xOS4xLjE2ODY0NDkwMzAuMC4wLjA."> */}
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=ScdGl1SUhX4&ab_channel=FiPME"
+                >
                   <img
                     className="md:max-w-[120px] sm:max-w-[80px] xs:max-w-[80px] m-auto"
                     src={youtube_icon}

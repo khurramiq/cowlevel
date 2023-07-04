@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
@@ -17,19 +19,44 @@ import api from './utils/api';
 
 const App = () => {
   const [blogsLoading, setBlogsLoading] = useState(false);
+  const [blogPageSizeLoading, setBlogPageSizeLoading] = useState(false);
+  const [blogsPageSize, setBlogsPageSize] = useState(9);
+  const [blogsCurrentPage, setBlogsCurrentPage] = useState(1);
+  const [blogsTotalPages, setBlogsTotalPages] = useState(0);
   const [blogs, setBlogs] = useState([]);
   const [newsLoading, setNewsLoading] = useState(false);
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    getBlogs();
+    getBlogsPageSize();
     getNews();
   }, []);
+  useEffect(() => {
+    getBlogs();
+  }, [blogsCurrentPage]);
 
+  const getBlogsPageSize = async () => {
+    setBlogPageSizeLoading(true);
+    try {
+      var res = await api.get(`/blog/pageSize/${blogsPageSize}`);
+      if (res.data.totalPages && !res.data.error) {
+        setBlogsTotalPages(res.data.totalPages);
+        setBlogPageSizeLoading(false);
+      } else {
+        console.log('res.data.error', res.data.error);
+        setBlogPageSizeLoading(false);
+      }
+    } catch (e) {
+      console.log('e.message', e.message);
+      setBlogPageSizeLoading(false);
+    }
+  };
   const getBlogs = async (data) => {
     setBlogsLoading(true);
     try {
-      var res = await api.get('/blog');
+      var res = await api.get(
+        `/blog/currentPage/${blogsCurrentPage}/pageSize/${blogsPageSize}`
+      );
       if (res.data.items && !res.data.error) {
         setBlogs(res.data.items);
         setBlogsLoading(false);
@@ -58,6 +85,7 @@ const App = () => {
       setNewsLoading(false);
     }
   };
+  console.log('blogsTotalPages', blogsTotalPages);
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -79,7 +107,15 @@ const App = () => {
       />
       <Route
         path="/blogs"
-        element={<Blogs blogsLoading={blogsLoading} blogs={blogs} />}
+        element={
+          <Blogs
+            blogsLoading={blogsLoading}
+            blogs={blogs}
+            blogsCurrentPage={blogsCurrentPage}
+            setBlogsCurrentPage={setBlogsCurrentPage}
+            blogsTotalPages={blogsTotalPages}
+          />
+        }
       />
       <Route
         path="/news"
